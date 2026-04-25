@@ -123,9 +123,10 @@ El diagrama detalla la estructura modular de la API desarrollada en **Spring Boo
 1. Diagrama de `announcement` 
 
    <p align="center">
-     <img src="https://i.imgur.com/vZHaUON.png" alt="Descripción">
+     <img src="https://i.imgur.com/1geIbTm.png" alt="Descripción">
    </p>
-
+   
+   
    Este módulo está pensado para la comunicación tipo foro o tablero de avisos corporativos.
 
 - **`Announcement`**: Representa el aviso principal. Almacena la información central como el título, descripción, una imagen asociada, su prioridad y quién lo creó. Es una raíz de agregado (`AuditableAbstractAggregateRoot`).
@@ -137,7 +138,7 @@ El diagrama detalla la estructura modular de la API desarrollada en **Spring Boo
   2. Diagrama de  `chat`
 
   <p align="center">
-    <img src="https://i.imgur.com/ts6dTBp.png" alt="Descripción">
+    <img src="https://i.imgur.com/OyYZlym.png" alt="Descripción">
   </p>
 
 Modela un sistema de comunicación instantánea estructurado alrededor de salas o grupos.
@@ -153,8 +154,9 @@ Modela un sistema de comunicación instantánea estructurado alrededor de salas 
   
 
 <p align="center">
-  <img src="https://i.imgur.com/Gv0Iwjk.png" alt="Descripción">
+  <img src="https://i.imgur.com/A28KvTu.png" alt="Descripción">
 </p>
+
 
 Es el dominio encargado de la gestión de la agenda o calendario.
 
@@ -165,8 +167,9 @@ Es el dominio encargado de la gestión de la agenda o calendario.
 4. Diagrama de  `profile`
 
 <p align="center">
-  <img src="https://i.imgur.com/kSdNiuw.png" alt="Descripción">
+  <img src="https://i.imgur.com/N67dJAQ.png" alt="Descripción">
 </p>
+
 
 Actúa como el directorio de identidad dentro del sistema, separando los datos del usuario de sus credenciales de acceso.
 
@@ -176,8 +179,9 @@ Actúa como el directorio de identidad dentro del sistema, separando los datos d
 5. Diagrama de  `company`
 
 <p align="center">
-  <img src="https://i.imgur.com/9zPV65Z.png" alt="Descripción">
+  <img src="https://i.imgur.com/QvdI0tE.png" alt="Descripción">
 </p>
+
 
 
 
@@ -239,3 +243,7 @@ Todas las entidades principales (`Announcement`, `Comment`, `Group`, `Event`, `P
 
 ## 4.10. Database Design.
 ### 4.10.1. Relational/Non-Relational Database Diagram.
+
+
+
+![](../Anexos/Database_Design_Diagram/diamagra_db.svg)
