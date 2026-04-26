@@ -28,7 +28,7 @@
 
 | Foto del estudiante | Nombres y apellidos                    | Código de estudiante | Descripción |
 | ------------------- | -------------------------------------- | -------------------- | ----------- |
-|                     | Aguirre Castillo Sergio Cesar          | u202310425           | Estudiante de 7.º ciclo de Ingeniería de Software con alta capacidad de adaptación y pasión por el aprendizaje continuo. Cuento con experiencia versátil en múltiples lenguajes de programación (Python, C++, PHP, C#, Java, JavaScript), respaldada por bases sólidas en desarrollo web (HTML, CSS) y gestión de bases de datos relacionales (MySQL). Me enfoco en asimilar nuevas tecnologías rápidamente para resolver problemas complejos, afrontar retos profesionales y aportar valor en diversos entornos de desarrollo.           |
+|![Uploading image.png…]()| Aguirre Castillo Sergio Cesar          | u202310425           | Estudiante de 7.º ciclo de Ingeniería de Software con alta capacidad de adaptación y pasión por el aprendizaje continuo. Cuento con experiencia versátil en múltiples lenguajes de programación (Python, C++, PHP, C#, Java, JavaScript), respaldada por bases sólidas en desarrollo web (HTML, CSS) y gestión de bases de datos relacionales (MySQL). Me enfoco en asimilar nuevas tecnologías rápidamente para resolver problemas complejos, afrontar retos profesionales y aportar valor en diversos entornos de desarrollo.           |
 |                     | Bellido Salas Raúl                     |                      |             |
 |                     | Contreras Peralta Fabrizio Alessandro  | u202319889           |             |
 |                     | Curipaco Huayllani Neil Aldrin Wilhelm | u20231b866           |             |
