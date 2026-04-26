@@ -28,7 +28,7 @@
 
 | Foto del estudiante | Nombres y apellidos                    | Código de estudiante | Descripción |
 | ------------------- | -------------------------------------- | -------------------- | ----------- |
-|                     | Aguirre Castillo Sergio Cesar          |                      |             |
+|                     | Aguirre Castillo Sergio Cesar          | u202310425           |             |
 |                     | Bellido Salas Raúl                     |                      |             |
 |                     | Contreras Peralta Fabrizio Alessandro  | u202319889           |             |
 |                     | Curipaco Huayllani Neil Aldrin Wilhelm | u20231b866           |             |
