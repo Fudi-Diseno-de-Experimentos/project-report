@@ -1891,6 +1891,6 @@ Definimos dos objetivos principales, cada uno enfocado en un segmento usuario es
 | 58   | US58    | Baja del servicio de Compania                                | 3            |
 | 59   | US59    | Registro de empleados por Compania                           | 3            |
 | 60   | US60    | Eliminación de miembros de la Compania                       | 3            |
-| 61 | US61 | Panel de control corporativo | Como gerente corporativo, deseo visualizar un dashboard con el progreso y métricas de mis empleados para medir la participación en la plataforma. | 8 |
-| 62 | US62 | Facturación y pagos centralizados | Como gerente, deseo gestionar un método de pago corporativo y descargar facturas unificadas para simplificar la contabilidad. | 5 |
-| 63 | US63 | Registro de múltiples sedes | Como gerente corporativo, deseo registrar diferentes sedes para segmentar la comunicación y los empleados según su ubicación. | 5 |
+| 61   | US61    | Panel de control corporativo                                 | 8            |
+| 62   | US62    | Facturación y pagos centralizados                            | 5            |
+| 63   | US63    | Registro de múltiples sedes o sucursales                     | 5            |
