@@ -1686,6 +1686,90 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Desvinculación de empleado (Borrado Lógico)  Dado que un Manager decide eliminar a un miembro del equipo, Cuando confirma la acción en el panel de control, Entonces el estado del empleado cambia a "Terminated" pero se conserva su historial de lectura de anuncios.<br><br>Escenario: Cese de notificaciones  Dado que un empleado ha sido desvinculado, Cuando la Company publica un nuevo Announcement prioritario, Entonces el sistema no genera ni envía ninguna notificación push a dicho usuario.</td>
   </tr>
 </table>
+<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US61</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Panel de control corporativo</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente corporativo, quiero visualizar un dashboard con el progreso y las métricas de mis empleados, para medir la participación y el uso de la plataforma.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Panel corporativo<br><br>Escenario: Visualización de métricas<br>Dado que el gerente accede al panel corporativo,<br>Cuando ingresa a la pestaña de estadísticas,<br>Entonces puede ver la cantidad total de eventos asistidos, mensajes enviados y nivel de participación de su equipo.</td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US62</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Facturación y pagos centralizados</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero gestionar un método de pago corporativo y recibir facturas unificadas, para simplificar la contabilidad de la empresa.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Facturación corporativa<br><br>Escenario: Descarga de factura consolidada<br>Dado que ha terminado el ciclo de facturación mensual,<br>Cuando el gerente accede a la sección de pagos de la Company,<br>Entonces el sistema permite descargar una factura consolidada en PDF detallando todos los servicios utilizados.</td>
+  </tr>
+</table>
+
+<br>
+
+<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US63</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Registro de múltiples sedes o sucursales</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente corporativo, quiero registrar diferentes sedes bajo la misma cuenta de Company, para segmentar la comunicación y los empleados según su ubicación.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Gestión de sedes<br><br>Escenario: Añadir una nueva sede<br>Dado que el gerente necesita organizar a los empleados por ubicación,<br>Cuando agrega una nueva sede en el panel de configuración,<br>Entonces el sistema permite asignar empleados y filtrar anuncios/eventos específicamente para esa sede.</td>
+  </tr>
+</table>
 
 
 ## 3.3. Impact Mapping.
@@ -1807,3 +1891,6 @@ Definimos dos objetivos principales, cada uno enfocado en un segmento usuario es
 | 58   | US58    | Baja del servicio de Compania                                | 3            |
 | 59   | US59    | Registro de empleados por Compania                           | 3            |
 | 60   | US60    | Eliminación de miembros de la Compania                       | 3            |
+| 61   | US61    | Panel de control corporativo                                 | 8            |
+| 62   | US62    | Facturación y pagos centralizados                            | 5            |
+| 63   | US63    | Registro de múltiples sedes o sucursales                     | 5            |
