@@ -210,8 +210,124 @@ Es un **protocolo de comunicación** a través de números de versión (ej. `MAJ
 
 ### 5.2.3. Implemented Frontend-Web Application Evidence
 ### 5.2.4. Acuerdo de Servicio - SaaS
+
+<p style="text-indent: 1.25cm;">El presente Acuerdo de Servicio establece el marco legal y operativo que rige el uso de la plataforma Centralis, provista por Fudi bajo el modelo de Software como Servicio (SaaS). Este documento garantiza la transparencia en la prestación del servicio y define las responsabilidades tanto del proveedor como de las organizaciones usuarias.
+
+ 
+
+**1. Aceptación de los Términos y Condiciones de Servicio (TOS)**
+<p style="text-indent: 1.25cm;">Al acceder, registrarse o utilizar cualquier componente de la solución Centralis (incluyendo su landing page, aplicación web, API RESTful y futuras aplicaciones móviles), la organización suscriptora y sus usuarios finales aceptan de manera explícita e irrevocable los presentes términos. Esta aceptación constituye un requisito legal y técnico previo para la habilitación de la cuenta corporativa y el acceso a los servicios.
+
+**2. Descripción del Servicio, Modelo de Despliegue y Acuerdo de Nivel de Servicio (SLA)**
+<p style="text-indent: 1.25cm;">Fudi provee Centralis bajo el modelo de Software como Servicio (SaaS). La plataforma se despliega utilizando una arquitectura multi-tenancy, garantizando el aislamiento lógico y físico de los datos de cada suscriptor.
+
+- **Componentes del Servicio:** El servicio comprende el acceso a una infraestructura en la nube que soporta procesos de comunicación interna, gestión de anuncios y coordinación de equipos en tiempo real.
+- **Compromiso de Disponibilidad (SLA):** El Proveedor se compromete a mantener una disponibilidad del **99.5%** mensual, excluyendo ventanas de mantenimiento programado que serán notificadas con al menos 72 horas de anticipación. El incumplimiento de este SLA dará derecho al Suscriptor a créditos de servicio según la tabla de compensaciones disponible en el portal de soporte.
+
+**3. Responsabilidades del Usuario y Gobernanza de Datos**
+
+- **Del Suscriptor:** La organización cliente es responsable de la administración de sus usuarios, la asignación y revocación del rol de **Manager** (administrador de la instancia corporativa), y el cumplimiento de las leyes de protección de datos aplicables (ej. Ley 29733 - Ley de Protección de Datos Personales, Perú).
+- **De los Usuarios Finales:** Cada usuario se compromete a mantener la confidencialidad de sus credenciales de acceso, no compartirlas con terceros no autorizados, y utilizar la plataforma únicamente para fines profesionales y lícitos, respetando la privacidad e integridad de la comunicación organizacional.
+
+**4. Propiedad Intelectual y Licencias de Uso**
+
+- **Del Proveedor (Fudi):** Fudi retiene la titularidad exclusiva sobre todos los derechos de propiedad intelectual, incluyendo pero no limitándose a: código fuente (implementado en **Java Spring Boot** para el backend y **Flutter/Dart** para el frontend mobile), diseños de interfaz de usuario (basados en **Material Design**), arquitectura de software (diagramas C4, UML), algoritmos, marcas, logos, y documentación técnica del proyecto.
+- **Del Suscriptor:** El Suscriptor mantiene la plena propiedad sobre todos los datos, contenidos e información que genere, ingrese o procese a través de la plataforma ("Sus Datos").
+- **Licencia de Datos:** Al utilizar el servicio, el Suscriptor otorga a Fudi una licencia mundial, no exclusiva, libre de regalías y limitada en el tiempo para usar, procesar y almacenar "Sus Datos" exclusivamente con el propósito de: (a) proporcionar, mantener y mejorar el servicio; (b) generar informes agregados y anonimizados para análisis de rendimiento y seguridad; y (c) cumplir con obligaciones legales. Fudi no venderá ni compartirá "Sus Datos" con terceros para fines de marketing sin el consentimiento explícito del Suscriptor.
+
+**5. Acuerdo de Nivel de Servicio (SLA) y Soporte Técnico**
+
+- **Soporte:** Fudi proporcionará soporte técnico para la resolución de incidencias que afecten la funcionalidad crítica del sistema. Los niveles de severidad y los tiempos de respuesta se definen en la siguiente tabla:
+
+| Nivel de Severidad    | Descripción                                                  | Tiempo de Respuesta Objetivo   |
+| :-------------------- | :----------------------------------------------------------- | :----------------------------- |
+| **Crítico (Nivel 1)** | El servicio no está disponible para toda la organización o se ha producido una pérdida/degradación severa de datos. | < 2 horas (24/7)               |
+| **Alto (Nivel 2)**    | Una función principal está inoperable para un segmento de usuarios, pero existe un workaround temporal. | < 8 horas (en horario laboral) |
+| **Medio (Nivel 3)**   | Un problema menor que no bloquea el uso del producto (ej. error en una etiqueta UI, comportamiento inesperado pero no crítico). | < 48 horas                     |
+
+- **Mantenimiento:** Los mantenimientos programados se comunicarán a través de la plataforma (con al menos 5 días hábiles de anticipación) y se realizarán, de ser posible, en horarios de bajo impacto.
+
+**6. Restricciones de Uso y Conducta Prohibida**
+Queda estrictamente prohibido cualquier actividad que constituya una violación a la seguridad, integridad o disponibilidad del sistema. Esto incluye, pero no se limita a:
+
+- Realizar ingeniería inversa, descompilar o desensamblar los productos digitales (aplicación web, API, etc.).
+- Intentar vulnerar, eludir o sortear cualquier medida de seguridad, autenticación o control de acceso.
+- Utilizar la plataforma para transmitir contenido ilegal, difamatorio, abusivo, obsceno o que infrinja derechos de propiedad intelectual de terceros.
+- Realizar pruebas de carga, estrés o penetración sin la autorización previa y por escrito de Fudi.
+- El incumplimiento de estas normas constituye una violación material del acuerdo y facultará a Fudi para suspender o terminar el servicio de forma inmediata.
+
+**7. Limitación de Responsabilidad**
+<p style="text-indent: 1.25cm;">En la máxima medida permitida por la ley aplicable, Fudi no será responsable por pérdidas indirectas, incidentales, especiales, consecuentes o punitivas, ni por pérdida de beneficios o datos, derivadas del uso o la imposibilidad de usar el servicio, incluso si se ha advertido de la posibilidad de dichos daños. La responsabilidad total acumulativa de Fudi por cualquier reclamación relacionada con este acuerdo no excederá el monto total de las tarifas pagadas por el Suscriptor durante los doce (12) meses anteriores a la reclamación.
+
+**8. Legislación Aplicable y Confidencialidad**
+<p style="text-indent: 1.25cm;">Este acuerdo se regirá e interpretará de acuerdo con las leyes de la República del Perú. Cualquier disputa será sometida a la jurisdicción exclusiva de los tribunales de Lima, Perú.
+
 ### 5.2.5. Implemented Native-Mobile Application Evidence
 ### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 ### 5.2.7. RESTful API documentation
+
+<p style="text-indent: 1.25cm;">En el contexto del Sprint actual, se ha desarrollado y desplegado la API RESTful que sirve como backend para la plataforma Centralis. La documentación sigue el estándar OpenAPI Specification (Swagger) y está disponible de forma interactiva en el entorno de producción. A continuación, se presenta un resumen de los *bounded contexts* implementados, los endpoints principales, el esquema de autenticación y ejemplos de interacción.
+
+**Base URL y Versiones**
+
+Todos los endpoints descritos en esta sección están prefijados con `/api/v1` y se acceden a través de la siguiente base URL:
+
+- **Producción:** `https://`
+- **Staging:** `https://`
+
+**Autenticación y Autorización**
+
+La API utiliza **JSON Web Tokens (JWT)** para la autenticación. Para todos los requests que requieran autorización (endpoints protegidos), el cliente debe incluir el token en el encabezado `Authorization`:
+
+```
+Authorization: Bearer <your_jwt_token>
+```
+
+El token se obtiene mediante el endpoint de autenticación (`/auth/sign-in`). Los roles disponibles (`Admin`, `Manager`, `Employee`) determinan los permisos de acceso a cada recurso.
+
+**Resumen de Contextos Implementados (Bounded Contexts)**
+
+A continuación, se detallan los bounded contexts implementados en esta versión de la API, los cuales reflejan la arquitectura dirigida por dominio (DDD) de la solución.
+
+| Bounded Context                          | Descripción                                                  | Endpoint Base                   |
+| :--------------------------------------- | :----------------------------------------------------------- | :------------------------------ |
+| **Identity and Access Management (IAM)** | Gestiona la autenticación, registro de usuarios, perfiles y roles. | `/api/v1/auth`, `/api/v1/users` |
+| **Announcements**                        | Administra la creación, edición, eliminación y consulta de anuncios y sus comentarios. | `/api/v1/announcements`         |
+| **Events**                               | Gestiona los eventos del calendario organizacional.          | `/api/v1/events`                |
+| **Company**                              | Administra los datos de las empresas suscriptoras.           | `/api/v1/companies`             |
+| **Profile**                              | Gestiona los perfiles extendidos de los usuarios, incluyendo su afiliación a compañías. | `/api/v1/profiles`              |
+| **Chat**                                 | Proporciona funcionalidad de mensajería en tiempo real (grupos, mensajes, imágenes) y streaming de eventos vía SSE. | `/api/v1/groups`, `/api/v1/sse` |
+
+**Endpoints Principales**
+
+Para cada contexto, se listan los endpoints más relevantes, su verbo HTTP, sintaxis y un ejemplo de respuesta.
+
+**1. Contexto: Identity and Access Management (IAM)**
+
+| Acción             | Verbo  | Endpoint          | Descripción                                                  |
+| :----------------- | :----- | :---------------- | :----------------------------------------------------------- |
+| Registrar usuario  | `POST` | `/auth/sign-up`   | Crea un nuevo usuario en el sistema.                         |
+| Iniciar sesión     | `POST` | `/auth/sign-in`   | Autentica al usuario y devuelve un `access_token` y `refresh_token`. |
+| Obtener usuarios   | `GET`  | `/users`          | Retorna la lista de todos los usuarios (requiere rol `Admin`). |
+| Actualizar usuario | `PUT`  | `/users/{userId}` | Actualiza los datos de un usuario específico.                |
+
+**2. Contexto: Announcements**
+
+| Acción                | Verbo  | Endpoint                                   | Descripción                                                  |
+| :-------------------- | :----- | :----------------------------------------- | :----------------------------------------------------------- |
+| Crear anuncio         | `POST` | `/announcements`                           | Crea un nuevo anuncio. En el body se envía título, contenido y prioridad. |
+| Obtener anuncios      | `GET`  | `/announcements`                           | Obtiene todos los anuncios (soporta paginación vía `?page=0&size=10`). |
+| Obtener por prioridad | `GET`  | `/announcements/priority/{priority}`       | Filtra anuncios por `HIGH`, `MEDIUM` o `LOW`.                |
+| Agregar comentario    | `POST` | `/announcements/{announcementId}/comments` | Añade un comentario a un anuncio.                            |
+
+**3. Contexto: Chat (Tiempo Real)**
+
+| Acción               | Verbo  | Endpoint                     | Descripción                                                  |
+| :------------------- | :----- | :--------------------------- | :----------------------------------------------------------- |
+| Crear grupo          | `POST` | `/groups`                    | Crea un nuevo grupo de chat con nombre y visibilidad (`PUBLIC`/`PRIVATE`). |
+| Enviar mensaje       | `POST` | `/groups/{groupId}/messages` | Envía un nuevo mensaje a un grupo específico.                |
+| Obtener mensajes     | `GET`  | `/groups/{groupId}/messages` | Recupera el historial de mensajes de un grupo.               |
+| Streaming de eventos | `GET`  | `/sse/chat/{groupId}`        | Establece una conexión Server-Sent Events (SSE) para recibir eventos de chat en tiempo real. |
+
 ### 5.2.8. Team Collaboration Insights
 ## 5.3. Video About-the-Product.
