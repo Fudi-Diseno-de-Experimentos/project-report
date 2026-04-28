@@ -1714,7 +1714,6 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Panel corporativo<br><br>Escenario: Visualización de métricas<br>Dado que el gerente accede al panel corporativo,<br>Cuando ingresa a la pestaña de estadísticas,<br>Entonces puede ver la cantidad total de eventos asistidos, mensajes enviados y nivel de participación de su equipo.</td>
   </tr>
 </table>
-
 <br>
 
 ## 3.3. Impact Mapping.
