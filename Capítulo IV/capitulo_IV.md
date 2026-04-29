@@ -364,6 +364,40 @@ Esta vista especializada organiza la agenda corporativa mediante un selector de 
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
 ### 4.4.3. Mobile Applications Mock-ups.
+
+Pantalla de Log in: Interfaz de inicio de sesión refinada que presenta el imagotipo azul de la marca, campos de texto con fondo gris claro y un botón de "Sign in" en un tono verde azulado oscuro (teal) que destaca la acción principal.
+
+<img width="374" height="801" alt="image" src="https://github.com/user-attachments/assets/f786e796-56fb-4b84-b0b5-186db412a6f5" />
+
+Pantalla de Register: Formulario de registro estilizado que mantiene la coherencia visual con campos minimalistas para los datos del usuario y un botón de "Sign up", integrando sutilmente la casilla de términos y condiciones.
+
+<img width="368" height="801" alt="image" src="https://github.com/user-attachments/assets/e9a367c6-9c61-41fc-b609-21d6c314a0a9" />
+
+Pantalla de Verification: Diseño limpio y centrado en la conversión para ingresar el código OTP, utilizando cinco cajas de texto individuales y destacando el botón de "Verify" con el color primario de la aplicación.
+
+<img width="370" height="796" alt="image" src="https://github.com/user-attachments/assets/94a5daef-62d5-476c-85f1-52414499d368" />
+
+Pantalla de Home: Panel principal vibrante que ahora muestra fotografías reales en los avatares de los chats y tarjetas con imágenes de fondo para los anuncios de la empresa, manteniendo la sección de eventos estructurada y clara.
+
+<img width="377" height="808" alt="image" src="https://github.com/user-attachments/assets/7a17f117-0ef0-4f22-af18-d715f97f33e1" />
+
+Pantalla de Company Feed (Announcements):
+Muro informativo de alta fidelidad que destaca la noticia principal con una imagen atractiva y resalta los comunicados de Recursos Humanos con una llamada a la acción ("Read Policy") en contraste oscuro. Presenta un flujo de actividad reciente organizado con iconos, etiquetas de categoría y textos reales, finalizando con un botón flotante prominente para crear nuevas publicaciones.
+
+<img width="232" height="841" alt="image" src="https://github.com/user-attachments/assets/ed87cbce-a8ab-4714-b4b3-8f44d332556d" />
+
+Pantalla de Chats (Communications): Interfaz de mensajería refinada que ahora muestra conversaciones con fotografías reales de los usuarios y vistas previas del texto. Facilita la navegación con filtros visuales oscuros para el estado activo y destaca los mensajes no leídos con contadores numéricos.
+
+<img width="358" height="751" alt="image" src="https://github.com/user-attachments/assets/24d06d5c-9d76-4733-8878-18ef6aa4cf5b" />
+
+Pantalla de Perfil (Profile): Vista personal detallada que integra la foto de perfil, un texto biográfico real ("About") y los datos de contacto del empleado. Muestra de forma elegante las métricas de desempeño y un historial concreto de tareas completadas o reconocimientos recientes.
+
+<img width="259" height="815" alt="image" src="https://github.com/user-attachments/assets/901ec38c-1d48-4fd7-90bf-a7184f66f94a" />
+
+Pantalla de Eventos (Company Feed - Events): Agenda corporativa visualmente pulida que organiza las reuniones en tarjetas detalladas con etiquetas de prioridad (como "Mandatory" o "Internal"). Incluye miniaturas fotográficas de los asistentes y define claramente si la cita es presencial (sala de conferencias) o virtual (Google Meet).
+
+<img width="331" height="840" alt="image" src="https://github.com/user-attachments/assets/cedb416d-4f76-42cd-83f4-c08421a3abb5" />
+
 ### 4.4.4. Mobile Applications User Flow Diagrams.
 ## 4.5. Mobile Applications Prototyping.
 <p style="text-indent: 1.25cm;">En esta sección se detalla el planteamiento de la propuesta de arquitectura y diseño de software, utilizando como base el conjunto de User Stories identificados y el Impact Map desarrollado previamente. El enfoque adoptado se fundamenta en la arquitectura dirigida por el dominio (Domain-Driven Design), permitiendo estructurar la solución de manera que responda directamente a las necesidades del negocio digital. A través de esta perspectiva, se busca garantizar que la plataforma sea escalable, mantenible y que exista una coherencia total entre el modelo de negocio y la implementación técnica.
