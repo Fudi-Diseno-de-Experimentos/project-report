@@ -316,6 +316,53 @@ La página de aterrizaje utiliza un sistema simplificado orientado a la conversi
 ### 4.3.2. Landing Page Mock-up.
 ## 4.4. Mobile Applications UX/UI Design.
 ### 4.4.1. Mobile Applications Wireframes.
+
+Pantalla de Login: Interfaz de acceso con campos para correo y contraseña, incluyendo opciones para recuperación de cuenta y acceso directo al registro de nuevos usuarios.
+ 
+
+![alt text](image.png)
+
+Pantalla de Registro: Formulario de creación de cuenta que solicita nombre, correo y contraseña, con una casilla de verificación para la aceptación de términos y políticas legales.
+ 
+
+![alt text](image-1.png)
+
+
+Pantalla de Verificación: Paso de seguridad que requiere un código OTP de 5 dígitos enviado al correo electrónico para validar la identidad del usuario antes de ingresar.
+ 
+
+![alt text](image-2.png)
+
+
+Pantalla de Home: Panel principal que centraliza el acceso a chats recientes, un carrusel de anuncios destacados de la empresa y una lista de eventos programados.
+ 
+
+![alt text](image-3.png)
+
+
+Pantalla de Company Feed (General): Muro informativo con buscador y filtros para alternar entre anuncios y eventos, destacando las noticias más importantes de la organización.
+ 
+![alt text](image-5.png)
+
+
+Sección de Actividad Reciente: Historial cronológico de publicaciones categorizadas por etiquetas (como General o Tech Stack), que permite seguir el flujo diario de actualizaciones del equipo.
+ 
+
+![alt text](image-6.png)
+
+
+
+Vista detallada del usuario que muestra su avatar, cargo e información de contacto corporativa (correo, teléfono y ubicación). Además, incluye una sección de biografía, métricas destacadas (como proyectos e integrantes gestionados) y un registro de sus actividades o logros recientes.
+
+
+![alt text](image-7.png)
+
+
+Esta vista especializada organiza la agenda corporativa mediante un selector de fechas semanal interactivo y una lista de tarjetas con los eventos próximos. Cada tarjeta detalla información clave como la lista de asistentes y la ubicación (ya sea presencial o mediante enlaces a Google Meet), concluyendo con un bloque integrado que permite a los usuarios proponer y crear nuevas actividades.
+ 
+![alt text](image-8.png)
+
+
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
 ### 4.4.3. Mobile Applications Mock-ups.
 ### 4.4.4. Mobile Applications User Flow Diagrams.
