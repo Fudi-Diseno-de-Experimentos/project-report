@@ -19,7 +19,7 @@
 
 **Tipografía y Fuente **
 
-<p style="text-indent: 1.25cm;">Para la tipografía, se ha optado por una fuente de tipo "Sans Serif" de estilo geométrico y moderno, lo que garantiza una legibilidad excepcional en dispositivos móviles y navegadores web. La jerarquía visual se establece mediante el uso de pesos: los encabezados y títulos de las aplicaciones utilizan un peso mayor ("Bold") para destacar la identidad de la sección, mientras que el cuerpo del texto emplea pesos ligeros para priorizar la claridad del contenido. Esta decisión tipográfica responde a la arquitectura de la información, donde la simplicidad de las etiquetas y el sistema de rotulado buscan evitar confusiones en los visitantes y usuarios finales de la plataforma.
+<p style="text-indent: 1.25cm;">Para la tipografía, se ha optado por una fuente principal de tipo "Inter" de estilo geométrico y moderno y una secundaria de tipo "SF Pro Display", lo que garantiza una legibilidad excepcional en dispositivos móviles y navegadores web. La jerarquía visual se establece mediante el uso de pesos: los encabezados y títulos de las aplicaciones utilizan un peso mayor ("Bold") para destacar la identidad de la sección, mientras que el cuerpo del texto emplea pesos ligeros para priorizar la claridad del contenido. Esta decisión tipográfica responde a la arquitectura de la información, donde la simplicidad de las etiquetas y el sistema de rotulado buscan evitar confusiones en los visitantes y usuarios finales de la plataforma.
 
 
 <p align="center">
