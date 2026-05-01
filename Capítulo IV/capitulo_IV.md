@@ -23,8 +23,8 @@
 
 
 <div style="display: flex; justify-content: center; align-items: center; gap: 16px; flex-wrap: wrap; width: 100%;">
-  <img src="img/Inter.png" alt="img1" style="width: 100%; max-width: 300px; height: auto;">
-  <img src="img/SF%20Pro%20Display.png" alt="img2" style="width: 100%; max-width: 300px; height: auto;">
+  <img src="https://i.imgur.com/Nr6vJfk.png" alt="img1" style="width: 100%; max-width: 300px; height: auto;">
+  <img src="https://i.imgur.com/yRYzj2S.png" alt="img2" style="width: 100%; max-width: 300px; height: auto;">
 </div>
 
 *Nota.* Elaboración propia.
