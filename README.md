@@ -30,7 +30,7 @@
   <h3>Integrantes</h3>
 
   <p style="margin: 4px 0;"><code>u20231045</code> - Aguirre Castillo Sergio Cesar</p>
-  <p style="margin: 4px 0;"><code>U202</code> - Bellido Salas Raúl</p>
+  <p style="margin: 4px 0;"><code>u202310931</code> - Bellido Salas Raúl</p>
   <p style="margin: 4px 0;"><code>u202319889</code> - Contreras Peralta, Fabrizio Alessandro</p>
   <p style="margin: 4px 0;"><code>U20231B866</code> - Curipaco Huayllani, Neil Aldrin Wilhelm</p>
   <p style="margin: 4px 0;"><code>u202</code> - Heredia Hoyos Danitza Ivonne</p>

@@ -313,7 +313,110 @@ La página de aterrizaje utiliza un sistema simplificado orientado a la conversi
 
 ## 4.3. Landing Page UI Design.
 ### 4.3.1. Landing Page Wireframe.
+
+<p style="text-indent: 1.25cm;">En esta sección se presenta el diseño estructural de la página de aterrizaje de Centralis, la cual sirve como el portal principal para comunicar la propuesta de valor del ecosistema a las organizaciones. El wireframe ha sido diseñado bajo una estética minimalista y profesional, enfocándose en la claridad de las funciones core de la plataforma: la centralización de anuncios oficiales, la gestión de eventos corporativos y la integración de chats internos en tiempo real.
+
+<p style="text-indent: 1.25cm;">A través de esta interfaz, se busca demostrar cómo Centralis facilita la cohesión empresarial y elimina la fragmentación de la información, permitiendo que cada miembro del equipo se mantenga alineado con la visión y las actividades de la empresa mediante una navegación intuitiva y directa.
+
+**Sección 1: Hero Page**
+
+Esta imagen representa la cabecera principal de la landing page de **Centralis**, diseñada para establecer la identidad de la marca desde el primer contacto.
+
+- **Propósito de la sección**: Presentar a la plataforma como el eje central que garantiza la alineación corporativa mediante anuncios oficiales y comunicación en tiempo real.
+
+- **Jerarquía Visual**:
+
+  - **Encabezado principal**: El mensaje "Where your team stays aligned" destaca el valor central de la herramienta: la unidad y la visión compartida dentro de la empresa.
+  - **Llamados a la acción (CTA)**: Los botones "Get Started" y "Explore Features" guían al usuario hacia una interacción inmediata con el ecosistema de la plataforma.
+
+- **Experiencia del Usuario (UX)**: El diseño minimalista reduce la carga cognitiva, permitiendo que el colaborador se enfoque en el mensaje principal: mantenerse conectado con la organización.
+
+  
+
+  ![](https://i.imgur.com/bBJoe5L.png)
+
+**Sección 2: Funcionalidades Core**
+
+En esta sección del wireframe se detallan los pilares funcionales de la aplicación móvil, la cual está desarrollada con **Flutter** y **Firebase**.
+
+- **Propósito de la sección**: Desglosar los tres servicios principales: publicación de anuncios, organización de eventos y chats internos.
+- **Jerarquía Visual**: Se utiliza un diseño de tarjetas (cards) modulares para otorgar el mismo peso visual a cada característica, facilitando la comprensión de la versatilidad de la plataforma.
+- **Componentes del Wireframe**:
+  - **Official Announcements**: Un espacio dedicado para noticias críticas, eliminando la pérdida de información importante.
+  - **Event Management**: Herramientas para organizar actividades, charlas y convenciones con recordatorios automáticos.
+  - **Secure Internal Chat**: Un entorno de mensajería nativo que se integra directamente con la agenda corporativa.
+
+
+
+![](https://i.imgur.com/YoNQUGa.png)
+
+**Sección 3: Metodología de Uso**
+
+Esta sección explica el flujo de trabajo simplificado que propone **Centralis** para las empresas.
+
+- **Propósito de la sección**: Demostrar la facilidad con la que una organización puede transicionar de una comunicación fragmentada a un flujo de trabajo unificado.
+- **Jerarquía Visual**: Un proceso numerado paso a paso simplifica el concepto de adopción de la herramienta para posibles clientes corporativos.
+- **Integración del flujo**:
+  - **Paso 1**: Centralización de la información mediante la creación de canales globales o por departamentos.
+  - **Paso 2**: Programación y organización de eventos internos con notificaciones directas al dispositivo móvil del usuario.
+  - **Paso 3**: Fomento de la participación mediante chats colaborativos y seguimiento de eventos en tiempo real.
+
+
+
+![](https://i.imgur.com/djzQZFa.png)
+
+**Sección 4: Llamado a la Acción Final**
+
+Representa el cierre estratégico del wireframe para fomentar la conversión y adopción del software.
+
+- **Propósito de la sección**: Convertir el interés del visitante en una acción concreta, invitando a las organizaciones a unirse a la comunidad de **Centralis**.
+- **Jerarquía Visual**: El uso de tipografía de alto contraste enfoca la atención en la pregunta final: "¿Ready to unite your workforce?".
+- **Estrategia de Conversión**: Ofrece puntos de entrada de baja fricción, como una prueba gratuita o la solicitud de una demostración personalizada para equipos corporativos de mayor tamaño.
+
+![](https://i.imgur.com/200t5GL.png)
+
+
+
 ### 4.3.2. Landing Page Mock-up.
+
+<p style="text-indent: 1.25cm;">A continuación, se detallan las secciones finales del diseño, donde la estética inspirada en la simplicidad de herramientas de colaboración líderes se combina con la robustez funcional de la plataforma.
+
+**Sección Hero**
+
+En esta versión final, la cabecera utiliza un diseño limpio con un fuerte enfoque en la fotografía de producto.
+
+- **Identidad Visual**: Se observa la implementación de botones con estados visuales claros ("Get Started" con relleno sólido y "Explore Features" con delineado), mejorando la intuitividad del sitio.
+- **Imagen de Producto**: El contenedor de la derecha muestra ahora una interfaz móvil real de la aplicación, destacando la simplicidad del diseño inspirado en la estética moderna de herramientas de colaboración líderes.
+
+![](https://i.imgur.com/el9xq7W.png)
+
+**Propuesta de Valor**
+
+Esta sección traduce los conceptos técnicos en beneficios tangibles para la empresa mediante una cuadrícula de características refinada.
+
+- **Iconografía**: Se utilizan iconos vectoriales estilizados para representar los tres pilares: **Official Announcements** (anuncios oficiales), **Event Management** (gestión de eventos) y **Secure Internal Chat** (chat interno seguro).
+- **Claridad Textual**: El uso de una tipografía *sans-serif* de alta legibilidad asegura que el usuario comprenda rápidamente que la plataforma elimina el "ruido" comunicativo para enfocarse en la cohesión corporativa.
+
+![](https://i.imgur.com/asQdTeb.png)
+
+**Flujo de Trabajo**
+
+El mockup utiliza una imagen de estilo *lifestyle* empresarial para humanizar la tecnología y mostrar el impacto de la herramienta en el día a día de un equipo.
+
+- **Proceso de Conexión**: La sección detalla visualmente los tres pasos clave: **Centralize Information** (centralizar la información), **Organize and Schedule** (organizar y programar) y **Engage and Collaborate** (interactuar y colaborar).
+- **Equilibrio Visual**: La composición equilibra la imagen aspiracional a la izquierda con una lista de pasos limpia a la derecha, facilitando una lectura rápida de arriba hacia abajo.
+
+![](https://i.imgur.com/f2K1zbt.png)
+
+**Cierre y Pie de Página**
+
+La sección final está diseñada para maximizar la tasa de conversión mediante un bloque de color sólido que contrasta con el resto del sitio.
+
+- **Call to Action (CTA)**: El mensaje principal "¿Ready to unite your workforce?" actúa como un cierre persuasivo, acompañado de opciones claras para iniciar una prueba gratuita o agendar una demostración.
+- **Footer Profesional**: Se incluye un pie de página con enlaces legales y redes sociales, junto con el *copyright* de 2026, lo que refuerza la seriedad y el soporte institucional de la plataforma **Centralis**.
+
+![](https://i.imgur.com/ChdVg86.png)
+
 ## 4.4. Mobile Applications UX/UI Design.
 ### 4.4.1. Mobile Applications Wireframes.
 

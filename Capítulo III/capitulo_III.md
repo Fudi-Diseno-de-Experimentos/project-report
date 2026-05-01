@@ -268,6 +268,25 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Integración de Accesibilidad ARIA<br><br>Escenario: Escuchar etiquetas descriptivas<br>Dado que el visitante utiliza un lector de pantalla para navegar por los sitios web, <br>Cuando navega por la landing page con el teclado, <br>Entonces se anuncian los roles ARIA correspondientes a cada sección.<br>Escenario: Navegación por puntos de referencia<br>Dado que el visitante utiliza un lector de pantalla con la navegación activada, <br>Cuando navega por la landing page usando puntos de referencia o accesos directos, <br>Entonces puede acceder a las secciones clave.</td>
   </tr>
 </table>
+
+
+
+
+
+
+---
+
+
+
+---
+
+
+
+---
+
+
+
+
 <table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
   <tr>
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
@@ -277,150 +296,6 @@
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">US10</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">visitante</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Pagina de presentación</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Acceder a las descripciones de las imágenes</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como visitante que utiliza un lector de pantalla, quiero que todas las imágenes significativas de la página de destino incluyan texto alternativo claro para poder comprender el contenido visual y navegar por el sitio web.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Accesibilidad de imágenes<br><br>Escenario: Integrar texto alternativo<br>Dado que el visitante utiliza un lector de pantalla, <br>Cuando navega a una imagen que transmite información, <br>Entonces se anuncia una descripción clara de la imagen.</td>
-  </tr>
-</table>
-
-
-
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US11</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">visitante</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Pagina de presentación</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Explorar redes sociales</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como visitante, quiero ver enlaces a las cuentas oficiales de redes sociales para seguir las actualizaciones, mantenerme informado o contactar al equipo.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Redes sociales<br><br>Escenario: Mostrar redes sociales<br>Dado que el visitante quiere contactar o seguir a la startup,<br>Cuando navega a contacto o redes sociales, <br>Entonces las conexiones de la startup en redes sociales estarán disponibles.</td>
-  </tr>
-</table>
-
----
-
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US12</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">visitante</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Pagina de presentación</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Mostrar representaciones visuales de la aplicación.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como visitante, quiero ver ejemplos visuales de cómo funciona la aplicación para conocer más acerca de la aplicación.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Mostrar la funcionalidad de la aplicación. <br><br>Escenario: Mostrar funcionalidades clave de la aplicación.<br>Dado que el visitante se encuentra en la landing page y quiere conocer más funciones clave de la aplicación,<br>Cuando navega por la landing page, <br>Entonces visualiza las funciones principales de la aplicación</td>
-  </tr>
-</table>
-
----
-
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US13</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Soporte de plataforma multilingüe</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Traducir la aplicación móvil</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como empleado, quiero elegir mi idioma preferido en la interfaz de usuario para poder interactuar con la plataforma en mi idioma nativo.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Vincular el selector de idioma a i18n<br>Escenario: Cambiar el idioma dinámicamente con i18n<br>Dado que un empleado se encuentra en la interfaz de la aplicación móvil,<br>Cuando selecciona un idioma desde la interfaz,<br>Entonces el módulo i18n ejecuta la función dinámicamente.<br>Escenario: Cargar traducciones de respaldo<br>Dado que un empleado se encuentra en la interfaz de la aplicación móvil,<br>Cuando selecciona un idioma y falta una clave en esa configuración regional,<br>Entonces el módulo regresa al texto del idioma predeterminado.</td>
-  </tr>
-</table>
-
----
-
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US14</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Soporte de plataforma multilingüe</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Vincular el selector de idioma al módulo i18n y activar el cambio de idioma</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como desarrollador, quiero vincular un selector de idioma desplegable al módulo i18n y activar la función dinámicamente.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Vincular el selector de idioma a i18n<br><br>Escenario: Cambiar el idioma dinámicamente con i18n<br><br>Dado que un empleado se encuentra en la interfaz de la aplicación móvil,<br>Cuando selecciona un idioma desde la interfaz,<br>Entonces el módulo i18n ejecuta la función dinámicamente.<br><br>Escenario: Cargar traducciones de respaldo<br><br>Dado que un empleado se encuentra en la interfaz de la aplicación móvil,<br>Cuando selecciona un idioma y falta una clave en esa configuración regional, el módulo regresa al texto del idioma predeterminado.</td>
-  </tr>
-</table>
-
-
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US15</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">8</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -449,7 +324,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US16</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US11</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -475,7 +350,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US17</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US12</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -504,7 +379,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US18</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US13</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -524,32 +399,7 @@
 </table>
 
 
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US19</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Segmentación de anuncios por departamento</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero dirigir anuncios a departamentos específicos para que la información relevante llegue solo a quienes corresponda.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Segmentación de anuncios<br><br>Escenario: Publicar anuncio para un departamento específico<br>Dado que el gerente está creando un anuncio,<br>Cuando selecciona un selector de departamentos y completa la publicación,<br>Entonces el sistema muestra el anuncio solo a empleados del departamento seleccionado,<br>Y los empleados de otros departamentos no reciben la notificación.</td>
-  </tr>
-</table>
+
 
 ---
 
@@ -561,7 +411,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US20</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US14</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -583,32 +433,13 @@
 ---
 
 
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US21</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Marcar anuncios como leídos</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como empleado, quiero marcar anuncios como leídos para llevar un control de la información revisada.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Marcado de anuncios leídos<br><br>Escenario: Marcar automáticamente un anuncio como leído<br>Dado que el empleado abre un anuncio,<br>Cuando visualiza el contenido y sale de la pantalla,<br>Entonces el sistema registra automáticamente el anuncio como leído,</td>
-  </tr>
-</table>
+
+
+
+---
+
+
+
 
 
 ---
@@ -622,38 +453,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US22</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Filtrado de anuncios por prioridad</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como empleado, quiero filtrar anuncios por prioridad para ver primero lo más importante.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Filtrado de anuncios<br><br>Escenario: Filtrar anuncios prioritarios<br>Dado que el empleado está en la sección de anuncios,<br>Cuando selecciona ver prioritarios,<br>Entonces el sistema muestra únicamente los anuncios marcados como prioritarios,<br>Y oculta temporalmente los anuncios regulares.</td>
-  </tr>
-</table>
-
-
----
-
-
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US23</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US15</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -683,7 +483,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US24</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US16</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -710,7 +510,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US25</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US17</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Publicacion de anuncios</td>
@@ -737,7 +537,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US26</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US18</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">8</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
@@ -755,58 +555,8 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Creación de eventos<br><br>Escenario: Crear un evento exitosamente<br>Dado que el gerente ha iniciado sesión en la aplicación móvil,<br>Cuando crea un evento llenando los datos necesarios,<br>Entonces el sistema guarda el evento en la base de datos,<br>Y lo muestra a los empleados seleccionados.</td>
   </tr>
 </table>
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US27</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Invitación a departamentos específicos</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero invitar a departamentos específicos a eventos para asegurar que solo participen los empleados requeridos.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Segmentación de eventos<br><br>Escenario: Invitar solo a un departamento específico<br>Dado que el gerente está creando un evento,<br>Cuando selecciona un departamento específico,<br>Entonces el sistema envía invitaciones solo a empleados del departamento seleccionado,<br>Y los empleados de otros departamentos no reciben la notificación.</td>
-  </tr>
-</table>
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US28</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Confirmación de asistencia</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como empleado, quiero confirmar mi asistencia a eventos para que los organizadores sepan cuántos asistirán.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Confirmación de asistencia<br><br>Escenario: Confirmar asistencia a evento<br>Dado que el empleado visualiza los detalles de un evento,<br>Cuando selecciona el evento para confirmar su asistencia,<br>Entonces el sistema registra su confirmación en la base de datos,<br>Y actualiza el contador de asistentes visible para el gerente.</td>
-  </tr>
-</table>
+
+
 
 ---
 
@@ -818,7 +568,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US29</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US19</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
@@ -847,7 +597,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US30</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US20</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
@@ -876,7 +626,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US31</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US21</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
@@ -904,7 +654,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US32</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US22</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Creación de eventos</td>
@@ -930,7 +680,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US33</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US23</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -948,32 +698,7 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Creación de chats grupales<br><br>Escenario: Crear chat grupal para proyecto<br>Dado que el empleado necesita coordinar un proyecto con un equipo,<br>Cuando crea un nuevo chat, añade participantes y establece un nombre para el grupo,<br>Entonces el sistema crea el chat con todos los miembros añadidos.</td>
   </tr>
 </table>
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US34</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">8</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Chats por departamentos</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero crear chats automáticos por departamentos para facilitar la comunicación interna.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Chats departamentales<br><br>Escenario: Crear chat de departamento automático<br>Dado que el gerente quiere un chat para un departamento en específico,<br>Cuando crea un nuevo grupo de chat y elige el departamento,<br>Entonces el sistema añade automáticamente a todos los empleados de ese departamento.</td>
-  </tr>
-</table>
+
 
 ---
 
@@ -985,7 +710,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US35</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US24</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1013,7 +738,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US36</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US25</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1039,7 +764,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US37</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US26</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1067,7 +792,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US38</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US27</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1085,6 +810,7 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Edición de mensajes<br><br>Escenario: Corregir error tipográfico en mensaje<br>Dado que el empleado envió un mensaje con un error de ortografía,<br>Cuando selecciona el mensaje y realiza la corrección,<br>Entonces el sistema actualiza el contenido del mensaje.</td>
   </tr>
 </table>
+
 <table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
   <tr>
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
@@ -1093,33 +819,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US39</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Eliminación de mensajes por moderadores</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero eliminar mensajes inapropiados de cualquier chat para mantener la profesionalidad.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Moderación de mensajes<br><br>Escenario: Eliminar mensaje inapropiado como moderador<br>Dado que un empleado envía contenido inadecuado en un chat grupal,<br>Cuando el gerente selecciona el mensaje y lo elimina,<br>Entonces el sistema remueve el mensaje para todos los participantes.</td>
-  </tr>
-</table>
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US40</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US28</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1145,7 +845,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US41</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US29</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1173,7 +873,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US42</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US30</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1202,7 +902,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US43</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US31</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">usuario</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1228,7 +928,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US44</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US32</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Comunicación por chats</td>
@@ -1246,6 +946,8 @@
     <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Visualizar imágenes en chats<br><br>Escenario: Mostrar imagen recibida en un chat<br>Dado que un usuario recibe una imagen en un chat,<br>Cuando abre la conversación,<br>Entonces puede ver la imagen dentro del mensaje.<br>Escenario: Ampliar imagen recibida<br>Dado que un usuario recibe una imagen,<br>Cuando presiona sobre la imagen,<br>Entonces puede visualizarla en pantalla completa.</td>
   </tr>
 </table>
+
+
 <table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
   <tr>
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
@@ -1254,59 +956,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US45</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Notificaciones</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Notificaciones de anuncios</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como empleado, quiero recibir notificaciones de nuevos anuncios para estar informado.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Notificaciones <br><br>Escenario: Recibir notificación de anuncio prioritario<br>Dado que el gerente publica un anuncio marcado como prioritario,<br>Cuando el empleado tiene la app instalada y las notificaciones activadas,<br>Entonces el sistema envía una notificación a su dispositivo móvil.</td>
-  </tr>
-</table>
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US46</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Notificaciones</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Notificaciones de cambios</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como empleado, quiero recibir notificaciones cuando los eventos cambien para estar siempre actualizado.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Notificaciones de cambios<br><br>Escenario: Notificación de cambio de horario<br>Dado que un gerente modifica la hora de un evento confirmado,<br>Cuando guarda los cambios,<br>Entonces el sistema notifica automáticamente a todos los confirmados sobre el cambio,</td>
-  </tr>
-</table>
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US47</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US33</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1332,7 +982,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US48</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US34</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1358,7 +1008,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US49</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US35</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">5</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1386,7 +1036,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US50</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US36</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">empleado</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1412,7 +1062,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US51</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US37</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1432,32 +1082,7 @@
 </table>
 
 
-<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
-  <tr>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
-    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US52</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Implementar la transmisión segura de datos y el cifrado.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como desarrollador, quiero asegurarme de que todos los datos confidenciales estén cifrados en reposo y se transmitan de forma segura para la seguridad de los datos.</td>
-  </tr>
-  <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Implementar estándares de transmisión segura y cifrado<br><br>Escenario: Transmitir datos<br>Dado que se requiere mantener una transmisión segura<br>Cuando el empleado accede a la aplicación móvil<br>Entonces todo el tráfico de red se cifra<br><br>Escenario: Redirigir solicitudes inseguras<br>Dado que se requiere mantener las solicitudes de forma segura<br>Cuando un empleado intenta acceder mediante HTTP<br>Entonces la solicitud se redirige a otra más segura<br><br>Escenario: Cifrar campos confidenciales<br>Dado que se requiere mantener segura la aplicación móvil,<br>Cuando se guarda información confidencial <br>Entonces la información se cifra<br><br>Escenario: Proteger contraseñas<br>Dado que se requiere mantener segura la aplicación móvil,<br>Cuando un empleado establece o actualiza su contraseña<br>Entonces se aplica un algoritmo hash a la contraseña antes de almacenarla</td>
-  </tr>
-</table>
+
 
 
 <table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
@@ -1468,7 +1093,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US53</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US38</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1494,7 +1119,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US54</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US39</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">desarrollador</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Seguridad de acceso y protección de la información</td>
@@ -1523,7 +1148,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US55</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US40</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Equipo Fudi</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Notificaciones</td>
@@ -1551,18 +1176,18 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US56</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US41</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de compañía</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Registro de nueva Company</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Registro de nueva compañía</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero registrar mi Company en la plataforma para empezar a gestionar la comunicación de mi equipo.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero registrar mi compañía en la plataforma para empezar a gestionar la comunicación de mi equipo.</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
@@ -1580,22 +1205,22 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US57</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US42</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Edición de perfil de Company</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Edición de perfil de compañía</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero actualizar la información de mi Company (logo, nombre, dirección) para que los empleados identifiquen la marca.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero actualizar la información de mi compañía (logo, nombre, dirección) para que los empleados identifiquen la marca.</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Actualización de datos básicos y logo  Dado que un Manager está en el panel de configuración de su Company, Cuando modifica la Dirección Física y sube un nuevo Logo, Entonces el sistema guarda los cambios y los refleja inmediatamente en la interfaz de todos los empleados.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Actualización de datos básicos y logo  Dado que un Manager está en el panel de configuración de su compañía, Cuando modifica la Dirección Física y sube un nuevo Logo, Entonces el sistema guarda los cambios y los refleja inmediatamente en la interfaz de todos los empleados.</td>
   </tr>
 </table>
 
@@ -1609,22 +1234,22 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US58</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US43</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Baja del servicio de Company</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Baja del servicio de compañía</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero poder desactivar la cuenta de mi Company para que toda la información y acceso de los empleados sea revocado.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero poder desactivar la cuenta de mi compañía para que toda la información y acceso de los empleados sea revocado.</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Confirmación de seguridad para eliminación  Dado que un Manager solicita dar de baja su Company, Cuando el sistema pide la palabra de seguridad "ELIMINAR" y el usuario la ingresa correctamente, Entonces la cuenta cambia a estado inactivo.<br><br>Escenario: Revocación inmediata de accesos  Dado que una Company ha sido dada de baja, Cuando cualquier empleado intenta realizar una acción en la app (como leer un anuncio), Entonces el sistema invalida su sesión y lo redirige al login con un mensaje de cuenta desactivada.<br><br>Escenario: Protección de datos post-baja  Dado que el estado de una Company es "Inactive", Cuando se intenta realizar una petición API a sus recursos (chats o eventos), Entonces el servidor responde con un error 403 Forbidden.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Confirmación de seguridad para eliminación  Dado que un Manager solicita dar de baja su compañía, Cuando el sistema pide la palabra de seguridad "ELIMINAR" y el usuario la ingresa correctamente, Entonces la cuenta cambia a estado inactivo.<br><br>Escenario: Revocación inmediata de accesos  Dado que una compañía ha sido dada de baja, Cuando cualquier empleado intenta realizar una acción en la app (como leer un anuncio), Entonces el sistema invalida su sesión y lo redirige al login con un mensaje de cuenta desactivada.<br><br>Escenario: Protección de datos post-baja  Dado que el estado de una compañía es "Inactive", Cuando se intenta realizar una petición API a sus recursos (chats o eventos), Entonces el servidor responde con un error 403 Forbidden.</td>
   </tr>
 </table>
 
@@ -1638,24 +1263,25 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US59</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US44</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Registro de empleados por Company</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Registro de empleados por compañía</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero registrar nuevos empleados vinculándolos automáticamente a mi Company para que tengan acceso al entorno privado.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero registrar nuevos empleados vinculándolos automáticamente a mi compañía para que tengan acceso al entorno privado.</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Registro individual de empleado  Dado que un Manager desea agregar un nuevo colaborador, Cuando ingresa el Nombre, DNI y Correo, Entonces el sistema vincula al empleado al company del Manager automáticamente.<br><br>Escenario: Validación de correo duplicado en la empresa  Dado que un empleado ya existe en la Company, Cuando el Manager intenta registrar a otra persona con el mismo correo electrónico, Entonces el sistema impide el registro para evitar duplicidad de cuentas.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Escenario: Registro individual de empleado  Dado que un Manager desea agregar un nuevo colaborador, Cuando ingresa el Nombre, DNI y Correo, Entonces el sistema vincula al empleado al company del Manager automáticamente.<br><br>Escenario: Validación de correo duplicado en la empresa  Dado que un empleado ya existe en la compañía, Cuando el Manager intenta registrar a otra persona con el mismo correo electrónico, Entonces el sistema impide el registro para evitar duplicidad de cuentas.</td>
   </tr>
 </table>
+
 
 
 
@@ -1667,18 +1293,18 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US60</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US45</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">2</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Eliminación de miembros de la Company</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Eliminación de miembros de la compañía</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
-    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero desvincular a un empleado de mi Company para que ya no pueda acceder a los anuncios, chats o eventos privados.</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como gerente, quiero desvincular a un empleado de mi compañía para que ya no pueda acceder a los anuncios, chats o eventos privados.</td>
   </tr>
   <tr>
     <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
@@ -1696,7 +1322,7 @@
     <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
   </tr>
   <tr>
-    <td style="border: 1px solid black; padding: 8px; text-align: center;">US61</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">US46</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">gerente</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">3</td>
     <td style="border: 1px solid black; padding: 8px; text-align: center;">Gestión de Company</td>
@@ -1790,55 +1416,41 @@ Link del tablero en Trello: https://goo.su/iCaq6
 | 7    | US07    | Compatibilidad con múltiples dispositivos                    | 3            |
 | 8    | US08    | Acceso a Centralis desde la landing page                     | 2            |
 | 9    | US09    | Navegación Accesible                                         | 3            |
-| 10   | US10    | Acceder a las descripciones de las imágenes                  | 3            |
-| 11   | US11    | Explorar redes sociales                                      | 3            |
-| 12   | US12    | Mostrar representaciones visuales de la aplicación.          | 3            |
-| 13   | US13    | Traducir la aplicación móvil                                 | 2            |
-| 14   | US14    | Vincular el selector de idioma al módulo i18n y activar el cambio de idioma | 5            |
-| 15   | US15    | Publicación básica de anuncios                               | 8            |
-| 16   | US16    | Priorización de anuncios                                     | 5            |
-| 17   | US17    | Edición de anuncios                                          | 5            |
-| 18   | US18    | Eliminación de anuncios                                      | 3            |
-| 19   | US19    | Segmentación de anuncios por departamento                    | 3            |
-| 20   | US20    | Confirmaciones de lectura                                    | 5            |
-| 21   | US21    | Marcar anuncios como leídos                                  | 3            |
-| 22   | US22    | Filtrado de anuncios por prioridad                           | 2            |
-| 23   | US23    | Comentarios en anuncios                                      | 5            |
-| 24   | US24    | Subir imágenes en anuncios                                   | 5            |
-| 25   | US25    | Visualizar imágenes en anuncios                              | 5            |
-| 26   | US26    | Creación básica de eventos                                   | 8            |
-| 27   | US27    | Invitación a departamentos específicos                       | 5            |
-| 28   | US28    | Confirmación de asistencia                                   | 3            |
-| 29   | US29    | Cancelación de eventos                                       | 3            |
-| 30   | US30    | Modificación de eventos                                      | 3            |
-| 31   | US31    | Eventos prioritarios                                         | 3            |
-| 32   | US32    | Métricas de participación                                    | 5            |
-| 33   | US33    | Creación de chats grupales                                   | 5            |
-| 34   | US34    | Chats por departamentos                                      | 8            |
-| 35   | US35    | Eliminar grupos de chats                                     | 5            |
-| 36   | US36    | Envío de mensajes                                            | 3            |
-| 37   | US37    | Eliminación de mensajes enviados                             | 5            |
-| 38   | US38    | Modificación de mensajes enviados                            | 3            |
-| 39   | US39    | Eliminación de mensajes por moderadores                      | 3            |
-| 40   | US40    | Eliminación de chats grupales por gerentes                   | 3            |
-| 41   | US41    | Listado organizado de chats                                  | 3            |
-| 42   | US42    | Enviar imágenes en chats grupales                            | 3            |
-| 43   | US43    | Eliminar imágenes enviadas en el chat                        | 3            |
-| 44   | US44    | Visualizar imágenes en chats                                 | 3            |
-| 45   | US45    | Notificaciones de anuncios                                   | 2            |
-| 46   | US46    | Notificaciones de cambios                                    | 5            |
-| 47   | US47    | Validar y almacenar datos cifrados de usuario al registrarse | 2            |
-| 48   | US48    | Restringir el acceso a la API                                | 3            |
-| 49   | US49    | Mantener la sesión iniciada                                  | 5            |
-| 50   | US50    | Funcionalidad de Cierre de Sesión Seguro                     | 2            |
-| 51   | US51    | Invalidar tokens y borrar metadatos de sesión al cerrar sesión | 2            |
-| 52   | US52    | Implementar la transmisión segura de datos y el cifrado.     | 2            |
-| 53   | US53    | Implementar autenticación segura con JWT y cifrado de contraseñas | 2            |
-| 54   | US54    | Representación de navegación y acciones basada en roles.     | 2            |
-| 55   | US55    | Investigar la Integración de Firebase Cloud Messaging para Notificaciones en la Plataforma Fudi | 8            |
-| 56   | US56    | Registro de nueva Compania                                   | 3            |
-| 57   | US57    | Edición de perfil de Compania                                | 3            |
-| 58   | US58    | Baja del servicio de Compania                                | 3            |
-| 59   | US59    | Registro de empleados por Compania                           | 3            |
-| 60   | US60    | Eliminación de miembros de la Compania                       | 3            |
-| 61   | US61    | Panel de control corporativo                                 | 8            |
+| 10    | US10    | Publicación básica de anuncios                               | 8            |
+| 11    | US11    | Priorización de anuncios                                     | 5            |
+| 12    | US12    | Edición de anuncios                                          | 5            |
+| 13    | US13    | Eliminación de anuncios                                      | 3            |
+| 14    | US14    | Confirmaciones de lectura                                    | 5            |
+| 15    | US15    | Comentarios en anuncios                                      | 5            |
+| 16    | US16    | Subir imágenes en anuncios                                   | 5            |
+| 17    | US17    | Visualizar imágenes en anuncios                              | 5            |
+| 18    | US18    | Creación básica de eventos                                   | 8            |
+| 19    | US19    | Cancelación de eventos                                       | 3            |
+| 20    | US20    | Modificación de eventos                                      | 3            |
+| 21    | US21    | Eventos prioritarios                                         | 3            |
+| 22    | US22    | Métricas de participación                                    | 5            |
+| 23    | US23    | Creación de chats grupales                                   | 5            |
+| 24    | US24    | Eliminar grupos de chats                                     | 5            |
+| 25    | US25    | Envío de mensajes                                            | 3            |
+| 26    | US26    | Eliminación de mensajes enviados                             | 5            |
+| 27    | US27    | Modificación de mensajes enviados                            | 3            |
+| 28    | US28    | Eliminación de chats grupales por gerentes                   | 3            |
+| 29    | US29    | Listado organizado de chats                                  | 3            |
+| 30    | US30    | Enviar imágenes en chats grupales                            | 3            |
+| 31    | US31    | Eliminar imágenes enviadas en el chat                        | 3            |
+| 32    | US32    | Visualizar imágenes en chats                                 | 3            |
+| 33    | US33    | Validar y almacenar datos cifrados de usuario al registrarse | 2            |
+| 34    | US34    | Restringir el acceso a la API                                | 3            |
+| 35    | US35    | Mantener la sesión iniciada                                  | 5            |
+| 36    | US36    | Funcionalidad de Cierre de Sesión Seguro                     | 2            |
+| 37    | US37    | Invalidar tokens y borrar metadatos de sesión al cerrar sesión | 2            |
+| 38    | US38    | Implementar autenticación segura con JWT y cifrado de contraseñas | 2            |
+| 39    | US39    | Representación de navegación y acciones basada en roles.     | 2            |
+| 40    | US40    | Investigar la Integración de Firebase Cloud Messaging para Notificaciones en la Plataforma Fudi | 8            |
+| 41    | US41    | Registro de nueva compañía                                   | 3            |
+| 42    | US42    | Edición de perfil de compañía                                | 3            |
+| 43    | US43    | Baja del servicio de compañía                                | 3            |
+| 44    | US44    | Registro de empleados por compañía                           | 3            |
+| 45    | US45    | Eliminación de miembros de la compañía                       | 3            |
+| 46    | US46    | Panel de control corporativo                                 | 8            |
+
