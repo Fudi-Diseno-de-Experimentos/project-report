@@ -503,6 +503,13 @@ Pantalla de Eventos (Company Feed - Events): Agenda corporativa visualmente puli
 <img width="331" height="840" alt="image" src="https://github.com/user-attachments/assets/cedb416d-4f76-42cd-83f4-c08421a3abb5" />
 
 ### 4.4.4. Mobile Applications User Flow Diagrams.
+
+Flow 1: Usuario no cuenta con cuenta, se mueve al sign up y es redireccionado a la pagina donde llena sus datos. Siguiente se le pide la confirmación de código para el correo. 
+
+Flow 2: Entra en el feed donde el feed se parte entre eventos y anuncios el usuario es capaz de navegar entre ambas libremente. 
+
+Flow 3: El usuario explora las siguientes opciones  de navegación. Donde puede visualizar sus chats, asimismo, su propio perfil. 
+
 ## 4.5. Mobile Applications Prototyping.
 <p style="text-indent: 1.25cm;">En esta sección se detalla el planteamiento de la propuesta de arquitectura y diseño de software, utilizando como base el conjunto de User Stories identificados y el Impact Map desarrollado previamente. El enfoque adoptado se fundamenta en la arquitectura dirigida por el dominio (Domain-Driven Design), permitiendo estructurar la solución de manera que responda directamente a las necesidades del negocio digital. A través de esta perspectiva, se busca garantizar que la plataforma sea escalable, mantenible y que exista una coherencia total entre el modelo de negocio y la implementación técnica.
 
