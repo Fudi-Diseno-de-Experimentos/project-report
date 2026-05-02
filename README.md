@@ -59,11 +59,39 @@
 
 # Project Report Collaboration Insights
 
+En esta sección se detalla el proceso colaborativo del equipo de la startup **Fudi** para la elaboración del informe del proyecto Centralis. El equipo utiliza un repositorio centralizado en GitHub para la gestión del informe en formato Markdown, asegurando la trazabilidad de los aportes de cada integrante.
+
 Url de la organización: https://github.com/Fudi-Diseno-de-Experimentos
 
 **TB1:**
 
+Para la primera entrega, el equipo ha completado los Capítulos 1, 2, 3, 4 y 5, integrando los fundamentos del negocio, el diseño de la solución y las evidencias iniciales de implementación.
 
+**Analíticos de Contribuciones:**
+
+Como se observa en los analíticos de GitHub, el equipo ha mantenido un flujo de trabajo activo durante el periodo del 1 de abril al 1 de mayo de 2026. Se registran un total de **30 commits** distribuidos entre las ramas del proyecto, con **12 Pull Requests** integrados satisfactoriamente a la rama principal.
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/VWSYX4T.png" alt="Descripción">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/l1xQ7tA.png" alt="Descripción">
+</p>
+
+**Desglose de Participación por Miembro:**
+
+La elaboración del informe se ha distribuido de manera equitativa, alineándose con las responsabilidades éticas y profesionales definidas en el *Student Outcome*:
+
+- **seratt15a (Sergio Aguirre):** Realizó **13 commits** enfocados en la documentación de los requerimientos y el diseño de los *wireframes* iniciales del Capítulo 2 y 3.
+- **Neilcuri7 (Neil Curipaco):** Lideró la integración técnica con **13 commits**, gestionando el despliegue de los servicios en Vercel/Render y la corrección estructural de los Capítulos 4 y 5.
+- **UDnTzh (Danitza Heredia):** Aportó **3 commits** clave en el Capítulo 4, específicamente en la definición del diseño visual y la identidad de la aplicación móvil basada en Material Design 3.
+- **fabriziocpa (Fabrizio Contreras):** Documentó la arquitectura de información y los flujos de usuario mediante confirmaciones de cambios enfocadas en la usabilidad del sistema.
+- **Raúl Bellido (Bellido Salas):** Participó en la supervisión y validación del *Product Backlog* y las historias de usuario en el Capítulo 3, asegurando la coherencia del modelo de negocio SaaS.
+
+Lo evidenciado en estos analíticos guarda total coherencia con el Registro de Versiones, demostrando un compromiso profesional con la transparencia y el trabajo en equipo para el éxito del proyecto Centralis.
 
 
 # Contenido 

@@ -53,3 +53,4 @@ As-is Scenario Mapping: https://i.imgur.com/9JcFOZH.png
 
 To-Be Scenario Mapping: https://i.imgur.com/TCNr03W.png
 
+Link del prototipo mobile: https://shorturl.at/Fy7KA

@@ -302,13 +302,10 @@ Queda estrictamente prohibido cualquier actividad que constituya una violación 
 <p align="center">
   <img src="https://i.imgur.com/LDnV5dP.png" alt="Descripción">
 </p>
-
-<p align="center">
-  <img src="https://i.imgur.com/LDnV5dP.png" alt="Descripción">
-</p>
 <p align="center">
   <img src="https://i.imgur.com/duuwd4o.png" alt="Descripción">
 </p>
+
 
 
 

@@ -183,7 +183,9 @@
 ### 4.2.4. Searching Systems.
 
 <p style="text-indent: 1.25cm;">El sistema de búsqueda de Centralis tiene como objetivo principal evitar que los usuarios se sientan perdidos ante el volumen de información generado dentro de su organización. Se han diseñado mecanismos de recuperación de datos específicos que permiten localizar activos de comunicación y perfiles profesionales de manera ágil, garantizando que los resultados siempre estén confinados al alcance de la Company del usuario.  
+
 **1. Opciones y Escenarios de Búsqueda**
+
 
 <p style="text-indent: 1.25cm;">El sistema implementa capacidades de búsqueda en tres contextos críticos identificados en el flujo operativo:
 
@@ -425,34 +427,34 @@ La sección final está diseñada para maximizar la tasa de conversión mediante
 ### 4.4.1. Mobile Applications Wireframes.
 
 Pantalla de Login: Interfaz de acceso con campos para correo y contraseña, incluyendo opciones para recuperación de cuenta y acceso directo al registro de nuevos usuarios.
- 
+
 <img width="550" height="1147" alt="image" src="https://github.com/user-attachments/assets/85a7a325-8c4e-4fce-841b-77f74e764fc1" />
 
 Pantalla de Registro: Formulario de creación de cuenta que solicita nombre, correo y contraseña, con una casilla de verificación para la aceptación de términos y políticas legales.
 
- 
+
 <img width="548" height="1130" alt="image" src="https://github.com/user-attachments/assets/a2f5ae9a-536b-44e2-adbd-b3f15be4b457" />
 
 
 Pantalla de Verificación: Paso de seguridad que requiere un código OTP de 5 dígitos enviado al correo electrónico para validar la identidad del usuario antes de ingresar.
- 
+
 
 <img width="523" height="1136" alt="image" src="https://github.com/user-attachments/assets/941f1361-08d0-49ea-81c1-f4871e326fb8" />
 
 
 Pantalla de Home: Panel principal que centraliza el acceso a chats recientes, un carrusel de anuncios destacados de la empresa y una lista de eventos programados.
- 
+
 
 <img width="527" height="1152" alt="image" src="https://github.com/user-attachments/assets/30c0aa64-f5a8-4066-995f-4c3fc266cde3" />
 
 
 Pantalla de Company Feed (General): Muro informativo con buscador y filtros para alternar entre anuncios y eventos, destacando las noticias más importantes de la organización.
- 
+
 <img width="364" height="1334" alt="image" src="https://github.com/user-attachments/assets/300093cd-52a5-4e93-9cdc-07175fc8af29" />
 
 
 Sección de Actividad Reciente: Historial cronológico de publicaciones categorizadas por etiquetas (como General o Tech Stack), que permite seguir el flujo diario de actualizaciones del equipo.
- 
+
 
 <img width="416" height="905" alt="image" src="https://github.com/user-attachments/assets/b20e186c-8190-46e6-9074-3f6f1691ff64" />
 
@@ -465,7 +467,7 @@ Vista detallada del usuario que muestra su avatar, cargo e información de conta
 
 
 Esta vista especializada organiza la agenda corporativa mediante un selector de fechas semanal interactivo y una lista de tarjetas con los eventos próximos. Cada tarjeta detalla información clave como la lista de asistentes y la ubicación (ya sea presencial o mediante enlaces a Google Meet), concluyendo con un bloque integrado que permite a los usuarios proponer y crear nuevas actividades.
- 
+
 <img width="513" height="1342" alt="image" src="https://github.com/user-attachments/assets/a3c194d2-bf92-4376-8791-ecad8c834878" />
 
 
@@ -579,9 +581,23 @@ Flow 3: El usuario explora las siguientes opciones  de navegación. Donde puede 
 
 ## 4.5. Mobile Applications Prototyping.
 
-<p style="text-indent: 1.25cm;">En esta sección se detalla el planteamiento de la propuesta de arquitectura y diseño de software, utilizando como base el conjunto de User Stories identificados y el Impact Map desarrollado previamente. El enfoque adoptado se fundamenta en la arquitectura dirigida por el dominio (Domain-Driven Design), permitiendo estructurar la solución de manera que responda directamente a las necesidades del negocio digital. A través de esta perspectiva, se busca garantizar que la plataforma sea escalable, mantenible y que exista una coherencia total entre el modelo de negocio y la implementación técnica.
+<p style="text-indent: 1.25cm;">En esta sección se presentan los prototipos de alta fidelidad para la aplicación móvil desarrollada en Flutter, los cuales integran simulaciones de interacción y navegación basadas en los "User Flow Diagrams" previamente establecidos. Las decisiones de diseño de interacción se han fundamentado en los principios de Material Design 3, priorizando la eficiencia operativa y la claridad visual para los colaboradores de las organizaciones.  
 
-URL de los diagramas: https://shorturl.at/mBpWF
+<p style="text-indent: 1.25cm;">La arquitectura de información se materializa a través de un sistema de navegación intuitivo que utiliza componentes como el "Bottom Navigation Bar" y gestos táctiles estandarizados, garantizando que el acceso a la información crítica sea directo y coherente con el modelo multi-tenancy de Fudi.  
+
+**Flujos de Interacción Evaluados**
+
+Durante la fase de prototipado, se validaron los siguientes flujos críticos para asegurar una experiencia de usuario sin fricciones:
+
+- **Autenticación y Onboarding Corporativo:** Se evaluó el proceso de inicio de sesión (*Sign In*) y la vinculación a una organización mediante el ingreso del código único de empresa, validando el aislamiento de datos desde el primer contacto con la aplicación.  
+- **Navegación mediante Bar Menu:** Se comprobó la eficacia del menú de navegación inferior para el desplazamiento rápido entre los módulos principales, permitiendo una transición fluida entre las diferentes secciones de la plataforma.  
+- **Gestión de Contenido Dinámico:** Se validó la movilidad y visualización de anuncios oficiales y eventos corporativos, asegurando que el usuario pueda alternar entre la lectura de actualizaciones críticas y la agenda de la empresa con un esfuerzo cognitivo mínimo.  
+
+Link del prototipo mobile: https://shorturl.at/Fy7KA
+
+<p align="center">
+  <img src="https://i.imgur.com/qaMkdpD.png" alt="Descripción">
+</p>
 
 ### 4.6.1. Software Architecture Context Diagram.
 
