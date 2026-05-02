@@ -48,12 +48,12 @@
 # Registro de Versiones del Informe
 
 
-| **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
-| :---------- | :-------- | :-------- | :------------------------------ |
-|             |           |           |                                 |
-|             |           |           |                                 |
-|             |           |           |                                 |
-|             |           |           |                                 |
+| **Versión** | **Fecha**    | **Autor**                                                    | **Descripción de modificación**                              |
+| :---------- | :----------- | :----------------------------------------------------------- | :----------------------------------------------------------- |
+| 1.0         | 01 mayo 2026 | u20231045 - Aguirre Castillo Sergio Cesar<br />u202310931 - Bellido Salas Raúl<br />u202319889 - Contreras Peralta, Fabrizio Alessandro<br />U20231B866 - Curipaco Huayllani, Neil Aldrin Wilhelm<br />u201910803 - Heredia Hoyos Danitza Ivonne | Elaboración de los Capítulos 1, 2, 3, 4 y 5 del proyecto Centralis. Incluye: Carátula, perfiles de integrantes, descripción de la startup Fudi y de la solución. Redacción de antecedentes y problemática.<br />Desarrollo del proceso Lean UX (Canvas) y definición de segmentos objetivos. Elaboración de User Personas, User Stories y priorización del Product Backlog.<br />Definición de las General Style Guidelines y diseño de Mock-ups para la Landing Page y Aplicaciones Móviles.<br />Diseño de Arquitectura de Software: Diagramas de Contexto, Contenedores y Componentes.<br />Implementación y despliegue (Deploy) de la Landing Page en Vercel y del Web Service (API REST) en Render. |
+|             |              |                                                              |                                                              |
+|             |              |                                                              |                                                              |
+|             |              |                                                              |                                                              |
 
 
 
@@ -168,23 +168,23 @@ Capítulo IV: Product Design
 
 4.5. Mobile Applications Prototyping.
 
-4.8. Domain-Driven Software Architecture.
+4.6. Domain-Driven Software Architecture.
 
-4.8.1. Software Architecture Context Diagram.
+4.6.1. Software Architecture Context Diagram.
 
-4.8.2. Software Architecture Container Diagrams.
+4.6.2. Software Architecture Container Diagrams.
 
-4.8.3. Software Architecture Components Diagrams.
+4.6.3. Software Architecture Components Diagrams.
 
-4.9. Software Object-Oriented Design.
+4.7. Software Object-Oriented Design.
 
-4.9.1. Class Diagrams.
+4.7.1. Class Diagrams.
 
-4.9.2. Class Dictionary.
+4.7.2. Class Dictionary.
 
-4.10. Database Design.
+4.8. Database Design.
 
-4.10.1. Relational/Non-Relational Database Diagram.
+4.8.1. Relational/Non-Relational Database Diagram.
 
 Capítulo V: Product Implementation
 
@@ -204,17 +204,15 @@ Capítulo V: Product Implementation
 
 5.2.2. Implemented Landing Page Evidence
 
-5.2.3. Implemented Frontend-Web Application Evidence
+5.2.3. Acuerdo de Servicio - SaaS
 
-5.2.4. Acuerdo de Servicio - SaaS
+5.2.4. Implemented Native-Mobile Application Evidence
 
-5.2.5. Implemented Native-Mobile Application Evidence
+5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 
-5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
+5.2.6. RESTful API documentation
 
-5.2.7. RESTful API documentation
-
-5.2.8. Team Collaboration Insights
+5.2.7. Team Collaboration Insights
 
 5.3. Video About-the-Product.
 
@@ -223,7 +221,11 @@ Capítulo V: Product Implementation
 
 ABET – EAC - Student Outcome 4: La capacidad de reconocer responsabilidades éticas y profesionales en situaciones de ingeniería y hacer juicios informados, que deben considerar el impacto de las soluciones de ingeniería en contextos globales, económicos, ambientales y sociales.
 
-| **Criterio específico**                                      | **Acciones realizadas**                                      | **Conclusiones** |
-| ------------------------------------------------------------ | ------------------------------------------------------------ | ---------------- |
-| Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software | Aguirre Castillo Sergio Cesar<br/><br />TB1:<br /><br />Bellido Salas Raúl<br/><br />TB1:<br /><br />Contreras Peralta, Fabrizio Alessandro<br/><br />TB1:<br /><br /> Curipaco Huayllani, Neil Aldrin Wilhelm<br/><br />TB1:<br /><br />Heredia Hoyos Danitza Ivonne<br />TB1:<br /><br /> |                  |
-| Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales | Aguirre Castillo Sergio Cesar<br/><br />TB1:<br /><br />Bellido Salas Raúl<br/><br />TB1:<br /><br />Contreras Peralta, Fabrizio Alessandro<br/><br />TB1:<br /><br /> Curipaco Huayllani, Neil Aldrin Wilhelm<br/><br />TB1:<br /><br />Heredia Hoyos Danitza Ivonne<br />TB1:<br /><br /> |                  |
+| **Criterio específico**                                      | **Acciones realizadas**                                      | **Conclusiones**                                             |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **4.c.1 Reconoce responsabilidad ética y profesional en situaciones de ingeniería de software** | **Bellido Salas, Raúl:** <br /><br />**Tb1:**<br />Supervisó la redacción de *User Stories* y el *Product Backlog*, asegurando que la gestión de datos sensibles cumpla con estándares éticos de privacidad para las organizaciones.    <br />**Aguirre Castillo, Sergio Cesar:** <br />**Tb1:**<br />Documentó los requerimientos y *wireframes* iniciales, garantizando que el diseño del software refleje fielmente las necesidades declaradas por los usuarios durante el *needfinding*.    <br />**Heredia Hoyos, Danitza Ivonne:** **Tb1:**<br />Aseguró que el diseño visual del producto digital mantenga un estándar profesional y transparente hacia los usuarios finales mediante el uso de *Material Design 3*.    <br />**Contreras Peralta, Fabrizio Alessandro:** **Tb1:**<br />Realizó el diseño de los prototipos de alta fidelidad, aplicando criterios profesionales de usabilidad para evitar sesgos en la interacción del usuario.    <br />**Curipaco Huayllani, Neil Aldrin:**<br />**Tb1:**<br /> Ejecutó el despliegue formal en entornos de producción (Vercel/Render) y corrigió la documentación técnica para asegurar la transparencia de los procesos de ingeniería ante los interesados. | **Tb1:**<br />El grupo concluye que la responsabilidad ética se ha materializado en el aislamiento lógico de datos de cada empresa cliente (multi-tenancy). El equipo ha actuado con profesionalismo al documentar y validar cada fase del ciclo de vida, garantizando que **Centralis** sea una herramienta confiable para la comunicación corporativa. |
+| **4.c.2 Emite juicios informados considerando el impacto de las soluciones de ingeniería de software en contextos globales, económicos, ambientales y sociales** | **Bellido Salas, Raúl:** <br />**Tb1:**<br />Evaluó la viabilidad económica de las funcionalidades del *backlog*, priorizando aquellas que generan un mayor retorno de inversión para las PyMEs locales.    <br />**Aguirre Castillo, Sergio Cesar:**<br />**Tb1:**<br /> Analizó el impacto social de las soluciones digitales propuestas, asegurando que los flujos de usuario faciliten la inclusión laboral de diversos perfiles tecnológicos.    <br />**Heredia Hoyos, Danitza Ivonne:** <br />**Tb1:**<br />Diseñó la interfaz móvil considerando el impacto global, implementando estándares de internacionalización (i18n) para soportar múltiples idiomas y culturas de trabajo.    <br />**Contreras Peralta, Fabrizio Alessandro:**<br />**Tb1:**<br /> Emitió juicios sobre la arquitectura de información para optimizar el rendimiento económico de las empresas, reduciendo tiempos de búsqueda y mejorando la cohesión interna.    <br />**Curipaco Huayllani, Neil Aldrin:**<br />**Tb1:**<br /> Seleccionó infraestructuras en la nube (SaaS) que optimizan el consumo de recursos y aseguran la disponibilidad económica y técnica del servicio a nivel global para la startup Fudi. | **Tb1:**<br />El equipo ha emitido juicios informados al diseñar una arquitectura SaaS que reduce drásticamente los costos de infraestructura para las PyMEs. Se ha considerado el impacto social y global al desarrollar aplicaciones multiplataforma (Web y Flutter) accesibles, fomentando una comunicación interna eficiente en contextos laborales diversos. |
+
+------
+
+### 

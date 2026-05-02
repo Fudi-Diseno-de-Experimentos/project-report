@@ -75,7 +75,10 @@
 ### 4.2.1. Organization Systems.
 
 <p style="text-indent: 1.25cm;">En esta sección se detallan las decisiones de diseño que dirigen la organización del contenido en la aplicación móvil de Centralis, orientadas a que los miembros de la Company encuentren la información necesaria sin esfuerzo. Se aplican esquemas que responden a la naturaleza corporativa del producto y a la jerarquía de roles establecida.
+
+
 **1. Organización Jerárquica (Visual Hierarchy)**
+
 
 <p style="text-indent: 1.25cm;">Se implementa para establecer una relación de importancia entre los elementos y guiar la atención hacia la información crítica de la organización.
 
@@ -467,6 +470,44 @@ Esta vista especializada organiza la agenda corporativa mediante un selector de 
 
 
 ### 4.4.2. Mobile Applications Wireflow Diagrams.
+
+### 
+
+<p style="text-indent: 1.25cm;">En esta sección se detallan los diagramas de flujo de usuario para la aplicación móvil desarrollada en Flutter, los cuales representan de manera lógica y secuencial las rutas que los colaboradores de las organizaciones siguen para completar sus objetivos dentro de la plataforma. Estos diagramas integran los mockups de alta fidelidad con las decisiones de navegación, permitiendo visualizar tanto el camino esperado como las rutas alternativas en las interacciones críticas del sistema.  
+
+
+
+
+<p style="text-indent: 1.25cm;">La elaboración de estos flujos asegura que la experiencia del usuario sea intuitiva y coherente con el modelo de Multi-tenancy de Fudi, garantizando que procesos como la visualización de anuncios, la gestión de eventos y la comunicación por chat se realicen de forma eficiente y sin fricciones dentro de la infraestructura móvil.
+
+
+Flow 1: Usuario no cuenta con cuenta, se mueve al sign up y es redireccionado a la pagina donde llena sus datos. Siguiente se le pide la confirmación de código para el correo. 
+
+<p align="center">
+  <img src="https://i.imgur.com/KMZmodt.png" alt="Descripción">
+</p>
+
+
+
+
+Flow 2: Entra en el feed donde el feed se parte entre eventos y anuncios el usuario es capaz de navegar entre ambas libremente. 
+
+<p align="center">
+  <img src="https://i.imgur.com/Ulm1TKE.png" alt="Descripción">
+</p>
+
+
+
+
+
+Flow 3: El usuario explora las siguientes opciones  de navegación. Donde puede visualizar sus chats, asimismo, su propio perfil. 
+
+<p align="center">
+  <img src="https://i.imgur.com/gJ6zU0e.png" alt="Descripción">
+</p>
+
+
+
 ### 4.4.3. Mobile Applications Mock-ups.
 
 Pantalla de Log in: Interfaz de inicio de sesión refinada que presenta el imagotipo azul de la marca, campos de texto con fondo gris claro y un botón de "Sign in" en un tono verde azulado oscuro (teal) que destaca la acción principal.
@@ -504,18 +545,45 @@ Pantalla de Eventos (Company Feed - Events): Agenda corporativa visualmente puli
 
 ### 4.4.4. Mobile Applications User Flow Diagrams.
 
+<p style="text-indent: 1.25cm;">En esta sección se detallan los diagramas de flujo de usuario para la aplicación móvil desarrollada en Flutter, los cuales representan de manera lógica y secuencial las rutas que los colaboradores de las organizaciones siguen para completar sus objetivos dentro de la plataforma. Estos diagramas integran los mockups de alta fidelidad con las decisiones de navegación, permitiendo visualizar tanto el camino esperado como las rutas alternativas en las interacciones críticas del sistema.  
+
+
+
+<p style="text-indent: 1.25cm;">La elaboración de estos flujos asegura que la experiencia del usuario sea intuitiva y coherente con el modelo de Multi-tenancy de Fudi, garantizando que procesos como la visualización de anuncios, la gestión de eventos y la comunicación por chat se realicen de forma eficiente y sin fricciones dentro de la infraestructura móvil.
+
 Flow 1: Usuario no cuenta con cuenta, se mueve al sign up y es redireccionado a la pagina donde llena sus datos. Siguiente se le pide la confirmación de código para el correo. 
+
+<p align="center">
+  <img src="https://i.imgur.com/nxLyuCd.png" alt="Descripción">
+</p>
+
+
 
 Flow 2: Entra en el feed donde el feed se parte entre eventos y anuncios el usuario es capaz de navegar entre ambas libremente. 
 
+
+<p align="center">
+  <img src="https://i.imgur.com/RrkwWe0.png" alt="Descripción">
+</p>
+
+
+
+
 Flow 3: El usuario explora las siguientes opciones  de navegación. Donde puede visualizar sus chats, asimismo, su propio perfil. 
 
+<p align="center">
+  <img src="https://i.imgur.com/AMyTlBP.png" alt="Descripción">
+</p>
+
+
+
 ## 4.5. Mobile Applications Prototyping.
+
 <p style="text-indent: 1.25cm;">En esta sección se detalla el planteamiento de la propuesta de arquitectura y diseño de software, utilizando como base el conjunto de User Stories identificados y el Impact Map desarrollado previamente. El enfoque adoptado se fundamenta en la arquitectura dirigida por el dominio (Domain-Driven Design), permitiendo estructurar la solución de manera que responda directamente a las necesidades del negocio digital. A través de esta perspectiva, se busca garantizar que la plataforma sea escalable, mantenible y que exista una coherencia total entre el modelo de negocio y la implementación técnica.
 
 URL de los diagramas: https://shorturl.at/mBpWF
 
-### 4.8.1. Software Architecture Context Diagram.
+### 4.6.1. Software Architecture Context Diagram.
 
 <p style="text-indent: 1.25cm;">El Diagrama de Contexto representa el nivel más alto de abstracción dentro del Modelo C4 utilizado para describir la arquitectura del sistema. Su propósito fundamental es delimitar el alcance de la solución, mostrando cómo el sistema de software interactúa con los distintos perfiles de usuario (como Managers y Employees) y con sistemas externos o de terceros. Este diagrama permite visualizar el ecosistema completo del producto sin profundizar en detalles técnicos internos, facilitando la comunicación del flujo de información con todos los stakeholders del proyecto.
 
@@ -544,7 +612,7 @@ URL de los diagramas: https://shorturl.at/mBpWF
 
 
 
-### 4.8.2. Software Architecture Container Diagrams.
+### 4.6.2. Software Architecture Container Diagrams.
 
 <p style="text-indent: 1.25cm;">El Diagrama de Contenedores representa el segundo nivel de detalle del Modelo C4, enfocándose en desglosar el sistema de software en sus unidades principales de ejecución. A diferencia del diagrama de contexto, esta vista permite identificar las responsabilidades tecnológicas específicas, como las aplicaciones móviles, las interfaces de programación de aplicaciones (API) y los esquemas de almacenamiento. En esta sección, se detalla la interacción técnica entre los componentes internos de Centralis, especificando los protocolos de comunicación y la distribución de la lógica de negocio para asegurar una arquitectura robusta y escalable.
 
@@ -560,7 +628,7 @@ URL de los diagramas: https://shorturl.at/mBpWF
 - **External API (Firebase Cloud Messaging):** La API de Spring Boot se comunica con este servicio para activar el envío de notificaciones push hacia la aplicación móvil cuando ocurren eventos relevantes (nuevos anuncios o mensajes).
 - **External API (Cloudinary):** La aplicación móvil interactúa directamente con este contenedor para la subida y recuperación de archivos multimedia (imágenes), optimizando así el tráfico del servidor principal.
 
-### 4.8.3. Software Architecture Components Diagrams.
+### 4.6.3. Software Architecture Components Diagrams.
 
 <p style="text-indent: 1.25cm;">El Diagrama de Componentes representa el tercer nivel de detalle del Modelo C4, descomponiendo un contenedor específico —en este caso, la API Application— en sus partes integrantes. Esta vista permite identificar las responsabilidades lógicas internas, los módulos de código y cómo estos interactúan para implementar las funcionalidades del sistema. En esta sección se describe la organización interna del backend de Centralis, detallando cómo los componentes de negocio (anuncios, chats, eventos) consumen lógica compartida y se conectan con servicios externos para cumplir con los requerimientos funcionales.
 
@@ -583,8 +651,8 @@ El diagrama detalla la estructura modular de la API desarrollada en **Spring Boo
   - **Conectividad con Bases de Datos:** Todos los componentes de gestión (Profile, Company, Notification, etc.) se conectan con **Supabase Postgres** para la persistencia y recuperación de datos transaccionales.
   - **Integración con Servicios Cloud:** El componente *Shared* gestiona la subida de recursos multimedia hacia **Cloudinary**, mientras que el componente *Notification* se comunica con **Firebase Cloud Messaging** para despachar alertas en tiempo real a los dispositivos móviles.
 
-## 4.9. Software Object-Oriented Design.
-### 4.9.1. Class Diagrams.
+## 4.7. Software Object-Oriented Design.
+### 4.7.1. Class Diagrams.
 
 1. Diagrama de `announcement` 
 
@@ -653,7 +721,7 @@ Actúa como el directorio de identidad dentro del sistema, separando los datos d
 
 - **Clase Company:** Es la entidad raíz que centraliza los datos legales (`ruc`, `nombre`) y el estado del cliente (`is_active`). Al heredar de la base de auditoría, rastrea automáticamente su creación y cambios.
 
-### 4.9.2. Class Dictionary.
+### 4.7.2. Class Dictionary.
 
 **Package: announcement**
 
@@ -707,8 +775,8 @@ Gestiona la información que le llega a cada usuario.
 
 Todas las entidades principales (`Announcement`, `Comment`, `Group`, `Event`, `Profile`, `Company`) heredan de AuditableAbstractAggregateRoot, lo que garantiza que el sistema mantenga un registro automático de metadatos de auditoría de fechas de creación, fechas de edición y generación de uuid.
 
-## 4.10. Database Design.
-### 4.10.1. Relational/Non-Relational Database Diagram.
+## 4.8. Database Design.
+### 4.8.1. Relational/Non-Relational Database Diagram.
 
 <p style="text-indent: 1.25cm;">La persistencia de datos en Centralis se ha diseñado mediante un modelo relacional que refleja fielmente los contextos delimitados identificados en la arquitectura de software. Este diseño garantiza la integridad referencial y el aislamiento de la información entre las distintas organizaciones que utilizan la plataforma. El esquema utiliza un enfoque de multi-tenancy basado en identificadores de compañía (`company_id`), permitiendo que una única instancia de base de datos soporte a múltiples empresas de forma segura y eficiente.
 

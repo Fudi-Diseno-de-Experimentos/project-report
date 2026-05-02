@@ -193,8 +193,24 @@ Es un **protocolo de comunicación** a través de números de versión (ej. `MAJ
 
 ### 5.2.2. Implemented Landing Page Evidence
 
-### 5.2.3. Implemented Frontend-Web Application Evidence
-### 5.2.4. Acuerdo de Servicio - SaaS
+<p style="text-indent: 1.25cm;">En este capítulo se describe de manera detallada el proceso de construcción, aseguramiento de calidad y puesta en producción de los componentes que integran la solución Centralis. La implementación se ha dividido en tres frentes tecnológicos clave, garantizando la interoperabilidad entre la plataforma de administración y el ecosistema móvil de las organizaciones cliente.
+*Link del deploy:* https://landing-page-rmy9.vercel.app/en 
+
+**Landing Page:** Desarrollada con el marco de trabajo **Astro**, priorizando la velocidad de carga y el posicionamiento SEO para la captación de nuevas empresas. Su despliegue se ha realizado de forma automatizada en la plataforma **Vercel**, aprovechando su infraestructura de red de entrega de contenidos (CDN).  
+
+<p align="center">
+  <img src="https://i.imgur.com/YIEOpVi.png" alt="Descripción">
+</p>
+
+
+<p align="center">
+  <img src="https://i.imgur.com/4XwTzhA.png" alt="Descripción">
+</p>
+
+
+
+
+### 5.2.3. Acuerdo de Servicio - SaaS
 
 <p style="text-indent: 1.25cm;">El presente Acuerdo de Servicio establece el marco legal y operativo que rige el uso de la plataforma Centralis, provista por Fudi bajo el modelo de Software como Servicio (SaaS). Este documento garantiza la transparencia en la prestación del servicio y define las responsabilidades tanto del proveedor como de las organizaciones usuarias.
 
@@ -246,19 +262,73 @@ Queda estrictamente prohibido cualquier actividad que constituya una violación 
 
 **8. Legislación Aplicable y Confidencialidad**
 <p style="text-indent: 1.25cm;">Este acuerdo se regirá e interpretará de acuerdo con las leyes de la República del Perú. Cualquier disputa será sometida a la jurisdicción exclusiva de los tribunales de Lima, Perú.
+### 5.2.4. Implemented Native-Mobile Application Evidence
 
-### 5.2.5. Implemented Native-Mobile Application Evidence
-### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
-### 5.2.7. RESTful API documentation
+<p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias del proceso de construcción y despliegue de la aplicación móvil nativa de Centralis, desarrollada bajo el marco de trabajo Flutter. El enfoque de implementación se ha centrado en garantizar una experiencia de usuario fluida y reactiva, permitiendo que los colaboradores accedan a los anuncios, eventos y chats de su organización de manera eficiente.  
 
-<p style="text-indent: 1.25cm;">En el contexto del Sprint actual, se ha desarrollado y desplegado la API RESTful que sirve como backend para la plataforma Centralis. La documentación sigue el estándar OpenAPI Specification (Swagger) y está disponible de forma interactiva en el entorno de producción. A continuación, se presenta un resumen de los *bounded contexts* implementados, los endpoints principales, el esquema de autenticación y ejemplos de interacción.
+
+
+<p style="text-indent: 1.25cm;">Las evidencias incluidas demuestran la integración de la interfaz de usuario con los Web Services alojados en Render, validando la persistencia de datos y el cumplimiento de las reglas de negocio establecidas para el modelo *SaaS* de Fudi. A continuación, se detallan las capturas de pantalla de las funcionalidades clave y los registros de los *commits* que respaldan el avance técnico durante el ciclo de desarrollo.
+
+
+
+**Mobile Applications:** Una aplicación móvil nativa desarrollada en **Flutter**, asegurando una comunicación fluida y en tiempo real.
+
+> [!NOTE]
+>
+> Para esta primera entrega no se logro completar el desarrollo de la app mobile
+
+<p style="text-indent: 1.25cm;">Este proceso se gestiona de forma iterativa a través de Sprints, donde cada ciclo incluye fases de planificación y documentación de servicios, asegurando un incremento de producto funcional y validado al finalizar cada iteración.
+
+
+
+### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+
+<p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias técnicas que respaldan la implementación y el despliegue de los Web Services de la plataforma Centralis. El backend, desarrollado íntegramente con Java y el marco de trabajo Spring Boot, actúa como el núcleo lógico del sistema, gestionando la persistencia de datos en PostgreSQL y garantizando el aislamiento de la información organizacional mediante la arquitectura multi-tenancy de Fudi.  
+
+
+
+<p style="text-indent: 1.25cm;">Las evidencias aquí recopiladas demuestran la operatividad de los *endpoints* en el entorno de producción de Render, validando la integración exitosa entre las solicitudes de las aplicaciones (web y móvil) y el servidor. 
+*Link del deploy:* https://web-service-1mm7.onrender.com
+
+**Web Services (API RESTful):** Construidos con **Java** y el framework **Spring Boot**, siguiendo una arquitectura de monolítica modular orientada a contextos delimitados. Estos servicios, encargados de la persistencia en PostgreSQL y la lógica *multi-tenancy*, se encuentran desplegados y operativos en **Render**.  
+
+<p align="center">
+  <img src="https://i.imgur.com/CFlae35.png" alt="Descripción">
+</p>
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/LDnV5dP.png" alt="Descripción">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/LDnV5dP.png" alt="Descripción">
+</p>
+<p align="center">
+  <img src="https://i.imgur.com/duuwd4o.png" alt="Descripción">
+</p>
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/SLoScyV.png" alt="Descripción">
+</p>
+
+
+
+### 5.2.6. RESTful API documentation
+
+<p style="text-indent: 1.25cm;">En el contexto del Sprint actual, se ha desarrollado y desplegado la API RESTful que sirve como backend para la plataforma Centralis. La documentación sigue el estándar OpenAPI Specification (Swagger) y está disponible de forma interactiva en el entorno de producción. A continuación, se presenta un resumen de los bounded contexts implementados, los endpoints principales, el esquema de autenticación y ejemplos de interacción.
+
 
 **Base URL y Versiones**
 
 Todos los endpoints descritos en esta sección están prefijados con `/api/v1` y se acceden a través de la siguiente base URL:
 
-- **Producción:** `https://`
-- **Staging:** `https://`
+- **Producción:** `https://web-service-1mm7.onrender.com/`
+- **Staging:** `https://web-service-1mm7.onrender.com/`
 
 **Autenticación y Autorización**
 
@@ -314,5 +384,51 @@ Para cada contexto, se listan los endpoints más relevantes, su verbo HTTP, sint
 | Obtener mensajes     | `GET`  | `/groups/{groupId}/messages` | Recupera el historial de mensajes de un grupo.               |
 | Streaming de eventos | `GET`  | `/sse/chat/{groupId}`        | Establece una conexión Server-Sent Events (SSE) para recibir eventos de chat en tiempo real. |
 
-### 5.2.8. Team Collaboration Insights
+### 5.2.7. Team Collaboration Insights
+
+<p style="text-indent: 1.25cm;">El presente apartado detalla el desempeño colaborativo y la actividad técnica del equipo durante el periodo de implementación de la Landing Page y los Web Services del proyecto Centralis. La gestión del desarrollo se ha articulado mediante el uso de repositorios en GitHub, permitiendo un seguimiento riguroso de la integración de código y la resolución de tareas. A través de los analíticos presentados a continuación, se evidencia la participación de los miembros del equipo y la evolución del software, garantizando la trazabilidad de cada incremento de producto en cumplimiento con los objetivos del Sprint.
+
+**1. Interpretación de Analíticos: Landing Page**
+
+Se analizan los siguientes puntos:
+
+- **Esfuerzo Distribuido:** El usuario *Neilcuri7* aportó 3 commits con un impacto de 918 adiciones de código, completando la estructura base del sitio.
+- **Gestión de Cambios:** El total de 4 commits refleja un flujo de trabajo directo hacia la rama principal, acumulando más de 2,000 líneas de código que conforman la interfaz visual y la experiencia de usuario inicial.
+- **Picos de Actividad:** El gráfico temporal muestra una concentración de trabajo en la semana del 20 al 27 de abril, periodo en el cual se finalizaron los componentes visuales del despliegue.
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/gT3Eo0z.png" alt="Descripción">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/cQxWboz.png" alt="Descripción">
+</p>
+
+
+
+
+**2. Interpretación de Analíticos: Web Services**
+
+En cuanto al desarrollo del backend y lógica de servicios (referenciados en las capturas adjuntas), se observan indicadores que denotan una fase de implementación técnica robusta:
+
+- **Flujo de Trabajo y Revisión:** A diferencia de la interfaz, el repositorio de Web Services muestra un proceso de integración más formal con **2 Pull Requests activos y mergeados**. Esto indica un control de calidad mediante la revisión de código antes de la consolidación en la rama *main*.
+
+- **Densidad Técnica:** Se registra un total de 3 commits realizados por el autor *Neilcuri7*. Destaca un volumen excepcional de **16,906 adiciones**, lo cual es característico de la integración de dependencias, configuración de entornos de servidor o la generación de código base (*scaffolding*) necesario para la arquitectura de microservicios.
+
+- **Continuidad de Desarrollo:** La actividad se mantuvo constante durante la segunda mitad de abril, con una distribución de commits que sugiere la implementación de servicios base y su posterior refinamiento.
+
+  <p align="center">
+    <img src="https://i.imgur.com/cQxWboz.png" alt="Descripción">
+  </p>
+
+  <p align="center">
+    <img src="https://i.imgur.com/djOCb4n.png" alt="Descripción">
+  </p>
+
 ## 5.3. Video About-the-Product.
+
+> [!NOTE]
+>
+> Para esta entrega solo se tiene la landing page y el web service, no se logro desarrollar a tiempo la mobile  app, para la siguiente entra nos comprometemos a los tres productos completos.
