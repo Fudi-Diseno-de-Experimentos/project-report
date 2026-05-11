@@ -214,7 +214,7 @@ Es un **protocolo de comunicación** a través de números de versión (ej. `MAJ
 
 <p style="text-indent: 1.25cm;">El presente Acuerdo de Servicio establece el marco legal y operativo que rige el uso de la plataforma Centralis, provista por Fudi bajo el modelo de Software como Servicio (SaaS). Este documento garantiza la transparencia en la prestación del servicio y define las responsabilidades tanto del proveedor como de las organizaciones usuarias.
 
- 
+
 
 **1. Aceptación de los Términos y Condiciones de Servicio (TOS)**
 <p style="text-indent: 1.25cm;">Al acceder, registrarse o utilizar cualquier componente de la solución Centralis (incluyendo su landing page, aplicación web, API RESTful y futuras aplicaciones móviles), la organización suscriptora y sus usuarios finales aceptan de manera explícita e irrevocable los presentes términos. Esta aceptación constituye un requisito legal y técnico previo para la habilitación de la cuenta corporativa y el acceso a los servicios.
@@ -267,22 +267,82 @@ Queda estrictamente prohibido cualquier actividad que constituya una violación 
 <p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias del proceso de construcción y despliegue de la aplicación móvil nativa de Centralis, desarrollada bajo el marco de trabajo Flutter. El enfoque de implementación se ha centrado en garantizar una experiencia de usuario fluida y reactiva, permitiendo que los colaboradores accedan a los anuncios, eventos y chats de su organización de manera eficiente.  
 
 
-
-<p style="text-indent: 1.25cm;">Las evidencias incluidas demuestran la integración de la interfaz de usuario con los Web Services alojados en Render, validando la persistencia de datos y el cumplimiento de las reglas de negocio establecidas para el modelo *SaaS* de Fudi. A continuación, se detallan las capturas de pantalla de las funcionalidades clave y los registros de los *commits* que respaldan el avance técnico durante el ciclo de desarrollo.
+<p style="text-indent: 1.25cm;">Las evidencias incluidas demuestran la integración de la interfaz de usuario con los Web Services alojados en Render, validando la persistencia de datos y el cumplimiento de las reglas de negocio establecidas para el modelo SaaS de Fudi. A continuación, se detallan las capturas de pantalla de las funcionalidades clave y los registros de los commits que respaldan el avance técnico durante el ciclo de desarrollo.
 
 
 
 **Mobile Applications:** Una aplicación móvil nativa desarrollada en **Flutter**, asegurando una comunicación fluida y en tiempo real.
 
-> [!NOTE]
->
-> Para esta primera entrega no se logro completar el desarrollo de la app mobile
-
 <p style="text-indent: 1.25cm;">Este proceso se gestiona de forma iterativa a través de Sprints, donde cada ciclo incluye fases de planificación y documentación de servicios, asegurando un incremento de producto funcional y validado al finalizar cada iteración.
+### 5.2.5. Implemented Native-Mobile Application Evidence
 
 
 
-### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
+<p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias del desarrollo y la operatividad de la aplicación móvil nativa de Centralis, construida con el framework Flutter. El proceso de implementación se centró en materializar los requisitos funcionales del Product Backlog en una interfaz reactiva y eficiente, garantizando que los colaboradores puedan interactuar con la información corporativa en tiempo real.
+
+<p style="text-indent: 1.25cm;">Se han completado satisfactoriamente los flujos de gestión de identidad, comunicación organizacional y administración de eventos. La aplicación se integra de manera fluida con la API RESTful desplegada en Render, permitiendo la sincronización de datos bajo el modelo multi-tenancy de la startup Fudi.
+
+A continuación, se detallan las interfaces implementadas que conforman el núcleo de la experiencia móvil:
+
+**1. Gestión de Acceso (Sign-in & Sign-up)**
+
+<p style="text-indent: 1.25cm;">Se implementaron las vistas de autenticación que permiten a los usuarios nuevos registrarse y a los colaboradores existentes acceder a su entorno corporativo. Estos flujos incluyen la validación de credenciales y la vinculación segura con el código de organización correspondiente.
+
+<p align="center">
+  <img src="https://i.imgur.com/g4GjaZI.png" alt="Descripción">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/0wgFQnj.png" alt="Descripción">
+</p>
+
+**2. Módulo de Anuncios (Visualización y Creación)**
+
+- **Vista de Anuncios:** Interfaz principal donde los usuarios visualizan comunicados oficiales, filtrados por prioridad y fecha.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/8AbLJIp.png" alt="Descripción">
+</p>
+
+- **Creación de Anuncios:** Formulario administrativo que permite a los usuarios con permisos generar nuevos anuncios, adjuntar imágenes y definir niveles de urgencia.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/VyQxao3.png" alt="Descripción">
+</p>
+
+**3. Gestión de Eventos (Agenda y Planificación)**
+
+- **Vista de Eventos:** Calendario y lista detallada de actividades programadas por la empresa, facilitando la organización del tiempo del colaborador.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/GuS8OD7.png" alt="Descripción">
+</p>
+
+- **Creación de Eventos:** Interfaz para la programación de nuevas actividades, donde se especifican horarios, locaciones (físicas o digitales) y descripciones.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/s139QnI.png" alt="Descripción">
+</p>
+
+**4. Perfiles de Usuario**
+
+<p style="text-indent: 1.25cm;">Se implementó la vista de perfil donde el colaborador puede visualizar sus datos personales, cargo dentro de la empresa y gestionar su configuración de cuenta, asegurando la transparencia en el manejo de su identidad digital dentro de la plataforma.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/8ZRjZ7d.png" alt="Descripción">
+</p>
+
+### 5.2.6. Implemented RESTful API and/or Serverless Backend Evidence
 
 <p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias técnicas que respaldan la implementación y el despliegue de los Web Services de la plataforma Centralis. El backend, desarrollado íntegramente con Java y el marco de trabajo Spring Boot, actúa como el núcleo lógico del sistema, gestionando la persistencia de datos en PostgreSQL y garantizando el aislamiento de la información organizacional mediante la arquitectura multi-tenancy de Fudi.  
 
@@ -315,7 +375,7 @@ Queda estrictamente prohibido cualquier actividad que constituya una violación 
 
 
 
-### 5.2.6. RESTful API documentation
+### 5.2.7. RESTful API documentation
 
 <p style="text-indent: 1.25cm;">En el contexto del Sprint actual, se ha desarrollado y desplegado la API RESTful que sirve como backend para la plataforma Centralis. La documentación sigue el estándar OpenAPI Specification (Swagger) y está disponible de forma interactiva en el entorno de producción. A continuación, se presenta un resumen de los bounded contexts implementados, los endpoints principales, el esquema de autenticación y ejemplos de interacción.
 
@@ -381,10 +441,9 @@ Para cada contexto, se listan los endpoints más relevantes, su verbo HTTP, sint
 | Obtener mensajes     | `GET`  | `/groups/{groupId}/messages` | Recupera el historial de mensajes de un grupo.               |
 | Streaming de eventos | `GET`  | `/sse/chat/{groupId}`        | Establece una conexión Server-Sent Events (SSE) para recibir eventos de chat en tiempo real. |
 
-### 5.2.7. Team Collaboration Insights
+### 5.2.8. Team Collaboration Insights
 
 <p style="text-indent: 1.25cm;">El presente apartado detalla el desempeño colaborativo y la actividad técnica del equipo durante el periodo de implementación de la Landing Page y los Web Services del proyecto Centralis. La gestión del desarrollo se ha articulado mediante el uso de repositorios en GitHub, permitiendo un seguimiento riguroso de la integración de código y la resolución de tareas. A través de los analíticos presentados a continuación, se evidencia la participación de los miembros del equipo y la evolución del software, garantizando la trazabilidad de cada incremento de producto en cumplimiento con los objetivos del Sprint.
-
 **1. Interpretación de Analíticos: Landing Page**
 
 Se analizan los siguientes puntos:
@@ -424,8 +483,3 @@ En cuanto al desarrollo del backend y lógica de servicios (referenciados en las
     <img src="https://i.imgur.com/djOCb4n.png" alt="Descripción">
   </p>
 
-## 5.3. Video About-the-Product.
-
-> [!NOTE]
->
-> Para esta entrega solo se tiene la landing page y el web service, no se logro desarrollar a tiempo la mobile  app, para la siguiente entra nos comprometemos a los tres productos completos.
