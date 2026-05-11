@@ -4,6 +4,10 @@
 
 ### 6.1.1. Core Entities Unit Tests
 
+En esta sección se detalla la implementación y ejecución de las pruebas unitarias diseñadas para validar la lógica de negocio atómica de las entidades principales de **Centralis**. El objetivo primordial es garantizar que los modelos de dominio, validaciones de atributos y funciones clave operen correctamente en total aislamiento de dependencias externas como bases de datos o servicios de red.
+
+**Landing Page test**
+
 Para la elaboración de los principales tests de nuestra Landing Page (**Centralis**), hemos tenido en cuenta las secciones más importantes que garantizan la correcta navegación y propuesta de valor para el usuario:
 
 * **Features:** Verificación de la visibilidad de las funcionalidades clave para la alineación de equipos.
@@ -16,7 +20,26 @@ Gracias a la herramienta de **Selenium IDE**, se han logrado realizar los tests 
 ![img_1.png](img_1.png)
 ---
 
+
+
+**Web Service test**
+
+A nivel de implementación (`BoundedContextsUnitTests`), las pruebas evalúan la creación de comandos dentro de los contextos acotados de Events, Chats y Announcements. Esto asegura que las abstracciones de dominio (como `CompanyId` o los distintos `UserId`) protejan la integridad de los datos. Se han ejecutado y superado un total de cuatro pruebas unitarias:
+
+- Se procesan exitosamente los comandos de creación de dominio para los contextos de **ANNOUNCEMENT** y **EVENTS**.
+- Se validan fallos intencionados al intentar crear un anuncio (`ANNOUNCEMENT`) o un grupo de chat (`CHATS (Groups)`) cuando falta información obligatoria o se incumplen reglas de negocio, corroborando que se lanzan las excepciones correspondientes para mantener la seguridad estructural del sistema.
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/NraHgCl.png" alt="Descripción">
+</p>
+
+
+
 ### 6.1.2. Core Integration Tests
+
+En esta sección se detalla la realización de las pruebas de integración implementadas en la arquitectura. El objetivo central de estas evaluaciones es asegurar que los diferentes módulos, servicios y componentes del sistema funcionen correctamente de forma conjunta y cuando interactúan entre sí. A través de estas pruebas conjuntas, se verifica la interoperabilidad, garantizando que la comunicación entre contextos, la persistencia en las bases de datos y los flujos transaccionales mantengan la integridad estructural y la exactitud en el flujo de información de la plataforma.
 
 **Landing Page test**
 
@@ -24,25 +47,22 @@ Se realizó un test automatizado utilizando Selenium IDE para verificar el corre
 
 ![img_2.png](img_2.png)
 
-**Mobile test**
 
-Se realizó un test automatizado utilizando Selenium WebDriver para verificar el correcto funcionamiento de la interfaz móvil de la aplicación. El objetivo del test fue asegurarse de que los elementos clave de la página, el login y los botones de navegación interna se cargaran correctamente y fueran interactivos en resoluciones de dispositivos móviles, validando el diseño responsivo.
-
-![img_3.png](img_3.png)
-
-**User CRUD (Consultants/Clients)**
-
-Se realizó un test automatizado para verificar el funcionamiento del CRUD de los usuarios principales (Consultores y Clientes), asegurando que el proceso de crear, leer, actualizar y eliminar los registros se realice correctamente. El test abarcó la funcionalidad de un usuario que gestiona su perfil, edita su información de contacto y elimina entradas, todo esto con el objetivo de garantizar que la plataforma maneje los datos de manera eficiente y sin errores.
-
-![img_4.png](img_4.png)
-
-**Appointment / Agenda CRUD**
-
-Se realizó un test automatizado para validar el correcto funcionamiento del sistema de gestión de agendas y citas de Centralis, asegurando que los usuarios puedan registrar, visualizar, actualizar y eliminar sus compromisos o reuniones sin inconvenientes. Este test garantizó que los integrantes del equipo puedan interactuar con el calendario de forma fluida.
-
-![img_5.png](img_5.png)
 
 ---
+
+**Web Service**
+
+A nivel de implementación (`MultiTenancyAndFlowIntegrationTests`), estas pruebas simulan un entorno más cercano al escenario de producción utilizando el framework Spring Boot y bases de datos en memoria (H2). Se han verificado exitosamente dos ejes críticos mediante pruebas automatizadas:
+
+- **Aislamiento Multi-tenancy:** Se evalúa y corrobora de forma estricta que un usuario logueado perteneciente a una compañía no puede acceder ni recuperar eventos que pertenecen al dominio de otra distinta.
+- **Flujo Operativo Completo:** Se simula el recorrido integral donde un administrador interacciona con los endpoints REST enviando *payloads* validados para crear un Evento corporativo. Esta integración confirma que todos los mecanismos de autorización y recuperación de información están operando sinérgicamente en los contextos principales.
+
+
+
+<p align="center">
+  <img src="https://i.imgur.com/rC1N1xt.png" alt="Descripción">
+</p>
 
 ### 6.1.3. Core Behavior-Driven Development
 
