@@ -100,9 +100,10 @@ Adicionalmente a las pruebas de interoperabilidad y *multi-tenancy* realizadas e
 
 
 ### 6.1.3. Core Behavior-Driven Development
-### prefacio:
 
-### Description: Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento.
+En esta sección se presentan las pruebas de desarrollo dirigido por comportamiento (BDD) implementadas para validar que las funcionalidades clave de Centralis cumplan con los requisitos del negocio desde la perspectiva del usuario final. A través de la metodología BDD, se formulan escenarios específicos en lenguaje natural (Given-When-Then) que describen el comportamiento esperado de las características principales del sistema, tales como la gestión de eventos, anuncios y chats grupales. Estas pruebas actúan como puente entre los requisitos funcionales y la implementación técnica, asegurando que cada funcionalidad entregue valor real a gerentes y empleados, y que los cambios y ajustes del producto respondan fielmente a las necesidades descritas en las historias de usuario.
+
+### 1. Description: Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento.
 
 Feature: Modificación de eventos
 
@@ -116,11 +117,11 @@ And actualiza el evento en la lista de eventos.
 
  <img src="https://imgur.com/I52Q2nr.jpg" alt="cambiar fecha de evento">
 
-### Explicación:
+### Interpretación:
 
+La evidencia demuestra que el gerente puede seleccionar un evento existente y modificar su fecha de forma intuitiva desde la interfaz móvil. El sistema procesa el cambio y lo refleja en tiempo real en la lista de eventos, confirmando que la funcionalidad de actualización opera correctamente sin perder los datos del evento.
 
-
-### Description: Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos.
+### 2. Description: Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos.
 
 Feature: Edición de mensajes
 
@@ -132,10 +133,11 @@ Then el sistema actualiza el contenido del mensaje.
 
  <img src="https://imgur.com/Ufbjivi.jpg" alt="Corregir error mensaje">
 
-### Explicación:
+### Interpretación:
 
+La pantalla evidencia que el empleado tiene acceso a un menú de opciones sobre mensajes enviados, permitiendo seleccionar la opción de edición. El sistema captura la corrección del texto y la persiste, demostrando que los cambios en mensajes son procesados y almacenados sin afectar el timestamp original del envío.
 
-### Description: Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas.
+### 3. Description: Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas.
 
 Feature: Creación de chats grupales
 
@@ -146,9 +148,11 @@ Then el sistema crea el chat con todos los miembros añadidos.
 ### Evidencias:
  <img src="https://imgur.com/DIxgZEq.jpg" alt="crear chat">
 
-### Explicación:
+### Interpretación:
 
-### Description: Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa.
+La interfaz muestra el flujo de creación de un nuevo chat grupal, donde el empleado puede ingresar el nombre del grupo y seleccionar múltiples participantes. La evidencia valida que el sistema genera correctamente el identificador único del grupo y que todos los miembros añadidos son incluidos en la conversación colectiva.
+
+### 4. Description: Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa.
 
 Feature: Creación de eventos
 
@@ -161,10 +165,11 @@ And lo muestra a los empleados seleccionados.
 
  <img src="https://imgur.com/e8XrUyv.jpg" alt="Crear evento">
 
-### Explicación:
+### Interpretación:
 
+La pantalla captura el formulario de creación de eventos con campos como título, fecha, hora, descripción y selección de empleados destinatarios. La evidencia confirma que los datos ingresados se guardan en la base de datos y que el evento es visible inmediatamente para los empleados seleccionados en sus vistas correspondientes.
 
-### Description: Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información.
+### 5. Description: Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información.
 
 Feature: Editar anuncio
 Scenario: Editar un anuncio existente
@@ -179,7 +184,9 @@ And los cambios se reflejan inmediatamente.
 
 ### Explicación:
 
-### Description: Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa.
+La interfaz demuestra que el gerente puede acceder a anuncios publicados previamente y modificar su contenido (título, descripción, etc.). La evidencia valida que la actualización se persiste en la base de datos y que los cambios son reflejados instantáneamente en la aplicación de todos los empleados sin requerir recargas manuales.
+
+### 6. Description: Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa.
 
 Feature: Publicación de anuncios
 
@@ -192,6 +199,10 @@ And muestra el anuncio donde los empleados puedan verlo.
 ### Evidencias:
 
  <img src="https://i.imgur.com/ncv7zQB.jpeg" alt="Publicar add">
+
+### Explicación:
+
+La pantalla muestra el formulario de creación de anuncios donde el gerente ingresa información relevante para la empresa. La evidencia comprueba que el anuncio se almacena correctamente en la base de datos y que aparece en el feed de anuncios de todos los empleados, garantizando que la información llega a toda la organización de forma centralizada.
 
 ### 6.1.4. Core System Tests
 
