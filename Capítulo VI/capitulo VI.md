@@ -36,6 +36,30 @@ A nivel de implementación (`BoundedContextsUnitTests`), las pruebas evalúan la
 </p>
 
 
+**Aplicación Móvil (Flutter)**
+
+Para complementar las evaluaciones de los servicios web, se diseñaron y ejecutaron pruebas unitarias en la aplicación móvil nativa con el fin de asegurar el aislamiento y correcto funcionamiento de la lógica de presentación y manejo de estado. Estas pruebas utilizan repositorios simulados (*mocks*) para evitar dependencias externas durante la validación de las entidades:
+
+- **Contexto de Anuncios (Announcements):**
+  - **`Create Announcement`**: Se probó el flujo de creación de un anuncio, verificando rigurosamente que tanto el ID como el título se guarden de forma correcta en el repositorio *mock*.
+  - **`Get Announcements`**: Se evaluó la capacidad de listado del sistema, verificando el tamaño exacto de la lista de anuncios devuelta por el repositorio simulado.
+  - **`Update Announcement`**: Se validó la lógica de actualización, comprobando que el cambio de título se refleje adecuadamente en el registro *mock*.
+- **Contexto de Eventos (Events):**
+  - **`Create Event`**: Se implementó una prueba para la creación de eventos, verificando que el ID y el nombre ingresados se almacenen correctamente en el repositorio *mock*.
+  - **`Get Events`**: Se comprobó la visualización del listado de eventos mediante la verificación del tamaño de la lista obtenida desde el repositorio simulado.
+  - **`Update Event`**: Se probó el flujo de modificación de un evento, validando el cambio efectivo de su nombre en el registro *mock*.
+
+Test de Announcement
+
+<p align="center">
+  <img src="https://i.imgur.com/09O3VUx.png" alt="Descripción">
+</p>
+
+Test de Event
+
+<p align="center">
+  <img src="https://i.imgur.com/iQzBknY.png" alt="Descripción">
+</p>
 
 ### 6.1.2. Core Integration Tests
 
@@ -63,6 +87,17 @@ A nivel de implementación (`MultiTenancyAndFlowIntegrationTests`), estas prueba
 <p align="center">
   <img src="https://i.imgur.com/rC1N1xt.png" alt="Descripción">
 </p>
+**Aplicación Móvil**
+
+Adicionalmente a las pruebas de interoperabilidad y *multi-tenancy* realizadas en el entorno de Spring Boot, se implementaron pruebas de integración en el ecosistema móvil para asegurar que las distintas capas y módulos de la aplicación en Flutter operen de forma sinérgica al interactuar entre sí.
+
+- **Integración Core (`Facade syncs both modules`):** Se desarrolló una prueba específica para evaluar el flujo de integración mediante el uso del patrón Facade. Esta prueba verifica las llamadas conjuntas a los repositorios de obtención de eventos y anuncios, simulando de manera precisa el proceso de sincronización de datos de la interfaz de usuario.
+
+<p align="center">
+  <img src="https://i.imgur.com/T03URRv.png" alt="Descripción">
+</p>
+
+
 
 ### 6.1.3. Core Behavior-Driven Development
 

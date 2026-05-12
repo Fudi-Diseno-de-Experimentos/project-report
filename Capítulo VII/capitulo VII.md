@@ -6,15 +6,15 @@
 En el desarrollo del proyecto se ha adoptado un conjunto de herramientas y prácticas orientadas a asegurar la integración continua del software, facilitando la colaboración entre los distintos miembros del equipo y garantizando la calidad del código a lo largo del ciclo de desarrollo.
 * **Herramientas utilizadas**
   * Backend: OpenJDK, Spring Boot y Apache Maven para la construcción y ejecución del servicio backend.
-  * Frontend móvil: Android Studio como entorno de desarrollo principal para la aplicación móvil.
-  * Base de datos: PostgreSQL desplegado en Render para la persistencia de datos.
+  * Frontend móvil: Android Studio Flutter como entorno de desarrollo principal para la aplicación móvil.
+  * Base de datos: PostgreSQL supabase para la persistencia de datos.
   * Control de versiones: Git como sistema de control de versiones y GitHub como repositorio central del proyecto.
   * Despliegue: Render como plataforma de despliegue del backend.
   * Almacenamiento externo: Cloudinary para la gestión de recursos multimedia.
   * Gestión del proyecto: Trello para la organización de tareas y seguimiento del progreso.
   * Gestión de requisitos: UXPressia para modelado de necesidades de usuario.
   * Documentación técnica: PlantUML para diagramas de arquitectura y diseño.
-  * Diseño UI/UX: Material Design 3 como guía de diseño visual, complementado con herramientas de prototipado (como Figma en algunos casos).
+  * Diseño UI/UX: Material Design 3 como guía de diseño visual, complementado con herramientas de prototipado.
 
 
 * **Prácticas de desarrollo**
@@ -25,13 +25,15 @@ Asimismo, se emplea versionado semántico (SemVer), facilitando la gestión de r
 ### 7.1.2. Build & Test Suite Pipeline Components
 El pipeline de integración del proyecto se compone de distintas etapas orientadas a la construcción y validación del software antes de su integración al entorno compartido.
 
-**Etapa de construcción (Build)**
+**Etapa de construcción **
+
 * El backend es construido utilizando Apache Maven, que gestiona dependencias, compilación y empaquetado del proyecto Spring Boot.
-* La aplicación móvil es construida mediante Android Studio, generando las versiones ejecutables del sistema móvil.
+* La aplicación móvil es construida en Flutter, generando las versiones ejecutables del sistema móvil.
 * El código fuente es obtenido desde GitHub, específicamente desde la rama develop, donde se integran las funcionalidades del equipo.
 
-**Etapa de pruebas (Testing Suite)**
+**Etapa de pruebas**
 *El sistema incorpora distintos niveles de pruebas para garantizar la calidad del software.*
+
 * Core Entities Unit Tests: validan la lógica de dominio de los principales componentes del sistema.
 * Core Integration Tests: verifican la correcta interacción entre módulos del backend, incluyendo flujos multi-tenancy y comunicación entre contextos.
 * System/UI Tests: realizados mediante Selenium IDE, validando el correcto funcionamiento de la landing page y sus componentes interactivos.
@@ -45,7 +47,7 @@ El pipeline de integración del proyecto se compone de distintas etapas orientad
 El proceso de entrega continua del sistema se basa en un conjunto de herramientas que permiten la publicación y actualización progresiva de los componentes del sistema en entornos de desarrollo y producción.
 * **Herramientas utilizadas**
   * Render: Utilizado para el despliegue del backend en la nube.
-  * PostgreSQL (Render): Base de datos gestionada en la nube para el entorno de producción.
+  * PostgreSQL: Base de datos gestionada en la nube para el entorno de producción.
   * Cloudinary: Almacenamiento y gestión de recursos multimedia en la nube.
   * GitHub: Repositorio central desde donde se obtienen las versiones del código para despliegue.
   * Android Studio: Utilizado para generar y actualizar las versiones de la aplicación móvil.
@@ -61,7 +63,7 @@ El pipeline de despliegue del sistema se estructura en varias etapas que garanti
     Los cambios realizados por los desarrolladores son integrados en la rama develop del repositorio en GitHub, siguiendo el flujo de GitFlow.
 2. Construcción del sistema:
     * El backend es compilado utilizando Maven.
-    * La aplicación móvil es construida en Android Studio. 
+    * La aplicación móvil es construida en Flutter. 
 3. Validación mediante pruebas:
     Antes del despliegue, se ejecutan pruebas unitarias, de integración y pruebas de interfaz (Selenium), asegurando la estabilidad del sistema.
 4. Despliegue del backend:
