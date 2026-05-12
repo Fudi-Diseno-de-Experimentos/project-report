@@ -108,8 +108,9 @@ Adicionalmente a las pruebas de interoperabilidad y *multi-tenancy* realizadas e
 
 En esta sección se presentan las pruebas de desarrollo dirigido por comportamiento (BDD) implementadas para validar que las funcionalidades clave de Centralis cumplan con los requisitos del negocio desde la perspectiva del usuario final. A través de la metodología BDD, se formulan escenarios específicos en lenguaje natural (Given-When-Then) que describen el comportamiento esperado de las características principales del sistema, tales como la gestión de eventos, anuncios y chats grupales. Estas pruebas actúan como puente entre los requisitos funcionales y la implementación técnica, asegurando que cada funcionalidad entregue valor real a gerentes y empleados, y que los cambios y ajustes del producto respondan fielmente a las necesidades descritas en las historias de usuario.
 
-### 1. Description: Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento.
+**1. Description: Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento.**
 
+```gherkin
 Feature: Modificación de eventos
 
 Scenario: Cambiar fecha de evento
@@ -117,48 +118,57 @@ Given que el gerente necesita posponer un eventos,
 When edita la fecha del evento y guarda los cambios,
 Then el sistema notifica automáticamente a los invitados sobre la nueva fecha,
 And actualiza el evento en la lista de eventos.
+```
 
-### Evidencias:
+**Evidencias:**
 
  <img src="https://imgur.com/I52Q2nr.jpg" alt="cambiar fecha de evento">
 
-### Interpretación:
+**Interpretación:**
 
 La evidencia demuestra que el gerente puede seleccionar un evento existente y modificar su fecha de forma intuitiva desde la interfaz móvil. El sistema procesa el cambio y lo refleja en tiempo real en la lista de eventos, confirmando que la funcionalidad de actualización opera correctamente sin perder los datos del evento.
 
-### 2. Description: Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos.
+**2. Description: Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos.**
 
+```gherkin
 Feature: Edición de mensajes
 
 Scenario: Corregir error tipográfico en mensaje
 Given que el empleado envió un mensaje con un error de ortografía,
 When selecciona el mensaje y realiza la corrección,
 Then el sistema actualiza el contenido del mensaje.
-### Evidencias:
+```
+
+**Evidencias:**
 
  <img src="https://imgur.com/Ufbjivi.jpg" alt="Corregir error mensaje">
 
-### Interpretación:
+**Interpretación:**
 
 La pantalla evidencia que el empleado tiene acceso a un menú de opciones sobre mensajes enviados, permitiendo seleccionar la opción de edición. El sistema captura la corrección del texto y la persiste, demostrando que los cambios en mensajes son procesados y almacenados sin afectar el timestamp original del envío.
 
-### 3. Description: Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas.
+**3. Description: Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas.**
 
+```gherkin
 Feature: Creación de chats grupales
 
 Scenario: Crear chat grupal para proyecto
 Given que el empleado necesita coordinar un proyecto con un equipo,
 When crea un nuevo chat, añade participantes y establece un nombre para el grupo,
 Then el sistema crea el chat con todos los miembros añadidos.
-### Evidencias:
+```
+
+**Evidencias:**
+
  <img src="https://imgur.com/DIxgZEq.jpg" alt="crear chat">
 
-### Interpretación:
+**Interpretación:**
 
 La interfaz muestra el flujo de creación de un nuevo chat grupal, donde el empleado puede ingresar el nombre del grupo y seleccionar múltiples participantes. La evidencia valida que el sistema genera correctamente el identificador único del grupo y que todos los miembros añadidos son incluidos en la conversación colectiva.
 
-### 4. Description: Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa.
+**4. Description: Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa.**
 
+```gherkin
 Feature: Creación de eventos
 
 Scenario: Crear un evento exitosamente
@@ -166,33 +176,38 @@ Given que el gerente ha iniciado sesión en la aplicación móvil,
 When crea un evento llenando los datos necesarios,
 Then el sistema guarda el evento en la base de datos,
 And lo muestra a los empleados seleccionados.
-### Evidencias:
+```
+
+**Evidencias:**
 
  <img src="https://imgur.com/e8XrUyv.jpg" alt="Crear evento">
 
-### Interpretación:
+**Interpretación:**
 
 La pantalla captura el formulario de creación de eventos con campos como título, fecha, hora, descripción y selección de empleados destinatarios. La evidencia confirma que los datos ingresados se guardan en la base de datos y que el evento es visible inmediatamente para los empleados seleccionados en sus vistas correspondientes.
 
-### 5. Description: Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información.
+**5. Description: Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información.**
 
+```gherkin
 Feature: Editar anuncio
 Scenario: Editar un anuncio existente
 Given que el gerente visualiza un anuncio publicado previamente,
 When modifica y guarda los cambios de la nueva información del anuncio,
 Then el sistema actualiza el anuncio en la base de datos,
 And los cambios se reflejan inmediatamente.
+```
 
-### Evidencias:
+**Evidencias:**
 
  <img src="https://imgur.com/XaXh2Zv.jpg" alt="editar add">
 
-### Interpretación:
+**Interpretación:**
 
 La interfaz demuestra que el gerente puede acceder a anuncios publicados previamente y modificar su contenido (título, descripción, etc.). La evidencia valida que la actualización se persiste en la base de datos y que los cambios son reflejados instantáneamente en la aplicación de todos los empleados sin requerir recargas manuales.
 
-### 6. Description: Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa.
+**6. Description: Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa.**
 
+```gherkin
 Feature: Publicación de anuncios
 
 Scenario: Publicar un anuncio exitosamente
@@ -200,15 +215,46 @@ Given que el gerente ha iniciado sesión en la aplicación móvil,
 When quiera publicar un anuncio con información relevante,
 Then el sistema guarda el anuncio en la base de datos,
 And muestra el anuncio donde los empleados puedan verlo.
+```
 
-### Evidencias:
+**Evidencias:**
 
  <img src="https://i.imgur.com/ncv7zQB.jpeg" alt="Publicar add">
 
-### Interpretación:
+**Interpretación:**
 
 La pantalla muestra el formulario de creación de anuncios donde el gerente ingresa información relevante para la empresa. La evidencia comprueba que el anuncio se almacena correctamente en la base de datos y que aparece en el feed de anuncios de todos los empleados, garantizando que la información llega a toda la organización de forma centralizada.
 
 ### 6.1.4. Core System Tests
 
-*(Sección para validación final de extremo a extremo en el entorno de producción)*
+En esta sección se detallan las pruebas de sistema realizadas para validar la integridad de la plataforma **Centralis** en su totalidad. Estas evaluaciones aseguran que la interacción entre la aplicación móvil y los servicios de backend operen correctamente bajo escenarios de uso real, cubriendo flujos completos de navegación y sincronización de datos.
+
+**Escenarios de Prueba de Sistema (E2E)**
+
+Se han ejecutado pruebas integrales que validan la respuesta del sistema en los siguientes escenarios críticos:
+
+1. **Flujo de Comunicación Organizacional:**
+
+   - **Escenario:** Un administrador publica un anuncio desde la plataforma web y un colaborador lo visualiza en la aplicación móvil nativa.
+   - **Validación:** Se confirma la correcta interacción con la API RESTful en Render y la actualización inmediata de la interfaz en Flutter, asegurando que la latencia y el formato de los datos sean los esperados.
+
+   
+
+   *Link del video:*  https://shorturl.at/LZBGu
+   Inicio 00:00 		Fin: 00:10
+
+   <img src="https://i.imgur.com/hh2gAQI.png" alt="crear chat">
+
+   
+
+2. **Sincronización de Eventos y Calendario:**
+
+   - **Escenario:** Registro de un evento corporativo y verificación de su disponibilidad para todos los usuarios pertenecientes al mismo `company_id`.
+   - **Validación:** Se valida la navegación entre módulos y la persistencia de la información en la base de datos PostgreSQL, garantizando que no existan errores de sincronización entre el estado del servidor y la vista del cliente móvil.
+
+   
+
+   *Link del video:*  https://shorturl.at/LZBGu
+   Inicio 00:10 		Fin: 00:34
+
+<img src="https://i.imgur.com/dXVz6K5.png" alt="crear chat">
