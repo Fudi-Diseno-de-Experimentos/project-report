@@ -100,8 +100,98 @@ Adicionalmente a las pruebas de interoperabilidad y *multi-tenancy* realizadas e
 
 
 ### 6.1.3. Core Behavior-Driven Development
+### prefacio:
 
-*(Sección pendiente de desarrollo según los escenarios Gherkin definidos)*
+### Description: Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento.
+
+Feature: Modificación de eventos
+
+Scenario: Cambiar fecha de evento
+Given que el gerente necesita posponer un eventos,
+When edita la fecha del evento y guarda los cambios,
+Then el sistema notifica automáticamente a los invitados sobre la nueva fecha,
+And actualiza el evento en la lista de eventos.
+
+### Evidencias:
+
+ <img src="https://imgur.com/I52Q2nr.jpg" alt="cambiar fecha de evento">
+
+### Explicación:
+
+
+
+### Description: Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos.
+
+Feature: Edición de mensajes
+
+Scenario: Corregir error tipográfico en mensaje
+Given que el empleado envió un mensaje con un error de ortografía,
+When selecciona el mensaje y realiza la corrección,
+Then el sistema actualiza el contenido del mensaje.
+### Evidencias:
+
+ <img src="https://imgur.com/Ufbjivi.jpg" alt="Corregir error mensaje">
+
+### Explicación:
+
+
+### Description: Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas.
+
+Feature: Creación de chats grupales
+
+Scenario: Crear chat grupal para proyecto
+Given que el empleado necesita coordinar un proyecto con un equipo,
+When crea un nuevo chat, añade participantes y establece un nombre para el grupo,
+Then el sistema crea el chat con todos los miembros añadidos.
+### Evidencias:
+ <img src="https://imgur.com/DIxgZEq.jpg" alt="crear chat">
+
+### Explicación:
+
+### Description: Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa.
+
+Feature: Creación de eventos
+
+Scenario: Crear un evento exitosamente
+Given que el gerente ha iniciado sesión en la aplicación móvil,
+When crea un evento llenando los datos necesarios,
+Then el sistema guarda el evento en la base de datos,
+And lo muestra a los empleados seleccionados.
+### Evidencias:
+
+ <img src="https://imgur.com/e8XrUyv.jpg" alt="Crear evento">
+
+### Explicación:
+
+
+### Description: Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información.
+
+Feature: Editar anuncio
+Scenario: Editar un anuncio existente
+Given que el gerente visualiza un anuncio publicado previamente,
+When modifica y guarda los cambios de la nueva información del anuncio,
+Then el sistema actualiza el anuncio en la base de datos,
+And los cambios se reflejan inmediatamente.
+
+### Evidencias:
+
+ <img src="https://imgur.com/XaXh2Zv.jpg" alt="editar add">
+
+### Explicación:
+
+### Description: Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa.
+
+Feature: Publicación de anuncios
+
+Scenario: Publicar un anuncio exitosamente
+Given que el gerente ha iniciado sesión en la aplicación móvil,
+When quiera publicar un anuncio con información relevante,
+Then el sistema guarda el anuncio en la base de datos,
+And muestra el anuncio donde los empleados puedan verlo.
+
+### Evidencias:
+
+ <img src="https://i.imgur.com/ncv7zQB.jpeg" alt="Publicar add">
 
 ### 6.1.4. Core System Tests
 
