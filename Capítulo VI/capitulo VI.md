@@ -17,7 +17,12 @@ Para la elaboración de los principales tests de nuestra Landing Page (**Central
 
 Gracias a la herramienta de **Selenium IDE**, se han logrado realizar los tests funcionales que aseguran que cada elemento de la interfaz responda correctamente a las acciones del usuario.
 
-![img_1.png](img_1.png)
+
+
+<img src="https://i.imgur.com/QMJS39R.png" alt="img">
+
+
+
 ---
 
 
@@ -69,7 +74,7 @@ En esta sección se detalla la realización de las pruebas de integración imple
 
 Se realizó un test automatizado utilizando Selenium IDE para verificar el correcto funcionamiento de la landing page de Centralis. El objetivo del test fue asegurarse de que los elementos clave de la página, como el título principal, la navegación y los botones de acción ("Get Started", "Explore Features"), se cargaran correctamente y fueran interactivos, garantizando una experiencia de usuario óptima.
 
-![img_2.png](img_2.png)
+<img src="https://i.imgur.com/VD9fYhk.png" alt="img2">
 
 
 
@@ -182,7 +187,7 @@ And los cambios se reflejan inmediatamente.
 
  <img src="https://imgur.com/XaXh2Zv.jpg" alt="editar add">
 
-### Explicación:
+### Interpretación:
 
 La interfaz demuestra que el gerente puede acceder a anuncios publicados previamente y modificar su contenido (título, descripción, etc.). La evidencia valida que la actualización se persiste en la base de datos y que los cambios son reflejados instantáneamente en la aplicación de todos los empleados sin requerir recargas manuales.
 
@@ -200,7 +205,7 @@ And muestra el anuncio donde los empleados puedan verlo.
 
  <img src="https://i.imgur.com/ncv7zQB.jpeg" alt="Publicar add">
 
-### Explicación:
+### Interpretación:
 
 La pantalla muestra el formulario de creación de anuncios donde el gerente ingresa información relevante para la empresa. La evidencia comprueba que el anuncio se almacena correctamente en la base de datos y que aparece en el feed de anuncios de todos los empleados, garantizando que la información llega a toda la organización de forma centralizada.
 
