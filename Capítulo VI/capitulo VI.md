@@ -100,7 +100,7 @@ Para la elaboración de los principales tests de nuestra Landing Page (**Central
 
 Para la **Landing Page**, gracias a la herramienta de **Selenium IDE**, se han logrado realizar los tests funcionales que aseguran que cada elemento de la interfaz responda correctamente a las acciones del usuario. Por otro lado, para el entorno **Mobile**, se ha implementado **Patrol** como framework de pruebas E2E, permitiendo validar la interacción real y el comportamiento de la interfaz en dispositivos móviles.
 
-![img_1.png](img_1.png)
+![img_1.png](https://i.imgur.com/f9OSU7T.png)
 
 ---
 
@@ -146,22 +146,22 @@ La ejecución de las pruebas integradas valida que la lógica para registrar inv
 #### **Landing Page test**
 Se realizó un test automatizado utilizando Selenium IDE para verificar el correcto funcionamiento de la landing page de Centralis. El objetivo del test fue asegurarse de que los elementos clave de la página, como el título principal, la navegación y los botones de acción ("Get Started", "Explore Features"), se cargaran correctamente y fueran interactivos, garantizando una experiencia de usuario óptima.
 
-![img_2.png](img_2.png)
+![img_2.png](https://i.imgur.com/i6lbpD6.png)
 
 #### **Mobile test**
 Se realizó un test automatizado utilizando Patrol para verificar el correcto funcionamiento de la interfaz móvil de la aplicación. El objetivo del test fue asegurar que los elementos clave de la página, el inicio de sesión y los botones de navegación interna se cargaran correctamente y fueran interactivos en dispositivos móviles, validando la experiencia de usuario y la respuesta de la interfaz bajo condiciones de uso real.
 
-![img_3.png](img_3.png)
+![img_3.png](https://i.imgur.com/yfNT8Dl.png)
 
 #### **User CRUD (Consultants/Clients)**
 Se realizó un test automatizado para verificar el funcionamiento del CRUD de los usuarios principales (Consultores y Clientes), asegurando que el proceso de crear, leer, actualizar y eliminar los registros se realice correctamente. El test abarcó la funcionalidad de un usuario que gestiona su perfil, edita su información de contacto y elimina entradas, todo esto con el objetivo de garantizar que la plataforma maneje los datos de manera eficiente y sin errores.
 
-![img_4.png](img_4.png)
+![img_4.png](https://i.imgur.com/2bxlkll.png)
 
 #### **Appointment / Agenda CRUD**
 Se realizó un test automatizado para validar el correcto funcionamiento del sistema de gestión de agendas y citas de Centralis, asegurando que los usuarios puedan registrar, visualizar, actualizar y eliminar sus compromisos o reuniones sin inconvenientes. Este test garantizó que los integrantes del equipo puedan interactuar con el calendario de forma fluida.
 
-![img_5.png](img_5.png)
+![img_5.png](https://i.imgur.com/O8rNdTX.png)
 
 ---
 
