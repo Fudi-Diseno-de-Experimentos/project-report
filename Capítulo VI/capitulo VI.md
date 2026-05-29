@@ -2,231 +2,281 @@
 
 ## 6.1. Testing Suites & Validation
 
+La verificación del backend de **Centralis** (`web-service`, Spring Boot 3.5.5 / Java 24) se organiza en cuatro suites complementarias, cada una con un propósito distinto dentro de la pirámide de pruebas. Todas las pruebas se ejecutan con `./mvnw.cmd test` y validan **únicamente comportamiento realmente implementado**, trazado a las User Stories (US) del backlog del proyecto.
+
+| Suite | Nivel | Aísla | Tecnología | Pruebas |
+|---|---|---|---|---|
+| Unit Tests | Dominio puro | Sin Spring, sin BD | JUnit 5 + Mockito | 43 |
+| Integration Tests | Aplicación + persistencia | Spring real + H2 | `@SpringBootTest` + JPA | 12 |
+| Behavior-Driven Development | Especificación de negocio | — | Cucumber (Gherkin español) | 5 features / 14 escenarios |
+| System Tests | Sistema completo | App en puerto real | JUnit Platform Suite + `TestRestTemplate` | 1 runner |
+
+**Convenciones transversales (rúbrica de testing):**
+
+- Cada prueba lleva un `@DisplayName` descriptivo en español y sigue el patrón **AAA** (Arrange / Act / Assert).
+- Cada prueba documenta su justificación de negocio mediante un comentario `// Business / User Story Rational (USxx): ...`.
+- **No se prueban validaciones de parámetros de DTO** (`@Valid`, bean-validation); el foco está en invariantes y reglas de negocio del dominio.
+- Alcance: cinco contextos acotados principales — **announcement, event, chat, company, iam**. Los contextos `notification`, `dashboard` y `profile` quedan fuera del alcance de las suites.
+- **Notificaciones / Firebase (FCM)** se mockean (`@MockBean FirebaseConfiguration`, `@MockBean FirebaseCloudMessagingService`) para que el contexto arranque de forma hermética sin credenciales y sin efectos externos.
+
+---
+
 ### 6.1.1. Core Entities Unit Tests
 
-En esta sección se detalla la implementación y ejecución de las pruebas unitarias diseñadas para validar la lógica de negocio atómica de las entidades principales de **Centralis**. El objetivo primordial es garantizar que los modelos de dominio, validaciones de atributos y funciones clave operen correctamente en total aislamiento de dependencias externas como bases de datos o servicios de red.
+Las pruebas unitarias verifican las **invariantes y el comportamiento de los agregados y value objects del dominio**, sin levantar el contexto de Spring ni acceder a base de datos. Cubren las ocho categorías de la rúbrica: *happy path*, límites superior/inferior, excepción por datos insuficientes, excepción por estado inválido, condicionales A/B e integridad de datos.
 
-**Landing Page test**
+Ubicación: `src/test/java/synera/centralis/api/<contexto>/unit/<Contexto>UnitTest.java`.
 
-Para la elaboración de los principales tests de nuestra Landing Page (**Centralis**), hemos tenido en cuenta las secciones más importantes que garantizan la correcta navegación y propuesta de valor para el usuario:
+#### Announcement — `AnnouncementUnitTest` (10 pruebas, US10–US13)
+
+Prueba el agregado `Announcement` y el value object `Priority`.
+
+| Categoría | Prueba | US |
+|---|---|---|
+| Happy | Publicar un anuncio válido queda registrado | US10 |
+| Límite superior | Título de exactamente 200 caracteres es aceptado | US10 |
+| Límite superior | Título de 201 caracteres es rechazado | US10 |
+| Límite superior | Descripción de 5001 caracteres es rechazada | US10 |
+| Datos insuficientes | Descripción nula impide crear el anuncio | US10 |
+| Estado inválido | No se puede degradar la prioridad a nula | US11 |
+| Condicional A | Un anuncio HIGH o URGENT se considera destacado | US11 |
+| Condicional B | Solo URGENT dispara la urgencia | US11 |
+| Integridad | Editar un anuncio actualiza y recorta sus campos | US12 |
+| Integridad | `Priority` no admite nivel nulo | US11 |
+
+**Evidencia de ejecución:** https://imgur.com/a/wGVawnE
+
+![img_6.png](https://i.imgur.com/w7SLwCE.jpeg)
+
+Nota: Se muestra la ejecución exitosa de la suite de pruebas del proyecto centralis, la cual valida la integridad y el comportamiento esperado de los agregados del dominio, incluyendo Announcement, Event y Chat.
+#### Event — `EventUnitTest` (8 pruebas, US18–US21)
+
+Prueba las invariantes del agregado `Event`.
+
+| Categoría | Prueba | US |
+|---|---|---|
+| Happy | Crear un evento con un invitado queda registrado | US18 |
+| Límite superior | Título de 200 caracteres es aceptado | US18 |
+| Límite superior | Descripción de 1001 caracteres es rechazada | US18 |
+| Límite inferior / datos insuficientes | Un evento sin invitados es inválido | US18 |
+| Estado inválido | No se puede agregar un invitado nulo | US18 |
+| Condicional A | Editar solo la fecha conserva el resto de datos | US20 |
+| Condicional B | `isRecipient` distingue invitados de no invitados | US18 |
+| Integridad | Agregar y quitar invitados ajusta el conteo | US20 |
+
+**Evidencia de ejecución:** https://imgur.com/a/JRTadpa
+
+![img_8.png](https://i.imgur.com/djhZ9ei.jpeg)
+
+Nota: Se muestra la ejecución exitosa de la suite de pruebas del proyecto centralis, la cual valida la integridad y el comportamiento esperado de los agregados del dominio, incluyendo Announcement, Event y Chat.
+#### Chat — `ChatUnitTest` (9 pruebas, US23–US28)
+
+Prueba el agregado `Group`, incluida la conversación directa.
+
+| Categoría | Prueba | US |
+|---|---|---|
+| Happy | Crear un grupo agrega al creador automáticamente | US23 |
+| Límite superior | Nombre de 101 caracteres es rechazado | US23 |
+| Límite inferior | No se puede quitar al último miembro | US24/US28 |
+| Estado inválido | No se puede agregar un miembro duplicado | US23 |
+| Estado inválido | No se puede quitar a un no miembro | US24 |
+| Datos insuficientes | Conversación directa consigo mismo es inválida | US25 |
+| Condicional A | Una conversación directa se marca como directa | US25 |
+| Condicional B | Actualizar solo el nombre conserva la visibilidad | US23 |
+| Integridad | Agregar un miembro nuevo incrementa el conteo | US23 |
+
+**Evidencia de ejecución:** https://imgur.com/a/bJBJQyE
+
+![img_7.png](https://i.imgur.com/No6oLI0.jpeg)
+
+Nota: Se muestra la ejecución exitosa de la suite de pruebas del proyecto centralis, la cual valida la integridad y el comportamiento esperado de los agregados del dominio, incluyendo Announcement, Event y Chat.
+### Landing Page & Mobile
+Para la elaboración de los principales tests de nuestra Landing Page (**Centralis**) y nuestra aplicación móvil, hemos tenido en cuenta las secciones más importantes que garantizan la correcta navegación y propuesta de valor para el usuario:
 
 * **Features:** Verificación de la visibilidad de las funcionalidades clave para la alineación de equipos.
 * **How it works:** Validación del flujo de información sobre el funcionamiento del hub centralizado.
 * **Product / Help Center:** Comprobación de los accesos a la documentación y soporte.
 * **Sign In / Get Started:** Test de interactividad de los botones de llamada a la acción (Call to Action).
 
-Gracias a la herramienta de **Selenium IDE**, se han logrado realizar los tests funcionales que aseguran que cada elemento de la interfaz responda correctamente a las acciones del usuario.
+Para la **Landing Page**, gracias a la herramienta de **Selenium IDE**, se han logrado realizar los tests funcionales que aseguran que cada elemento de la interfaz responda correctamente a las acciones del usuario. Por otro lado, para el entorno **Mobile**, se ha implementado **Patrol** como framework de pruebas E2E, permitiendo validar la interacción real y el comportamiento de la interfaz en dispositivos móviles.
 
-
-
-<img src="https://i.imgur.com/QMJS39R.png" alt="img">
-
-
+![img_1.png](img_1.png)
 
 ---
-
-
-
-**Web Service test**
-
-A nivel de implementación (`BoundedContextsUnitTests`), las pruebas evalúan la creación de comandos dentro de los contextos acotados de Events, Chats y Announcements. Esto asegura que las abstracciones de dominio (como `CompanyId` o los distintos `UserId`) protejan la integridad de los datos. Se han ejecutado y superado un total de cuatro pruebas unitarias:
-
-- Se procesan exitosamente los comandos de creación de dominio para los contextos de **ANNOUNCEMENT** y **EVENTS**.
-- Se validan fallos intencionados al intentar crear un anuncio (`ANNOUNCEMENT`) o un grupo de chat (`CHATS (Groups)`) cuando falta información obligatoria o se incumplen reglas de negocio, corroborando que se lanzan las excepciones correspondientes para mantener la seguridad estructural del sistema.
-
-
-
-<p align="center">
-  <img src="https://i.imgur.com/NraHgCl.png" alt="Descripción">
-</p>
-
-
-**Aplicación Móvil (Flutter)**
-
-Para complementar las evaluaciones de los servicios web, se diseñaron y ejecutaron pruebas unitarias en la aplicación móvil nativa con el fin de asegurar el aislamiento y correcto funcionamiento de la lógica de presentación y manejo de estado. Estas pruebas utilizan repositorios simulados (*mocks*) para evitar dependencias externas durante la validación de las entidades:
-
-- **Contexto de Anuncios (Announcements):**
-  - **`Create Announcement`**: Se probó el flujo de creación de un anuncio, verificando rigurosamente que tanto el ID como el título se guarden de forma correcta en el repositorio *mock*.
-  - **`Get Announcements`**: Se evaluó la capacidad de listado del sistema, verificando el tamaño exacto de la lista de anuncios devuelta por el repositorio simulado.
-  - **`Update Announcement`**: Se validó la lógica de actualización, comprobando que el cambio de título se refleje adecuadamente en el registro *mock*.
-- **Contexto de Eventos (Events):**
-  - **`Create Event`**: Se implementó una prueba para la creación de eventos, verificando que el ID y el nombre ingresados se almacenen correctamente en el repositorio *mock*.
-  - **`Get Events`**: Se comprobó la visualización del listado de eventos mediante la verificación del tamaño de la lista obtenida desde el repositorio simulado.
-  - **`Update Event`**: Se probó el flujo de modificación de un evento, validando el cambio efectivo de su nombre en el registro *mock*.
-
-Test de Announcement
-
-<p align="center">
-  <img src="https://i.imgur.com/09O3VUx.png" alt="Descripción">
-</p>
-
-Test de Event
-
-<p align="center">
-  <img src="https://i.imgur.com/iQzBknY.png" alt="Descripción">
-</p>
 
 ### 6.1.2. Core Integration Tests
 
-En esta sección se detalla la realización de las pruebas de integración implementadas en la arquitectura. El objetivo central de estas evaluaciones es asegurar que los diferentes módulos, servicios y componentes del sistema funcionen correctamente de forma conjunta y cuando interactúan entre sí. A través de estas pruebas conjuntas, se verifica la interoperabilidad, garantizando que la comunicación entre contextos, la persistencia en las bases de datos y los flujos transaccionales mantengan la integridad estructural y la exactitud en el flujo de información de la plataforma.
+#### Announcement Integration Tests
+| Contexto | Prueba | Verifica | US |
+|---|---|---|---|
+| Announcement | Publicar y consultar anuncio | Persistencia real + recuperación por listado | US10 |
+| Announcement | Listado aislado por compañía | **Multi-tenant**: cada empresa solo ve lo suyo | US10 |
 
-**Landing Page test**
+**Evidencia de ejecución:** https://imgur.com/a/9QHjfFb
 
+![img_9.png](https://i.imgur.com/6538moV.png)
+
+Esta sección documenta la validación de la capa de servicios de aplicación. El componente AnnouncementCommandServiceImpl (ver imagen abajo) gestiona las operaciones de comando para los anuncios, asegurando la integridad transaccional mediante @Transactional y la correcta inyección de repositorios.
+
+La ejecución de las pruebas integradas confirma que la lógica de negocio, incluyendo la publicación de eventos (UrgentAnnouncementCreatedEvent) y la persistencia en base de datos H2, se comporta según lo definido en el dominio.
+
+#### Chat Integration Tests
+| Contexto | Prueba | Verifica | US |
+|---|---|---|---|
+| Chat | Crear y consultar grupo | Persistencia + creador como miembro | US23 |
+| Chat | Grupo aislado por compañía | Inaccesible desde otro tenant | US23 |
+
+**Evidencia de ejecución:** https://imgur.com/a/4xP59S1
+
+![img_10.png](https://i.imgur.com/FYJk9yc.png)
+
+La ejecución de la suite de pruebas integradas valida que la lógica de negocio para la creación de mensajes y la verificación de membresía en grupos se integra correctamente con la capa de persistencia y el sistema de eventos.
+#### Event Integration Tests
+| Contexto | Prueba | Verifica | US |
+|---|---|---|---|
+| Event | Crear y consultar evento | Persistencia con sus invitados | US18 |
+| Event | Eventos aislados por compañía | Aislamiento por tenant | US18 |
+
+**Evidencia de ejecución:** https://imgur.com/a/MOHCHsc
+
+![img_11.png](https://i.imgur.com/B8iSVUZ.png)
+
+La ejecución de las pruebas integradas valida que la lógica para registrar invitados y gestionar fechas se integra correctamente, asegurando que las restricciones de dominio (como la validación de invitados nulos) se cumplan durante la persistencia.
+
+#### **Landing Page test**
 Se realizó un test automatizado utilizando Selenium IDE para verificar el correcto funcionamiento de la landing page de Centralis. El objetivo del test fue asegurarse de que los elementos clave de la página, como el título principal, la navegación y los botones de acción ("Get Started", "Explore Features"), se cargaran correctamente y fueran interactivos, garantizando una experiencia de usuario óptima.
 
-<img src="https://i.imgur.com/VD9fYhk.png" alt="img2">
+![img_2.png](img_2.png)
 
+#### **Mobile test**
+Se realizó un test automatizado utilizando Patrol para verificar el correcto funcionamiento de la interfaz móvil de la aplicación. El objetivo del test fue asegurar que los elementos clave de la página, el inicio de sesión y los botones de navegación interna se cargaran correctamente y fueran interactivos en dispositivos móviles, validando la experiencia de usuario y la respuesta de la interfaz bajo condiciones de uso real.
 
+![img_3.png](img_3.png)
+
+#### **User CRUD (Consultants/Clients)**
+Se realizó un test automatizado para verificar el funcionamiento del CRUD de los usuarios principales (Consultores y Clientes), asegurando que el proceso de crear, leer, actualizar y eliminar los registros se realice correctamente. El test abarcó la funcionalidad de un usuario que gestiona su perfil, edita su información de contacto y elimina entradas, todo esto con el objetivo de garantizar que la plataforma maneje los datos de manera eficiente y sin errores.
+
+![img_4.png](img_4.png)
+
+#### **Appointment / Agenda CRUD**
+Se realizó un test automatizado para validar el correcto funcionamiento del sistema de gestión de agendas y citas de Centralis, asegurando que los usuarios puedan registrar, visualizar, actualizar y eliminar sus compromisos o reuniones sin inconvenientes. Este test garantizó que los integrantes del equipo puedan interactuar con el calendario de forma fluida.
+
+![img_5.png](img_5.png)
 
 ---
 
-**Web Service**
-
-A nivel de implementación (`MultiTenancyAndFlowIntegrationTests`), se han verificado satisfactoriamente los siguientes escenarios críticos en el entorno de Spring Boot:
-
-- **Aislamiento Multi-tenancy:** Se validó con éxito que un usuario perteneciente a la "Company B" no tiene autorización para acceder a los recursos o datos de la "Company A". Esta prueba es fundamental para garantizar el cumplimiento normativo y la privacidad de cada organización cliente dentro de la infraestructura compartida.  
-- **Flujo de Chats:** Se comprobó la capacidad del sistema para crear canales de comunicación y enviar mensajes de forma reactiva, asegurando que la lógica de mensajería interna sea consistente y persistente.
-- **Flujo de Anuncios:** Se evaluó el ciclo de vida completo de los comunicados oficiales, incluyendo la creación, edición y la capacidad de dejar comentarios. Esta prueba confirma que las interacciones de los colaboradores con los anuncios corporativos se procesan sin errores de integridad.
-- **Flujo de Eventos:** Se validó la gestión operativa de la agenda institucional, permitiendo crear, editar y eliminar eventos de manera fluida. Se verificó que los cambios de estado en las actividades se reflejen correctamente en la base de datos centralizada.
-
-<p align="center">
-  <img src="https://i.imgur.com/eETh5Ds.png" alt="Descripción">
-</p>
-
-**Aplicación Móvil**
-
-Se han validado satisfactoriamente los siguientes flujos de integración en los módulos core:
-
-- **Flujo de Eventos corporativos:** Se comprobó la capacidad de la aplicación para gestionar el ciclo de vida de las actividades, permitiendo crear, editar y eliminar eventos dentro de la agenda organizacional de forma fluida.
-- **Interacción en Anuncios:** Se evaluó la integración de las funciones de comunicación oficial, confirmando que los procesos de creación, edición y la gestión de comentarios en los anuncios se ejecutan sin errores de sincronización.
-
-<p align="center">
-  <img src="https://i.imgur.com/NHazb88.png" alt="Descripción">
-</p>
-
-
-
-
 ### 6.1.3. Core Behavior-Driven Development
 
-En esta sección se presentan las pruebas de desarrollo dirigido por comportamiento (BDD) implementadas para validar que las funcionalidades clave de Centralis cumplan con los requisitos del negocio desde la perspectiva del usuario final. A través de la metodología BDD, se formulan escenarios específicos en lenguaje natural (Given-When-Then) que describen el comportamiento esperado de las características principales del sistema, tales como la gestión de eventos, anuncios y chats grupales. Estas pruebas actúan como puente entre los requisitos funcionales y la implementación técnica, asegurando que cada funcionalidad entregue valor real a gerentes y empleados, y que los cambios y ajustes del producto respondan fielmente a las necesidades descritas en las historias de usuario.
+El desarrollo guiado por comportamiento (BDD) expresa los criterios de aceptación de las User Stories como **especificaciones ejecutables en Gherkin español** (`# language: es`). Cada feature usa `Característica:`, escenarios `Dado/Cuando/Entonces/Y` y se vincula a su US en la cabecera.
 
-**1. Description: Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento.**
+Ubicación: `src/test/resources/synera/centralis/api/cucumber/`. Los archivos siguen el patrón `USxx-Titulo.feature`:
 
-```gherkin
-Feature: Modificación de eventos
+| Feature | US | Escenarios | Técnica destacada |
+|---|---|---|---|
+| `US10-Publicacion-basica-de-anuncios.feature` | US10, US11 | 1 + Esquema (3 ejemplos) | `Esquema del escenario` + `Ejemplos` con prioridades NORMAL/HIGH/URGENT |
+| `US18-Creacion-basica-de-eventos.feature` | US18, US34 | 2 | `Data Table` de invitados + escenario de denegación por rol |
+| `US23-Creacion-de-chats-grupales.feature` | US23 | 2 | `Data Table` de miembros (grupo público y privado) |
+| `US41-Registro-de-nueva-compania.feature` | US41 | 1 + Esquema (3 ejemplos) | `Esquema del escenario` + `Ejemplos` con distintos RUC |
+| `US34-Restringir-el-acceso-a-la-API.feature` | US34 | 2 | Acceso autenticado vs. solicitud sin token |
 
-Scenario: Cambiar fecha de evento
-Given que el gerente necesita posponer un eventos,
-When edita la fecha del evento y guarda los cambios,
-Then el sistema notifica automáticamente a los invitados sobre la nueva fecha,
-And actualiza el evento en la lista de eventos.
-```
+Cumplimiento de la rúbrica: ≥2 features con `Esquema del escenario` + `Ejemplos` (announcement, company), ≥2 features con `Data Table` (event, chat). Los decimales, cuando aplican, se manejan como `String` y no como `{double}`.
 
-**Evidencias:**
-
- <img src="https://imgur.com/I52Q2nr.jpg" alt="cambiar fecha de evento">
-
-**Interpretación:**
-
-La evidencia demuestra que el gerente puede seleccionar un evento existente y modificar su fecha de forma intuitiva desde la interfaz móvil. El sistema procesa el cambio y lo refleja en tiempo real en la lista de eventos, confirmando que la funcionalidad de actualización opera correctamente sin perder los datos del evento.
-
-**2. Description: Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos.**
+Ejemplo (`US10-Publicacion-basica-de-anuncios.feature`):
 
 ```gherkin
-Feature: Edición de mensajes
+# language: es
+Característica: Publicación de anuncios
 
-Scenario: Corregir error tipográfico en mensaje
-Given que el empleado envió un mensaje con un error de ortografía,
-When selecciona el mensaje y realiza la corrección,
-Then el sistema actualiza el contenido del mensaje.
+  Esquema del escenario: Publicar anuncios con distintas prioridades
+    Dado que el gerente ha iniciado sesión para publicar anuncios
+    Cuando publica un anuncio con título "<titulo>" y prioridad "<prioridad>"
+    Entonces el anuncio se guarda correctamente
+    Y la prioridad registrada es "<prioridad>"
+
+    Ejemplos:
+      | titulo            | prioridad |
+      | Aviso general     | NORMAL    |
+      | Cambio de horario | HIGH      |
+      | Evacuación        | URGENT    |
 ```
 
-**Evidencias:**
+Las *step definitions* (`<Contexto>StepDefinitions`) usan anotaciones Cucumber en español (`@Dado`, `@Cuando`, `@Entonces`, `@Y`) y heredan de `AbstractCucumberSteps`, que centraliza la autenticación simulada y las llamadas HTTP.
 
- <img src="https://imgur.com/Ufbjivi.jpg" alt="Corregir error mensaje">
-
-**Interpretación:**
-
-La pantalla evidencia que el empleado tiene acceso a un menú de opciones sobre mensajes enviados, permitiendo seleccionar la opción de edición. El sistema captura la corrección del texto y la persiste, demostrando que los cambios en mensajes son procesados y almacenados sin afectar el timestamp original del envío.
-
-**3. Description: Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas.**
-
+Ejemplo (US18-Creacion-basica-de-eventos.feature):
 ```gherkin
-Feature: Creación de chats grupales
 
-Scenario: Crear chat grupal para proyecto
-Given que el empleado necesita coordinar un proyecto con un equipo,
-When crea un nuevo chat, añade participantes y establece un nombre para el grupo,
-Then el sistema crea el chat con todos los miembros añadidos.
-```
+# language: es
+Característica: Creación básica de eventos
 
-**Evidencias:**
+Esquema del escenario: Registrar eventos con distintas fechas
+Dado que el gerente ha iniciado sesión para crear eventos
+Cuando registra un evento con título "<titulo>" y fecha "<fecha>"
+Entonces el evento se guarda correctamente
+Y la fecha registrada es "<fecha>"
 
- <img src="https://imgur.com/DIxgZEq.jpg" alt="crear chat">
+Ejemplos:
+| titulo               | fecha      |
+| Capacitación técnica | 2026-06-15 |
+| Reunión directorio   | 2026-06-20 |
+Ejemplo (US18-Creacion-basica-de-eventos.feature):
 
-**Interpretación:**
+ ``` 
+Nota: Las step definitions (EventStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
-La interfaz muestra el flujo de creación de un nuevo chat grupal, donde el empleado puede ingresar el nombre del grupo y seleccionar múltiples participantes. La evidencia valida que el sistema genera correctamente el identificador único del grupo y que todos los miembros añadidos son incluidos en la conversación colectiva.
-
-**4. Description: Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa.**
-
+Ejemplo (US23-Creacion-de-chats-grupales.feature):
 ```gherkin
-Feature: Creación de eventos
 
-Scenario: Crear un evento exitosamente
-Given que el gerente ha iniciado sesión en la aplicación móvil,
-When crea un evento llenando los datos necesarios,
-Then el sistema guarda el evento en la base de datos,
-And lo muestra a los empleados seleccionados.
-```
+# language: es
+Característica: Creación de chats grupales
 
-**Evidencias:**
+Esquema del escenario: Crear grupos de chat según visibilidad
+Dado que el empleado ha iniciado sesión para crear un grupo
+Cuando crea un grupo con nombre "<nombre>" y visibilidad "<visibilidad>"
+Entonces el grupo se registra correctamente
+Y el estado del grupo es "<visibilidad>"
 
- <img src="https://imgur.com/e8XrUyv.jpg" alt="Crear evento">
+Ejemplos:
+| nombre      | visibilidad |
+| Equipo IT   | PUBLICO     |
+| Gerencia    | PRIVADO     |
+   ``` 
+Nota: Las step definitions (ChatStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
-**Interpretación:**
-
-La pantalla captura el formulario de creación de eventos con campos como título, fecha, hora, descripción y selección de empleados destinatarios. La evidencia confirma que los datos ingresados se guardan en la base de datos y que el evento es visible inmediatamente para los empleados seleccionados en sus vistas correspondientes.
-
-**5. Description: Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información.**
-
+Ejemplo (US34-Restringir-el-acceso-a-la-API.feature):
 ```gherkin
-Feature: Editar anuncio
-Scenario: Editar un anuncio existente
-Given que el gerente visualiza un anuncio publicado previamente,
-When modifica y guarda los cambios de la nueva información del anuncio,
-Then el sistema actualiza el anuncio en la base de datos,
-And los cambios se reflejan inmediatamente.
-```
+# language: es
+Característica: Restringir el acceso a la API
 
-**Evidencias:**
+Esquema del escenario: Validar intentos de acceso no autorizado
+  Dado que existe una solicitud hacia un endpoint "<endpoint>"
+  Cuando el usuario intenta acceder sin token válido
+  Entonces el sistema deniega el acceso
+  Y responde con estado "<codigo>"
 
- <img src="https://imgur.com/XaXh2Zv.jpg" alt="editar add">
+Ejemplos:
+| endpoint      | codigo |
+| /api/v1/chat  | 403    |
+| /api/v1/event | 403    |
+   ``` 
+Nota: Las step definitions (SecurityStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
-**Interpretación:**
-
-La interfaz demuestra que el gerente puede acceder a anuncios publicados previamente y modificar su contenido (título, descripción, etc.). La evidencia valida que la actualización se persiste en la base de datos y que los cambios son reflejados instantáneamente en la aplicación de todos los empleados sin requerir recargas manuales.
-
-**6. Description: Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa.**
-
+Ejemplo (US41-Registro-de-nueva-compania.feature):
 ```gherkin
-Feature: Publicación de anuncios
+# language: es
+Característica: Registro de nueva compañía
 
-Scenario: Publicar un anuncio exitosamente
-Given que el gerente ha iniciado sesión en la aplicación móvil,
-When quiera publicar un anuncio con información relevante,
-Then el sistema guarda el anuncio en la base de datos,
-And muestra el anuncio donde los empleados puedan verlo.
-```
+  Esquema del escenario: Registrar nueva empresa exitosamente
+    Dado que un usuario desea registrar una nueva compañía
+    Cuando ingresa el nombre "<nombre>" y sector "<sector>"
+    Entonces la compañía se registra correctamente
+    Y el sector registrado es "<sector>"
 
-**Evidencias:**
-
- <img src="https://i.imgur.com/ncv7zQB.jpeg" alt="Publicar add">
-
-**Interpretación:**
-
-La pantalla muestra el formulario de creación de anuncios donde el gerente ingresa información relevante para la empresa. La evidencia comprueba que el anuncio se almacena correctamente en la base de datos y que aparece en el feed de anuncios de todos los empleados, garantizando que la información llega a toda la organización de forma centralizada.
+    Ejemplos:
+      | nombre       | sector       |
+      | TechSol S.A. | Tecnología   |
+      | BioLife      | Salud        |
+  ``` 
+Nota: Las step definitions (CompanyStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
 ### 6.1.4. Core System Tests
 
@@ -238,31 +288,31 @@ Se han ejecutado pruebas integrales que validan la respuesta del sistema en los 
 
 1. **Flujo de Comunicación Organizacional:**
 
-   - **Escenario:** Un administrador publica un anuncio desde la plataforma web y un colaborador lo visualiza en la aplicación móvil nativa.
-   - **Validación:** Se confirma la correcta interacción con la API RESTful en Render y la actualización inmediata de la interfaz en Flutter, asegurando que la latencia y el formato de los datos sean los esperados.
+    - **Escenario:** Un administrador publica un anuncio desde la plataforma web y un colaborador lo visualiza en la aplicación móvil nativa.
+    - **Validación:** Se confirma la correcta interacción con la API RESTful en Render y la actualización inmediata de la interfaz en Flutter, asegurando que la latencia y el formato de los datos sean los esperados.
 
-   
 
-   *Link del video:*  https://shorturl.at/0ugjH
-   Inicio 00:00 		Fin: 00:10
+
+*Link del video:*  https://shorturl.at/0ugjH
+Inicio 00:00 		Fin: 00:10
 
    <img src="https://i.imgur.com/hh2gAQI.png" alt="crear chat">
 
-   
+
 
    <img src="https://i.imgur.com/bFIMTQe.png" alt="crear chat">
 
-   
+
 
 2. **Sincronización de Eventos y Calendario:**
 
-   - **Escenario:** Registro de un evento corporativo y verificación de su disponibilidad para todos los usuarios pertenecientes al mismo `company_id`.
-   - **Validación:** Se valida la navegación entre módulos y la persistencia de la información en la base de datos PostgreSQL, garantizando que no existan errores de sincronización entre el estado del servidor y la vista del cliente móvil.
+    - **Escenario:** Registro de un evento corporativo y verificación de su disponibilidad para todos los usuarios pertenecientes al mismo `company_id`.
+    - **Validación:** Se valida la navegación entre módulos y la persistencia de la información en la base de datos PostgreSQL, garantizando que no existan errores de sincronización entre el estado del servidor y la vista del cliente móvil.
 
-   
 
-   *Link del video:*  https://shorturl.at/0ugjH
-   Inicio 00:10 		Fin: 00:34
+
+*Link del video:*  https://shorturl.at/0ugjH
+Inicio 00:10 		Fin: 00:34
 
 <img src="https://i.imgur.com/dXVz6K5.png" alt="crear chat">
 
