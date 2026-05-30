@@ -27,7 +27,7 @@ Las pruebas unitarias verifican las **invariantes y el comportamiento de los agr
 
 Ubicación: `src/test/java/synera/centralis/api/<contexto>/unit/<Contexto>UnitTest.java`.
 
-#### Announcement — `AnnouncementUnitTest` (10 pruebas, US10–US13)
+**Announcement — `AnnouncementUnitTest` (10 pruebas, US10–US13)**
 
 Prueba el agregado `Announcement` y el value object `Priority`.
 
@@ -49,7 +49,8 @@ Prueba el agregado `Announcement` y el value object `Priority`.
 ![img_6.png](https://i.imgur.com/w7SLwCE.jpeg)
 
 Nota: Se muestra la ejecución exitosa de la suite de pruebas del proyecto centralis, la cual valida la integridad y el comportamiento esperado de los agregados del dominio, incluyendo Announcement, Event y Chat.
-#### Event — `EventUnitTest` (8 pruebas, US18–US21)
+
+**Event — `EventUnitTest` (8 pruebas, US18–US21)**
 
 Prueba las invariantes del agregado `Event`.
 
@@ -69,7 +70,8 @@ Prueba las invariantes del agregado `Event`.
 ![img_8.png](https://i.imgur.com/djhZ9ei.jpeg)
 
 Nota: Se muestra la ejecución exitosa de la suite de pruebas del proyecto centralis, la cual valida la integridad y el comportamiento esperado de los agregados del dominio, incluyendo Announcement, Event y Chat.
-#### Chat — `ChatUnitTest` (9 pruebas, US23–US28)
+
+**Chat — `ChatUnitTest` (9 pruebas, US23–US28)**
 
 Prueba el agregado `Group`, incluida la conversación directa.
 
@@ -90,7 +92,9 @@ Prueba el agregado `Group`, incluida la conversación directa.
 ![img_7.png](https://i.imgur.com/No6oLI0.jpeg)
 
 Nota: Se muestra la ejecución exitosa de la suite de pruebas del proyecto centralis, la cual valida la integridad y el comportamiento esperado de los agregados del dominio, incluyendo Announcement, Event y Chat.
-### Landing Page & Mobile
+
+**Landing Page & Mobile**
+
 Para la elaboración de los principales tests de nuestra Landing Page (**Centralis**) y nuestra aplicación móvil, hemos tenido en cuenta las secciones más importantes que garantizan la correcta navegación y propuesta de valor para el usuario:
 
 * **Features:** Verificación de la visibilidad de las funcionalidades clave para la alineación de equipos.
@@ -106,7 +110,8 @@ Para la **Landing Page**, gracias a la herramienta de **Selenium IDE**, se han l
 
 ### 6.1.2. Core Integration Tests
 
-#### Announcement Integration Tests
+**Announcement Integration Tests**
+
 | Contexto | Prueba | Verifica | US |
 |---|---|---|---|
 | Announcement | Publicar y consultar anuncio | Persistencia real + recuperación por listado | US10 |
@@ -120,7 +125,8 @@ Esta sección documenta la validación de la capa de servicios de aplicación. E
 
 La ejecución de las pruebas integradas confirma que la lógica de negocio, incluyendo la publicación de eventos (UrgentAnnouncementCreatedEvent) y la persistencia en base de datos H2, se comporta según lo definido en el dominio.
 
-#### Chat Integration Tests
+**Chat Integration Tests**
+
 | Contexto | Prueba | Verifica | US |
 |---|---|---|---|
 | Chat | Crear y consultar grupo | Persistencia + creador como miembro | US23 |
@@ -131,7 +137,9 @@ La ejecución de las pruebas integradas confirma que la lógica de negocio, incl
 ![img_10.png](https://i.imgur.com/FYJk9yc.png)
 
 La ejecución de la suite de pruebas integradas valida que la lógica de negocio para la creación de mensajes y la verificación de membresía en grupos se integra correctamente con la capa de persistencia y el sistema de eventos.
-#### Event Integration Tests
+
+**Event Integration Tests**
+
 | Contexto | Prueba | Verifica | US |
 |---|---|---|---|
 | Event | Crear y consultar evento | Persistencia con sus invitados | US18 |
@@ -143,22 +151,26 @@ La ejecución de la suite de pruebas integradas valida que la lógica de negocio
 
 La ejecución de las pruebas integradas valida que la lógica para registrar invitados y gestionar fechas se integra correctamente, asegurando que las restricciones de dominio (como la validación de invitados nulos) se cumplan durante la persistencia.
 
-#### **Landing Page test**
+**Landing Page test**
+
 Se realizó un test automatizado utilizando Selenium IDE para verificar el correcto funcionamiento de la landing page de Centralis. El objetivo del test fue asegurarse de que los elementos clave de la página, como el título principal, la navegación y los botones de acción ("Get Started", "Explore Features"), se cargaran correctamente y fueran interactivos, garantizando una experiencia de usuario óptima.
 
 ![img_2.png](https://i.imgur.com/i6lbpD6.png)
 
-#### **Mobile test**
+**Mobile test**
+
 Se realizó un test automatizado utilizando Patrol para verificar el correcto funcionamiento de la interfaz móvil de la aplicación. El objetivo del test fue asegurar que los elementos clave de la página, el inicio de sesión y los botones de navegación interna se cargaran correctamente y fueran interactivos en dispositivos móviles, validando la experiencia de usuario y la respuesta de la interfaz bajo condiciones de uso real.
 
 ![img_3.png](https://i.imgur.com/yfNT8Dl.png)
 
-#### **User CRUD (Consultants/Clients)**
+**User CRUD (Consultants/Clients)**
+
 Se realizó un test automatizado para verificar el funcionamiento del CRUD de los usuarios principales (Consultores y Clientes), asegurando que el proceso de crear, leer, actualizar y eliminar los registros se realice correctamente. El test abarcó la funcionalidad de un usuario que gestiona su perfil, edita su información de contacto y elimina entradas, todo esto con el objetivo de garantizar que la plataforma maneje los datos de manera eficiente y sin errores.
 
 ![img_4.png](https://i.imgur.com/2bxlkll.png)
 
-#### **Appointment / Agenda CRUD**
+**Appointment / Agenda CRUD**
+
 Se realizó un test automatizado para validar el correcto funcionamiento del sistema de gestión de agendas y citas de Centralis, asegurando que los usuarios puedan registrar, visualizar, actualizar y eliminar sus compromisos o reuniones sin inconvenientes. Este test garantizó que los integrantes del equipo puedan interactuar con el calendario de forma fluida.
 
 ![img_5.png](https://i.imgur.com/O8rNdTX.png)
@@ -220,7 +232,7 @@ Ejemplos:
 | Reunión directorio   | 2026-06-20 |
 Ejemplo (US18-Creacion-basica-de-eventos.feature):
 
- ``` 
+```
 Nota: Las step definitions (EventStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
 Ejemplo (US23-Creacion-de-chats-grupales.feature):
@@ -239,7 +251,7 @@ Ejemplos:
 | nombre      | visibilidad |
 | Equipo IT   | PUBLICO     |
 | Gerencia    | PRIVADO     |
-   ``` 
+```
 Nota: Las step definitions (ChatStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
 Ejemplo (US34-Restringir-el-acceso-a-la-API.feature):
@@ -257,7 +269,7 @@ Ejemplos:
 | endpoint      | codigo |
 | /api/v1/chat  | 403    |
 | /api/v1/event | 403    |
-   ``` 
+```
 Nota: Las step definitions (SecurityStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
 Ejemplo (US41-Registro-de-nueva-compania.feature):
@@ -275,7 +287,7 @@ Característica: Registro de nueva compañía
       | nombre       | sector       |
       | TechSol S.A. | Tecnología   |
       | BioLife      | Salud        |
-  ``` 
+```
 Nota: Las step definitions (CompanyStepDefinitions) usan anotaciones en español (@Dado, @Cuando, @Entonces, @Y) y heredan de AbstractCucumberSteps.
 
 ### 6.1.4. Core System Tests
@@ -319,3 +331,37 @@ Inicio 00:10 		Fin: 00:34
 
 
 <img src="https://i.imgur.com/VIGAK7a.png" alt="crear chat">
+
+
+
+
+
+
+
+## 6.2. Static testing & Verification
+
+En esta sección se detallan las actividades de verificación estática aplicadas sobre la base de código de **Centralis**. A diferencia de las pruebas dinámicas, la verificación estática no requiere la ejecución de los componentes del sistema; en su lugar, se centra en la inspección, el análisis de la estructura del código y la revisión por pares (*code reviews*) para identificar de forma temprana inconsistencias de diseño, vulnerabilidades de seguridad y desviaciones de las convenciones de programación adoptadas.
+
+### 6.2.1. Static Code Analysis
+#### 6.2.1.1. Coding standard & Code conventions.
+
+Para asegurar la legibilidad, uniformidad y mantenibilidad a largo plazo de la plataforma, el equipo ha adoptado estándares de codificación formales para cada ecosistema tecnológico:
+
+- **Backend (Java / Spring Boot):** Se siguen estrictamente las **Java Coding Conventions** oficiales de Oracle y las guías de estilo de Google para Java. Esto incluye la nomenclatura CamelCase para clases y métodos, la correcta estructuración de paquetes según el diseño modular de la arquitectura, y la restricción en la longitud máxima de líneas de código para facilitar su lectura en revisiones conjuntas.
+- **Frontend Móvil (Dart / Flutter):** Se aplican los principios de la guía oficial de estilo de Dart (*Effective Dart*). El formateador integrado de Flutter se ejecuta antes de cada confirmación de código para estandarizar el uso de comas finales, indentación de dos espacios y la organización semántica de los *widgets* dentro del árbol de la interfaz.
+
+#### 6.2.1.2. Code Quality & Code Security.
+
+La evaluación de la calidad y la seguridad del código se realiza con el soporte de linters automatizados y analizadores estáticos de vulnerabilidades:
+
+- **Métricas de Calidad (Code Quality):** Se evalúa la complejidad ciclomática de las funciones para asegurar que las reglas de negocio de anuncios y eventos no contengan lógica anidada excesiva que dificulte su mantenimiento. Asimismo, se monitorea la duplicidad de código (*code duplication*) y se gestiona proactivamente la "deuda técnica", garantizando que los componentes de persistencia transaccional e interoperabilidad mantengan un índice de mantenibilidad óptimo.
+- **Métricas de Seguridad (Code Security):** Se escanea la base de código para detectar malas prácticas críticas antes de consolidar el software en la rama `main`. Esto incluye la verificación de que no existan credenciales expuestas en texto plano (*hardcoded secrets*), la validación y sanitización de datos de entrada en las APIs para prevenir ataques de inyección SQL, y la auditoría de que las consultas respeten estrictamente las restricciones de seguridad del aislamiento *multi-tenancy* establecido en el modelo *SaaS*.
+
+### 6.2.2. Reviews
+
+Las revisiones de código se ejecutan bajo una metodología formal de revisión por pares (*Peer Reviews*) integrada directamente en la plataforma de gestión de Git.
+
+- **Flujo de Pull Requests (PR):** Ningún desarrollador tiene autorización para realizar fusiones directas a las ramas estables `develop` o `main`. Cuando se finaliza una funcionalidad o una suite de pruebas en una rama `feature/*`, se genera un *Pull Request* formal en GitHub.
+- **Proceso de Aprobación:** Cada *Pull Request* requiere la asignación obligatoria de al menos un revisor del equipo de ingeniería. El revisor analiza de manera crítica la lógica propuesta, comprueba que se cumplan las convenciones de diseño del proyecto y verifica que las pruebas asociadas den cobertura a las nuevas reglas de negocio.
+- **Criterio de Cierre:** El código solo puede ser integrado al flujo principal una vez que ha recibido la aprobación formal del revisor (*Approved*) y el motor de Integración Continua (CI) certifica que la construcción no genera conflictos ni errores sintácticos en el entorno compartido. Esto asegura la transparencia, la responsabilidad profesional y la transferencia de conocimiento entre todos los miembros de la startup.
+
