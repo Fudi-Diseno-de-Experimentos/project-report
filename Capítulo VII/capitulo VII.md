@@ -3,75 +3,69 @@
 ## 7.1. Continuous Integration
 
 ### 7.1.1. Tools and Practices
-En el desarrollo del proyecto se ha adoptado un conjunto de herramientas y prácticas orientadas a asegurar la integración continua del software, facilitando la colaboración entre los distintos miembros del equipo y garantizando la calidad del código a lo largo del ciclo de desarrollo.
-* **Herramientas utilizadas**
-  * Backend: OpenJDK, Spring Boot y Apache Maven para la construcción y ejecución del servicio backend.
-  * Frontend móvil: Android Studio Flutter como entorno de desarrollo principal para la aplicación móvil.
-  * Base de datos: PostgreSQL supabase para la persistencia de datos.
-  * Control de versiones: Git como sistema de control de versiones y GitHub como repositorio central del proyecto.
-  * Despliegue: Render como plataforma de despliegue del backend.
-  * Almacenamiento externo: Cloudinary para la gestión de recursos multimedia.
-  * Gestión del proyecto: Trello para la organización de tareas y seguimiento del progreso.
-  * Gestión de requisitos: UXPressia para modelado de necesidades de usuario.
-  * Documentación técnica: PlantUML para diagramas de arquitectura y diseño.
-  * Diseño UI/UX: Material Design 3 como guía de diseño visual, complementado con herramientas de prototipado.
+Para garantizar la viabilidad técnica y la calidad del incremento de software, el equipo de desarrollo de la startup **Fudi** ha diseñado e implementado un entorno de Integración Continua (CI) automatizado. Este enfoque permite centralizar, compilar y verificar el código fuente de forma progresiva, minimizando los conflictos de integración y asegurando la estabilidad del producto **Centralis** antes de su puesta en producción.
 
-
-* **Prácticas de desarrollo**
-El equipo adopta una metodología basada en GitFlow, utilizando ramas estructuradas como develop, feature/* y ramas de integración. Además, se aplican prácticas de commits estructurados mediante Conventional Commits, lo que permite mantener un historial de cambios claro y trazable.
-Asimismo, se emplea versionado semántico (SemVer), facilitando la gestión de releases del sistema. La integración del código se realiza de manera progresiva mediante merges controlados hacia la rama develop, evitando el uso de force push para preservar la integridad del historial del repositorio.
+- **Herramientas de la Suite de Integración Continua:**
+  - **Servidor de Automatización (Orquestador):** **GitHub Actions** actúa como el motor de CI, encargándose de disparar los flujos de trabajo (*workflows*) automatizados ante cada evento de código.
+  - **Ecosistema del Servidor (Backend):** Se utiliza **OpenJDK 26** en conjunto con el gestor de dependencias **Apache Maven** para la automatización de la compilación, empaquetado y ejecución de pruebas del *Web Service* desarrollado en **Spring Boot**.
+  - **Ecosistema Móvil (Native-Mobile):** Se emplea el SDK de **Flutter** y herramientas de CLI optimizadas para compilar la solución nativa y resolver las dependencias del proyecto.
+  - **Control de Versiones:** **Git** gestiona el historial de cambios local, mientras que **GitHub** opera como el repositorio centralizado público de la organización.
+- **Prácticas de Ingeniería de Software Adoptadas:**
+  - **Estrategia de Ramificación (GitFlow):** Se aplica estrictamente el modelo **GitFlow**. Las funcionalidades se desarrollan de manera aislada en ramas del tipo `feature/*` y se integran exclusivamente a la rama `develop` mediante *Pull Requests* validados.
+  - **Estándar de Trazabilidad (Conventional Commits):** Cada modificación en el código debe seguir la especificación de *Conventional Commits* (ej. `feat:`, `test:`, `fix:`), asegurando un historial auditable y legible.
+  - **Versionado Semántico (Semantic Versioning 2.0.0):** Se utiliza la nomenclatura `MAJOR.MINOR.PATCH` para el control riguroso de los lanzamientos (*releases*) de la plataforma, correlacionando el estado del reporte con las etiquetas del repositorio.
+  - **Integración sin Pérdida de Historial:** Queda estrictamente restringido el uso de comandos destructivos como `force push`. La sincronización de código se realiza mediante merges controlados y revisiones por pares para salvaguardar la integridad de la base de código.
 
 
 ### 7.1.2. Build & Test Suite Pipeline Components
-El pipeline de integración del proyecto se compone de distintas etapas orientadas a la construcción y validación del software antes de su integración al entorno compartido.
+El *pipeline* de Integración Continua está estructurado en componentes y etapas secuenciales automatizadas mediante scripts de configuración de GitHub Actions. Esto asegura que ningún fragmento de código sea integrado a la rama común sin haber superado con éxito los umbrales de compilación y pruebas de calidad.
 
-**Etapa de construcción **
+- **Etapa de Construcción Automatizada (Build Stage):**
+  - **Desencadenamiento del Pipeline:** El flujo se activa de forma automática tras el registro de un *Push* o la apertura de un *Pull Request* hacia las ramas `develop` o `main`.
+  - **Entorno de Compilación Backend:** El componente de Maven ejecuta de forma aislada la descarga de dependencias del archivo `pom.xml`, compila las clases de Java y empaqueta el servicio web en un archivo ejecutable, validando la ausencia de errores sintácticos o de configuración.
+  - **Entorno de Compilación Móvil:** El pipeline inicializa el entorno de Flutter, realiza la limpieza de caché (*flutter clean*), descarga los paquetes definidos en el archivo `pubspec.yaml` y ejecuta la pre-compilación del código Dart para asegurar la compatibilidad estructural de la aplicación móvil.
+- **Etapa de Validación e Inyección de Pruebas (Test Suite Stage):**
+  - **Ejecución de Core Entities Unit Tests:** El pipeline corre las pruebas unitarias automatizadas en aislamiento absoluto. En el backend, valida las restricciones de atributos de dominio y, en el entorno móvil, comprueba la correcta creación y modificación de las entidades de **Anuncios** y **Eventos**.
+  - **Ejecución de Core Integration Tests:** Se levanta un entorno controlado en la nube de CI para simular transacciones completas. En esta fase, se comprueba el flujo integral de mensajería, creación de anuncios y el cumplimiento estricto del **aislamiento multi-tenancy** entre organizaciones de la plataforma.
+  - **Ejecución de Core System Tests (E2E):** Utilizando el framework especializado **Patrol**, el pipeline ejecuta pruebas de sistema automatizadas de extremo a extremo en el entorno móvil, validando la navegación por la interfaz, el consumo real de la API RESTful desplegada y la persistencia de datos bajo diferentes escenarios operativos.
 
-* El backend es construido utilizando Apache Maven, que gestiona dependencias, compilación y empaquetado del proyecto Spring Boot.
-* La aplicación móvil es construida en Flutter, generando las versiones ejecutables del sistema móvil.
-* El código fuente es obtenido desde GitHub, específicamente desde la rama develop, donde se integran las funcionalidades del equipo.
 
-**Etapa de pruebas**
-*El sistema incorpora distintos niveles de pruebas para garantizar la calidad del software.*
 
-* Core Entities Unit Tests: validan la lógica de dominio de los principales componentes del sistema.
-* Core Integration Tests: verifican la correcta interacción entre módulos del backend, incluyendo flujos multi-tenancy y comunicación entre contextos.
-* System/UI Tests: realizados mediante Selenium IDE, validando el correcto funcionamiento de la landing page y sus componentes interactivos.
-  Estas pruebas permiten detectar errores de forma temprana antes de la integración de nuevas funcionalidades al sistema principal.
+**Web service Actions :**
+
+![image-20260529200126870](https://i.imgur.com/TihqGBh.png)
 
 ---
 
 ## 7.2. Continuous Delivery
 
 ### 7.2.1. Tools and Practices
-El proceso de entrega continua del sistema se basa en un conjunto de herramientas que permiten la publicación y actualización progresiva de los componentes del sistema en entornos de desarrollo y producción.
-* **Herramientas utilizadas**
-  * Render: Utilizado para el despliegue del backend en la nube.
-  * PostgreSQL: Base de datos gestionada en la nube para el entorno de producción.
-  * Cloudinary: Almacenamiento y gestión de recursos multimedia en la nube.
-  * GitHub: Repositorio central desde donde se obtienen las versiones del código para despliegue.
-  * Android Studio: Utilizado para generar y actualizar las versiones de la aplicación móvil.
+Para asegurar un flujo de lanzamientos eficiente y desacoplado, la startup **Fudi** ha adoptado la práctica de **Entrega Continua (CD)** para la plataforma **Centralis**. Esta práctica garantiza que cualquier incremento de software que haya superado la etapa de Integración Continua (CI) sea empaquetado y preparado automáticamente para su puesta en producción en la nube.
 
-
-* **Prácticas de entrega**
-El equipo sigue un flujo de entrega basado en la rama develop, desde la cual se integran las funcionalidades listas para ser desplegadas. Las actualizaciones del sistema se realizan de manera controlada, asegurando que cada cambio pase por un proceso de construcción y validación antes de su publicación.
-El despliegue del backend se realiza manualmente en Render a partir de la versión estable del repositorio, mientras que la aplicación móvil se actualiza mediante generación de nuevas versiones desde Android Studio.
+- **Herramientas de la Suite de Entrega Continua:**
+  - **Orquestador de Despliegue Nativo:** **Render PaaS** actúa de manera directa como el motor de CD para los servicios web, integrándose de forma nativa a nivel de repositorio con la organización de GitHub.
+  - **Distribución de la Solución Móvil:** Se emplea **Firebase App Distribution** para la Entrega Continua del cliente nativo en Flutter, automatizando la distribución de versiones ejecutables de prueba a los miembros del equipo y evaluadores.
+  - **Persistencia Integrada:** **Supabase (PostgreSQL)** opera de manera aislada como el motor de base de datos relacional para el entorno operativo transaccional.
+- **Prácticas de Entrega Automatizada:**
+  - **Despliegue Basado en Eventos (Git-Driven Deployment):** Se restringe cualquier tipo de intervención manual o configuraciones locales en los computadores del equipo. El entorno de producción se sincroniza directamente con la rama estable `main`.
+  - **Automatización por Confirmación:** Al aprobarse un *Pull Request* e integrarse los cambios en la rama `main`, la infraestructura de **Render** detecta automáticamente el evento de *push* mediante webhooks nativos del sistema de control de versiones, iniciando la construcción interna del contenedor de manera inmediata.
 
 ### 7.2.2. Stages Deployment Pipeline Components
-El pipeline de despliegue del sistema se estructura en varias etapas que garantizan la correcta entrega de las funcionalidades al entorno de producción.
-1. Integración del código:
-    Los cambios realizados por los desarrolladores son integrados en la rama develop del repositorio en GitHub, siguiendo el flujo de GitFlow.
-2. Construcción del sistema:
-    * El backend es compilado utilizando Maven.
-    * La aplicación móvil es construida en Flutter. 
-3. Validación mediante pruebas:
-    Antes del despliegue, se ejecutan pruebas unitarias, de integración y pruebas de interfaz (Selenium), asegurando la estabilidad del sistema.
-4. Despliegue del backend:
-   El backend es desplegado en la plataforma Render, que gestiona la ejecución del servicio en la nube. 
-5. Persistencia y servicios externos:
-   La base de datos PostgreSQL y el almacenamiento en Cloudinary son integrados como servicios externos del sistema en producción.
-6. Actualización del cliente móvil:
-   Las nuevas versiones de la aplicación móvil son generadas desde Android Studio y preparadas para su distribución.
+El *pipeline* de Entrega Continua opera de forma automatizada y transparente. Dado que el aprovisionamiento de webhooks personalizados para activar flujos cruzados externos en Render se encuentra restringido a planes de suscripción comerciales, el equipo ha estructurado un pipeline optimizado basado en el comportamiento nativo de la plataforma:
+
+- **Etapa de Detección e Integración en la Nube (Cloud Detection Stage):**
+  - **Monitoreo de Producción:** Render mantiene un escucha activo (*listener*) sobre el repositorio de GitHub. Al consolidarse el código en la rama `main`, la plataforma jala automáticamente los últimos cambios (*Git pull*) hacia sus servidores de empaquetamiento.
+- **Etapa de Construcción y Puesta en Operación (Build & Live Stage):**
+  - **Empaquetamiento Backend Remoto:** El servidor de Render inicializa un entorno aislado, descarga las dependencias del proyecto utilizando Apache Maven y compila el código de Java Spring Boot directamente en la nube, garantizando que el artefacto binario generado esté optimizado para el entorno productivo.
+  - **Despliegue Transparente (Zero-Downtime):** Una vez concluida la compilación, Render levanta el nuevo servicio web en paralelo y realiza la transición de tráfico sin interrumpir la disponibilidad de la plataforma para las PyMEs locales, manteniendo la consistencia de los datos en Supabase.
+
+
+
+**Imagen de Render donde se muestra el despliegue continuo**
+
+![image-20260529200126870](https://i.imgur.com/KEfzoTc.png)
+
+
 
 
 ---
@@ -79,34 +73,24 @@ El pipeline de despliegue del sistema se estructura en varias etapas que garanti
 ## 7.3. Continuous Deployment
 
 ### 7.3.1. Tools and Practices
-El proceso de despliegue continuo en el sistema Centralis se basa en un conjunto de herramientas, frameworks y prácticas de desarrollo que permiten automatizar la entrega de nuevas versiones del software hacia entornos de producción, garantizando consistencia, trazabilidad y calidad del código.
+El proceso de Despliegue Continuo (CD) en la plataforma **Centralis** representa la automatización absoluta del flujo de liberación. Una vez que los incrementos de software son consolidados en la rama `main`, el sistema despliega las modificaciones de forma inmediata hacia los entornos de producción sin intervención manual, garantizando una alta disponibilidad y resiliencia de los servicios bajo el modelo *SaaS* de **Fudi**.
 
-**Entorno de desarrollo y frameworks**  
-El desarrollo del sistema se realiza utilizando IntelliJ IDEA para el backend implementado en Spring Boot (Java 24), mientras que la aplicación móvil es desarrollada en Flutter mediante Android Studio como entorno principal.
-
-**Gestión de repositorios**     
-Se utiliza GitHub Organization que contiene repositorios independientes para los distintos componentes del sistema: Landing Page, Web Services y aplicación móvil. Esta separación permite una gestión modular del código, facilitando la escalabilidad y el mantenimiento del sistema.
-
-**Control de versiones**    
-El equipo adopta prácticas basadas en Conventional Commits junto con Semantic Versioning, lo que permite estandarizar los cambios en el código, mejorar la trazabilidad del desarrollo y facilitar la coordinación entre los miembros del equipo.
-
-**Prácticas de calidad**    
-Se aplican estándares de desarrollo como Java Coding Conventions, asegurando un código limpio y mantenible en el backend. Asimismo, se utiliza Material Design 3 para garantizar una experiencia de usuario consistente en la aplicación móvil y web.
+- **Prácticas de Despliegue Automatizado en Producción:**
+  - **Despliegue de Extremo a Extremo (Git-Triggered Production):** Cada fusión exitosa (*merge*) activa la actualización inmediata del ecosistema productivo.
+  - **Estrategia de Despliegue Impecable (Zero-Downtime Deployment):** Render y Vercel aprovisionan contenedores e instancias en paralelo. El tráfico de los usuarios no se interrumpe, ya que la versión anterior solo se apaga cuando la nueva está completamente operativa (*Live* y *Healthy*).
+  - **Inyección Dinámica de Variables de Entorno:** Las credenciales de producción (como `DATABASE_URL` de Supabase o las llaves de Cloudinary) se inyectan en tiempo de ejecución en la nube, aislando por completo los secretos comerciales del código fuente público.
 
 ### 7.3.2. Production Deployment Pipeline Components
-El pipeline de despliegue a producción está compuesto por distintos módulos que automatizan el flujo de entrega del sistema desde el repositorio hasta el usuario final.
 
-#### **Componentes del Pipeline del Backend (Spring Boot en Render)**
-* **Source Control:** El código fuente reside en el repositorio web-service de GitHub.
-* **Build & Runtime:** Configurado bajo Java 24 con Spring Boot, gestionado por Apache Maven para la administración de dependencias.
-* **Deployment Host:** Despliegue automatizado en Render, sincronizado directamente con la rama main del repositorio.
-* **Persistencia:** Base de datos PostgreSQL alojada también en Render, permitiendo una conexión segura mediante variables de entorno (DATABASE_URL).
+Esta sección describe la topología y los componentes de infraestructura en la nube donde reside operando la solución de **Centralis** en su entorno de producción definitivo:
 
-#### **Componentes del Pipeline del Frontend (Landing Page en Vercel)**
-* **Framework:** Desarrollada con Astro para optimizar la velocidad y el SEO.
-* **Source Control:** Repositorio landing-page en GitHub.
-* **Hosting y CDN:** Despliegue automático en la infraestructura de Vercel, aprovechando su red de entrega de contenidos para garantizar acceso global rápido.
-
-#### **Integración de Servicios Externos en Producción**
-* **Multimedia:** Se utiliza Cloudinary como servicio externo para el almacenamiento y optimización de imágenes utilizadas en el sistema (anuncios, chats y recursos dinámicos).
-* **Mensajería:** Se integra Firebase Cloud Messaging (FCM) para el envío de notificaciones push hacia dispositivos móviles, mejorando la comunicación en tiempo real dentro de la plataforma.
+- **Componentes del Entorno Productivo del Backend (API REST en Render):**
+  - **Source Control & Trigger:** Repositorio centralizado `web-service` (rama `main`).
+  - **Runtime Environment:** Servidor remoto optimizado ejecutando **OpenJDK 26** y embebiendo la arquitectura de **Spring Boot**.
+  - **Persistencia Transaccional:** Base de datos relacional **PostgreSQL** hospedada de forma desacoplada en la nube de **Supabase**, vinculada de manera segura mediante variables de entorno cifradas.
+- **Componentes del Entorno Productivo del Frontend (Landing Page en Vercel):**
+  - **Source Control & Trigger:** Repositorio centralizado `landing-page` (rama `main`).
+  - **Hosting & CDN Edge:** Infraestructura global de **Vercel**, configurada para optimizar el SEO y garantizar tiempos de carga mínimos para los visitantes y PyMEs interesadas.
+- **Integración de Servicios Externos en el Entorno de Producción:**
+  - **Almacenamiento de Multimedia:** **Cloudinary** opera como el microservicio en la nube para la persistencia, optimización y entrega dinámica de archivos multimedia (imágenes asociadas a los anuncios de las empresas y avatares de chats).
+  - **Mensajería Instantánea:** Integración con servicios en la nube para asegurar la comunicación interactiva y la sincronización de eventos de la plataforma en tiempo real.
