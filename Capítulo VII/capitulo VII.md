@@ -94,3 +94,40 @@ Esta sección describe la topología y los componentes de infraestructura en la 
 - **Integración de Servicios Externos en el Entorno de Producción:**
   - **Almacenamiento de Multimedia:** **Cloudinary** opera como el microservicio en la nube para la persistencia, optimización y entrega dinámica de archivos multimedia (imágenes asociadas a los anuncios de las empresas y avatares de chats).
   - **Mensajería Instantánea:** Integración con servicios en la nube para asegurar la comunicación interactiva y la sincronización de eventos de la plataforma en tiempo real.
+
+
+
+## 7.4. Continuous Monitoring
+
+### 7.4.1. Tools and Practices
+
+El enfoque de monitoreo de la plataforma se basa en la supervisión de la disponibilidad (*Uptime*) y la latencia de las peticiones en un entorno productivo 24/7.
+
+- **Herramientas de la Suite de Monitoreo:**
+  - **Motor de Vigilancia Externa (Uptime Engine):** Se utiliza **UptimeRobot / Better Stack** como la plataforma externa para realizar sondeos cíclicos sobre la disponibilidad del servicio web.
+  - **Manejador de Eventos (Log Collector):** El panel de control nativo de **Render Logs** recopila los eventos de errores en tiempo de ejecución (Stack traces de Java Spring Boot).
+  - **Centralizador de Comunicaciones:** **Discord Developer Webhooks** actúa como la plataforma receptora de notificaciones de incidentes en tiempo real para el equipo de desarrollo.
+- **Prácticas de Monitoreo Adoptadas:**
+  - **Inspección de Caja Negra (Synthetic Monitoring):** Se ejecutan peticiones automatizadas HTTP GET simuladas hacia los *endpoints* core de anuncios y eventos para asegurar que las rutas de la API devuelvan un código de estado exitoso (HTTP Status 200).
+  - **Monitoreo Basado en Cron-Jobs:** Se integra en el repositorio de GitHub un flujo programado que audita la latencia del servidor a intervalos regulares, eliminando la necesidad de revisiones manuales por parte de los desarrolladores.
+
+### 7.4.2. Monitoring Pipeline Components
+
+El componente de monitoreo está automatizado mediante un flujo de trabajo síncrono que evalúa constantemente el estado del sistema en la nube:
+
+- **Source Metric / Endpoint Validation:** El pipeline apunta directamente al *endpoint* de verificación de estado de la aplicación en Render.
+- **Frecuencia de Sondeo:** El motor externo está configurado para emitir ráfagas de verificación cada **5 minutos**. Si el servicio responde dentro del umbral de tiempo tolerable, el evento se registra como exitoso (*Healthy*). Si se excede el tiempo límite (*Timeout*) o devuelve un error de servidor (HTTP 5xx), se activa de inmediato el flujo de contención de fallas.
+
+### 7.4.3. Alerting Pipeline Components
+
+Una vez que el componente de monitoreo detecta una anomalía estructural en los servicios de **Centralis**, el pipeline de alertas procesa la información bajo las siguientes métricas de evaluación:
+
+- **Reglas de Activación de Alertas (Alerting Rules):** Una alerta se clasifica en estado crítico (*Triggered*) cuando el servidor encadenado acumula dos fallas consecutivas de conectividad, evitando falsos positivos por micro-caídas de red.
+- **Cifrado y Seguridad de Datos:** Las alertas incluyen metadatos clave como el código del error HTTP, la hora exacta del incidente en formato UTC y la sección afectada (Backend API o Base de Datos), aislando cualquier credencial confidencial del mensaje.
+
+### 7.4.4. Notification Pipeline Components. 
+
+El último eslabón de la infraestructura DevOps de monitoreo se encarga de transferir la alerta procesada de forma transparente hacia los ingenieros responsables:
+
+- **Canal de Destino Automatizado:** La alerta estructurada es enviada mediante una petición HTTP POST en formato JSON directamente hacia el webhook del canal privado de ingeniería en Discord (`#server-alerts`).
+- **Información Desplegada:** El mensaje recibido en los dispositivos móviles y de escritorio de los desarrolladores detalla de forma clara el estado del incidente (Ej: `🔴 CRITICAL: Centralis API on Render is DOWN - HTTP Status 502 Bad Gateway`). Una vez solucionado el problema, el pipeline dispara de forma automática una notificación de cierre (Ej: `🟢 RESOLVED: Centralis API is operational - Uptime Restored`), cerrando el ciclo de retroalimentación de operaciones de la entrega.
