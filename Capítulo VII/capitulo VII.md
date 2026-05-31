@@ -104,30 +104,38 @@ Esta sección describe la topología y los componentes de infraestructura en la 
 El enfoque de monitoreo de la plataforma se basa en la supervisión de la disponibilidad (*Uptime*) y la latencia de las peticiones en un entorno productivo 24/7.
 
 - **Herramientas de la Suite de Monitoreo:**
-  - **Motor de Vigilancia Externa (Uptime Engine):** Se utiliza **UptimeRobot / Better Stack** como la plataforma externa para realizar sondeos cíclicos sobre la disponibilidad del servicio web.
-  - **Manejador de Eventos (Log Collector):** El panel de control nativo de **Render Logs** recopila los eventos de errores en tiempo de ejecución (Stack traces de Java Spring Boot).
-  - **Centralizador de Comunicaciones:** **Discord Developer Webhooks** actúa como la plataforma receptora de notificaciones de incidentes en tiempo real para el equipo de desarrollo.
+  - **Motor de Vigilancia Externa (Uptime Engine):** Se utiliza **UptimeRobot** como la plataforma externa dedicada para realizar sondeos cíclicos y automatizados sobre la disponibilidad del servicio web en producción.
+  - **Manejador de Eventos (Log Collector):** El panel de control nativo de Render Logs recopila los eventos de errores en tiempo de ejecución (Stack traces de Java Spring Boot).
+  - **Centralizador de Comunicaciones:** **Discord Developer Webhooks** actúa como la plataforma receptora e integradora de notificaciones de incidentes en tiempo real para el equipo de desarrollo.
 - **Prácticas de Monitoreo Adoptadas:**
-  - **Inspección de Caja Negra (Synthetic Monitoring):** Se ejecutan peticiones automatizadas HTTP GET simuladas hacia los *endpoints* core de anuncios y eventos para asegurar que las rutas de la API devuelvan un código de estado exitoso (HTTP Status 200).
-  - **Monitoreo Basado en Cron-Jobs:** Se integra en el repositorio de GitHub un flujo programado que audita la latencia del servidor a intervalos regulares, eliminando la necesidad de revisiones manuales por parte de los desarrolladores.
+  - **Inspección de Caja Negra (Synthetic Monitoring):** Se ejecutan peticiones automatizadas HTTP GET de manera continua hacia el endpoint especializado de salud (`/health`) para asegurar que las rutas del monolito modular devuelvan un código de estado exitoso (HTTP Status 200).
+  - **Aislamiento de la Métrica de Salud:** El endpoint de verificación `/health` opera de forma pública y ligera, permitiendo auditorías externas sin comprometer credenciales ni sobrecargar el procesamiento transaccional de los módulos core.
 
 ### 7.4.2. Monitoring Pipeline Components
 
 El componente de monitoreo está automatizado mediante un flujo de trabajo síncrono que evalúa constantemente el estado del sistema en la nube:
 
-- **Source Metric / Endpoint Validation:** El pipeline apunta directamente al *endpoint* de verificación de estado de la aplicación en Render.
-- **Frecuencia de Sondeo:** El motor externo está configurado para emitir ráfagas de verificación cada **5 minutos**. Si el servicio responde dentro del umbral de tiempo tolerable, el evento se registra como exitoso (*Healthy*). Si se excede el tiempo límite (*Timeout*) o devuelve un error de servidor (HTTP 5xx), se activa de inmediato el flujo de contención de fallas.
+- **Source Metric / Endpoint Validation:** El pipeline apunta directamente al subdominio operativo expuesto en la infraestructura PaaS: `[https://web-service-1mm7.onrender.com/health](https://web-service-1mm7.onrender.com/health)`.
+- **Frecuencia de Sondeo:** El motor externo de **UptimeRobot** está configurado para emitir ráfagas de verificación parametrizadas estrictamente cada **5 minutos**. Si el servicio responde dentro del umbral de tiempo tolerable, el evento se registra como exitoso (*Healthy / Up*).
+
+![](https://i.imgur.com/rJlYsCV.png)
+
+
 
 ### 7.4.3. Alerting Pipeline Components
 
-Una vez que el componente de monitoreo detecta una anomalía estructural en los servicios de **Centralis**, el pipeline de alertas procesa la información bajo las siguientes métricas de evaluación:
+Una vez que el componente de monitoreo detecta una anomalía estructural en los servicios de **Centralis**, el pipeline de alertas procesa la información bajo métricas rigurosas de evaluación:
 
-- **Reglas de Activación de Alertas (Alerting Rules):** Una alerta se clasifica en estado crítico (*Triggered*) cuando el servidor encadenado acumula dos fallas consecutivas de conectividad, evitando falsos positivos por micro-caídas de red.
-- **Cifrado y Seguridad de Datos:** Las alertas incluyen metadatos clave como el código del error HTTP, la hora exacta del incidente en formato UTC y la sección afectada (Backend API o Base de Datos), aislando cualquier credencial confidencial del mensaje.
+- **Reglas de Activación de Alertas (Alerting Rules):** Una alerta cambia inmediatamente a estado crítico (*Triggered / Down*) cuando el endpoint genera errores persistentes en su respuesta, tales como caídas de pasarela de pago, fallas de conectividad de red o la caída simulada del servicio web en la nube.
+
+![](https://i.imgur.com/MNmhaEZ.png)
 
 ### 7.4.4. Notification Pipeline Components. 
 
-El último eslabón de la infraestructura DevOps de monitoreo se encarga de transferir la alerta procesada de forma transparente hacia los ingenieros responsables:
+El último eslabón de la infraestructura DevOps de monitoreo se encarga de transferir la alerta procesada de forma transparente hacia los canales de comunicación de los ingenieros responsables:
 
-- **Canal de Destino Automatizado:** La alerta estructurada es enviada mediante una petición HTTP POST en formato JSON directamente hacia el webhook del canal privado de ingeniería en Discord (`#server-alerts`).
-- **Información Desplegada:** El mensaje recibido en los dispositivos móviles y de escritorio de los desarrolladores detalla de forma clara el estado del incidente (Ej: `🔴 CRITICAL: Centralis API on Render is DOWN - HTTP Status 502 Bad Gateway`). Una vez solucionado el problema, el pipeline dispara de forma automática una notificación de cierre (Ej: `🟢 RESOLVED: Centralis API is operational - Uptime Restored`), cerrando el ciclo de retroalimentación de operaciones de la entrega.
+- **Canal de Destino Automatizado:** Al confirmarse un cambio de estado, **UptimeRobot** empaqueta un JSON y lo despacha de forma asíncrona mediante una petición HTTP POST hacia el webhook integrado del canal de texto en Discord (`#server-alerts`).
+- **Trazabilidad del Flujo de Notificaciones:** El bot de automatización comunica de manera instantánea el motivo exacto del fallo y el momento preciso en que la infraestructura se estabiliza de regreso a la normalidad.
+
+![](https://i.imgur.com/ds3EGva.png)
+
