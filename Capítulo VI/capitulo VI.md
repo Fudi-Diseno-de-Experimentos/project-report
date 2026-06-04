@@ -365,3 +365,84 @@ Las revisiones de código se ejecutan bajo una metodología formal de revisión 
 - **Proceso de Aprobación:** Cada *Pull Request* requiere la asignación obligatoria de al menos un revisor del equipo de ingeniería. El revisor analiza de manera crítica la lógica propuesta, comprueba que se cumplan las convenciones de diseño del proyecto y verifica que las pruebas asociadas den cobertura a las nuevas reglas de negocio.
 - **Criterio de Cierre:** El código solo puede ser integrado al flujo principal una vez que ha recibido la aprobación formal del revisor (*Approved*) y el motor de Integración Continua (CI) certifica que la construcción no genera conflictos ni errores sintácticos en el entorno compartido. Esto asegura la transparencia, la responsabilidad profesional y la transferencia de conocimiento entre todos los miembros de la startup.
 
+
+
+## 6.3. Validation Interviews
+
+### 6.3.1. Diseño de Entrevistas
+
+**Elementos de Inclusión en la Sesión de Validacion**
+
+Para asegurar el éxito de la auditoría de experiencia de usuario, cada sesión se dividirá en tres componentes interactivos:  
+
+- **Evaluación de la Landing Page:** El usuario analizará la propuesta de valor, claridad de características y arquitectura descrita en el sitio web de **Centralis por Fudi**.  
+
+- **Validación del User Flow del Empleado:** Flujos de comunicación horizontal (creación y visualización de anuncios globales, comentarios interactivos, inicio de chats individuales y revisión de eventos organizacionales).
+
+- **Validación del User Flow del Gerente:** Flujos de gestión y auditoría (creación de anuncios y eventos corporativos, apertura de canales grupales de chat y el despliegue del módulo de analíticas de lectura por perfil de empleado).
+
+  
+
+**Segmento 1: Empleados **
+
+**A. Fase de Exploración Inicial (Landing Page)**
+
+- Una vez revisada la Landing Page, ¿cuál es su entendimiento inicial sobre el propósito de Centralis?  
+- De las características observadas en la web (Anuncios, Eventos, Chat), ¿cuál considera que resolvería su mayor problema de comunicación actual en su empresa?  
+- ¿Considera que el diseño visual y la información de la página le transmiten la seguridad y privacidad necesarias para confiar los datos de su entorno laboral?  
+
+**B. Fase de Interacción y Tareas (App Móvil)**
+
+- **Tarea 1: Publicación e Interacción de Anuncios.** *Escenario: "Su equipo ha completado un hito importante y desea comunicarlo a toda la empresa. Ingrese a la app, publique un anuncio global y verifique cómo dejar un comentario en una publicación existente."*
+  - *Pregunta de validación:* ¿Qué tan intuitivo le resultó el proceso de redactar y publicar un anuncio global sin restricciones o filtros previos?
+  - *Pregunta de validación:* Al interactuar con la sección de comentarios, ¿la interfaz le facilitó entablar una conversación fluida con otros colaboradores?
+- **Tarea 2: Comunicación y Agenda.** *Escenario: "Necesita coordinar de manera urgente un pendiente con un compañero de otra área y revisar a qué eventos corporativos ha sido asignado esta semana."*
+  - *Pregunta de validación:* ¿Fue fácil para usted iniciar un chat individual (uno a uno) de forma autónoma con un colega específico?
+  - *Pregunta de validación:* ¿El calendario o sección de eventos le permitió confirmar su participación de manera clara y rápida?
+
+**C. Fase de Cierre y Debriefing**
+
+- Si su empresa implementara Centralis mañana mismo, ¿qué elemento de la aplicación móvil se convertiría en su herramienta diaria indispensable?  
+- Dado que cualquier empleado puede publicar anuncios globales, ¿le preocuparía que la pantalla principal se sature de información o el diseño le ayuda a priorizar lo importante?
+- ¿Qué mejoras o cambios drásticos le realizaría a la aplicación para que se adapte mejor a su rutina laboral?
+
+**Segmento 2: Gerentes / Administradores**
+
+**A. Fase de Exploración Inicial (Landing Page)**
+
+- Como gerente, al leer que Centralis está diseñado para la "Cohesión Corporativa", ¿considera que la propuesta de valor justifica migrar la comunicación de su empresa de herramientas tradicionales (como WhatsApp) a esta plataforma dedicada?  
+- Al revisar la sección de características, ¿le queda claro que el sistema opera bajo un entorno móvil unificado para gestionar a su personal?  
+
+**B. Fase de Interacción y Tareas (App Móvil)**
+
+- **Tarea 1: Gestión de Contenido y Grupos.** *Escenario: "Se acerca el cierre de trimestre y necesita emitir un comunicado oficial urgente para toda la organización, programar la reunión de balance general y abrir un grupo de chat enfocado en el equipo de finanzas."*
+  - *Pregunta de validación:* ¿Cómo evalúa el flujo de creación de anuncios y eventos desde su dispositivo móvil en comparación con las herramientas web tradicionales?
+  - *Pregunta de validación:* Al momento de estructurar un nuevo grupo de chat, ¿la asignación de miembros y la configuración del canal le resultaron ágiles?
+- **Tarea 2: Auditoría y Analíticas de Lectura.** *Escenario: "Usted ha lanzado un comunicado de seguridad crítico. Desea verificar de manera estricta si un empleado en específico ya revisó la información y conocer su historial completo de lecturas para asegurar la alineación del equipo."*
+  - *Pregunta de validación:* El ingreso al perfil del empleado para auditar los anuncios y eventos que ha visto, ¿le resultó accesible y claro de interpretar?
+  - *Pregunta de validación:* Sabiendo que esta funcionalidad es indispensable para usted como administrador, ¿considera que la forma en que se presentan los datos en la pantalla móvil resguarda un ambiente de confianza laboral o se percibe invasiva?
+
+**C. Fase de Cierre y Debriefing**
+
+- ¿Considera que el control analítico por perfil de usuario le otorga el respaldo operativo necesario para garantizar que los comunicados importantes realmente se lean en la empresa?
+- ¿Qué opinión tiene sobre que los empleados tengan la capacidad de publicar anuncios globales directamente en el mismo espacio que la gerencia? ¿Implementaría alguna restricción o prefiere mantener la comunicación abierta?
+- ¿Qué funcionalidad adicional requeriría en la aplicación móvil de Centralis para automatizar por completo el seguimiento de la productividad y comunicación de sus colaboradores?
+
+### 6.3.2. Registro de Entrevistas
+
+### 6.3.3. Evaluaciones según heurísticas
+
+## 6.4. Auditoría de Experiencias de Usuario
+
+### 6.4.1. Auditoría realizada
+
+#### 6.4.1.1. Información del grupo auditado
+
+#### 6.4.1.2. Cronograma de auditoría realizada
+
+#### 6.4.1.3. Contenido de auditoría realizada
+
+#### 6.4.2. Auditoría recibida
+
+#### 6.4.2.1. Información del grupo auditor.
+
