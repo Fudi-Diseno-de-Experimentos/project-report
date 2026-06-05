@@ -371,17 +371,13 @@ Las revisiones de código se ejecutan bajo una metodología formal de revisión 
 
 ### 6.3.1. Diseño de Entrevistas
 
-**Elementos de Inclusión en la Sesión de Validacion**
+El proceso de validación de la plataforma se sustenta en una metodología de investigación cualitativa mediante sesiones de entrevistas, diseñadas con el propósito de contrastar la percepción del usuario frente a las soluciones tecnológicas desplegadas. Esta fase de auditoría interactiva busca evaluar tanto el impacto de la propuesta de valor comunicada en los canales digitales como la usabilidad y eficacia operativa de las interfaces dentro de los flujos de trabajo cotidianos de las organizaciones. Con este fin, se establece una agenda de evaluación dividida en componentes específicos que permiten recopilar métricas de satisfacción, detectar fricciones de navegación y validar la alineación de las funcionalidades con las necesidades reales de cada segmento objetivo:  
 
-Para asegurar el éxito de la auditoría de experiencia de usuario, cada sesión se dividirá en tres componentes interactivos:  
-
-- **Evaluación de la Landing Page:** El usuario analizará la propuesta de valor, claridad de características y arquitectura descrita en el sitio web de **Centralis por Fudi**.  
-
+- **Evaluación de la Landing Page:** El usuario analizará la propuesta de valor, claridad de características y arquitectura descrita en el sitio web de Centralis por Fudi.  
 - **Validación del User Flow del Empleado:** Flujos de comunicación horizontal (creación y visualización de anuncios globales, comentarios interactivos, inicio de chats individuales y revisión de eventos organizacionales).
-
 - **Validación del User Flow del Gerente:** Flujos de gestión y auditoría (creación de anuncios y eventos corporativos, apertura de canales grupales de chat y el despliegue del módulo de analíticas de lectura por perfil de empleado).
 
-  
+
 
 **Segmento 1: Empleados **
 
@@ -400,7 +396,7 @@ Para asegurar el éxito de la auditoría de experiencia de usuario, cada sesión
   - *Pregunta de validación:* ¿Fue fácil para usted iniciar un chat individual (uno a uno) de forma autónoma con un colega específico?
   - *Pregunta de validación:* ¿El calendario o sección de eventos le permitió confirmar su participación de manera clara y rápida?
 
-**C. Fase de Cierre y Debriefing**
+**C. Fase de Cierre**
 
 - Si su empresa implementara Centralis mañana mismo, ¿qué elemento de la aplicación móvil se convertiría en su herramienta diaria indispensable?  
 - Dado que cualquier empleado puede publicar anuncios globales, ¿le preocuparía que la pantalla principal se sature de información o el diseño le ayuda a priorizar lo importante?
@@ -422,7 +418,7 @@ Para asegurar el éxito de la auditoría de experiencia de usuario, cada sesión
   - *Pregunta de validación:* El ingreso al perfil del empleado para auditar los anuncios y eventos que ha visto, ¿le resultó accesible y claro de interpretar?
   - *Pregunta de validación:* Sabiendo que esta funcionalidad es indispensable para usted como administrador, ¿considera que la forma en que se presentan los datos en la pantalla móvil resguarda un ambiente de confianza laboral o se percibe invasiva?
 
-**C. Fase de Cierre y Debriefing**
+**C. Fase de Cierre**
 
 - ¿Considera que el control analítico por perfil de usuario le otorga el respaldo operativo necesario para garantizar que los comunicados importantes realmente se lean en la empresa?
 - ¿Qué opinión tiene sobre que los empleados tengan la capacidad de publicar anuncios globales directamente en el mismo espacio que la gerencia? ¿Implementaría alguna restricción o prefiere mantener la comunicación abierta?
