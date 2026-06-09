@@ -46,13 +46,15 @@
 
 ¿Quiénes están involucrados?
 
-<p style="text-indent: 1.25cm;">Los principales stakeholders identificados son tres grupos: pequeñas y medianas empresas que buscan mejorar su comunicación interna, gerentes o líderes que necesitan un canal formal para difundir información y organizar actividades, y empleados que requieren un espacio colaborativo dedicado para interactuar sin mezclar su vida personal con la laboral.
+<p style="text-indent: 1.25cm;">Los principales stakeholders identificados son dos grupos:  gerentes o líderes que necesitan un canal formal para difundir información y organizar actividades, y empleados que requieren un espacio colaborativo dedicado para interactuar sin mezclar su vida personal con la laboral.
+
 
 ***What:***
 
 ¿Cuál es el problema?
 
-<p style="text-indent: 1.25cm;">Actualmente, las empresas enfrentan una fragmentación en sus canales de comunicación interna. Muchas organizaciones utilizan aplicaciones informales como WhatsApp para interacciones diarias, lo que genera desorganización y falta de privacidad, o recurren a soluciones complejas como Microsoft Teams o Slack, que pueden resultar abrumadoras y costosas para equipos pequeños. Esto deriva en pérdida de información importante, falta de centralización, dificultades para gestionar anuncios, eventos y conversaciones grupales de manera eficiente, y una clara desconexión entre los diferentes niveles jerárquicos de la organización.
+<p style="text-indent: 1.25cm;">Actualmente, las empresas enfrentan una fragmentación en sus canales de comunicación interna. Muchas organizaciones utilizan aplicaciones informales como WhatsApp para interacciones diarias, lo que genera desorganización y falta de privacidad, o recurren a soluciones complejas o caras como Microsoft Teams o Slack, que pueden resultar abrumadoras y costosas para equipos pequeños. Esto deriva en pérdida de información importante, falta de centralización, dificultades para gestionar anuncios, eventos y conversaciones grupales de manera eficiente, y una clara desconexión entre los diferentes niveles jerárquicos de la organización.
+
 
 ***Where:***
 
