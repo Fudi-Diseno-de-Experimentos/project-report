@@ -426,6 +426,44 @@ El proceso de validación de la plataforma se sustenta en una metodología de in
 
 ### 6.3.2. Registro de Entrevistas
 
+***Segmento Objetivo 1: Empleados de Empresas***
+
+***Segmento Objetivo 2: Gerentes y Líderes de Equipos***
+
+Entrevista 3: 
+
+<img src="https://i.imgur.com/Mcd6dpT.png" alt="">
+
+* **Nombre:**  Grecia Rivera
+
+* **Edad:** 28
+
+* **Minuto de inicio:**  (aun por definir)
+
+* **Resumen:** 
+
+  La participante interactuó con la propuesta de valor móvil de Centralis, validando que la plataforma justifica la migración desde herramientas tradicionales como WhatsApp, debido a que estas últimas generan pérdida de información y carecen de un seguimiento del nivel de lectura de los colaboradores. Durante la fase de interacción en la aplicación, la usuaria completó con éxito las tareas de registro de compañía, agregación de empleados a la organización, publicación de anuncios urgentes y creación de eventos corporativos enlazados a chats privados.
+
+  En términos de usabilidad, el flujo de creación fue evaluado como ágil y directo; sin embargo, se detectó una oportunidad de mejora heurística en el flujo de invitación a eventos, donde la usuaria tuvo que retroceder manualmente a la sección de perfiles y deslizar la pantalla hacia abajo para refrescar y actualizar la lista de miembros elegibles. Respecto al módulo analítico por perfil de usuario, confirmó que es altamente accesible, claro y que no transgrede la privacidad de los empleados al estar estrictamente limitado al ámbito laboral, otorgando el respaldo operativo necesario para garantizar la lectura de comunicados críticos.
+
+
+
+Entrevista 4: 
+
+<img src="https://i.imgur.com/klwtXgy.png" alt="">
+
+* **Nombre:**  Gerendine Correa
+
+* **Edad:** 30
+
+* **Minuto de inicio:**  (aun por definir)
+
+* **Resumen:** 
+
+  La participante validó la propuesta de valor desde la perspectiva de la seguridad informática corporativa, afirmando que herramientas tradicionales como WhatsApp no constituyen medios formales ni seguros para el flujo de datos de una organización. Durante la interacción con la aplicación móvil, completó satisfactoriamente los flujos de creación de compañía , adición de empleados al entorno corporativo aplicando la actualización por deslizamiento manual y estructuración de anuncios, eventos y chats grupales.  
+
+  En términos de usabilidad, el proceso fue evaluado como intuitivo, rápido y estético (*fancy*). No obstante, se detectó una falla técnica crítica de rendimiento: la aplicación se congeló momentáneamente (*"se quedó cargando"*) al intentar ingresar a las analíticas directamente desde la vista del anuncio. Esto obligó a desviar el flujo y acceder al historial de lecturas de manera indirecta a través del menú de miembros en el perfil de usuario. A pesar de este retraso en la carga, la usuaria validó que el módulo analítico es indispensable, claro y que no vulnera la privacidad de los colaboradores, ya que la auditoría utiliza cuentas corporativas y se restringe a verificar la lectura de asignaciones laborales. 
+
 ### 6.3.3. Evaluaciones según heurísticas
 
 ## 6.4. Auditoría de Experiencias de Usuario
