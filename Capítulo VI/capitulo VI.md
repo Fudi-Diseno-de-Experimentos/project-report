@@ -478,5 +478,11 @@ Entrevista 4:
 
 #### 6.4.2. Auditoría recibida
 
-#### 6.4.2.1. Información del grupo auditor.
+#### 6.4.2.1. Información del grupo auditor
+
+#### 6.4.2.2. Cronograma de auditoría recibida
+
+#### 6.4.2.3. Contenido de auditoría recibida
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos. 
 
