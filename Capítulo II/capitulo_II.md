@@ -194,6 +194,36 @@ Cuando recibe anuncios importantes, a veces llegan por correo y otras veces por 
 
 
 
+***Entrevista #3***
+
+**Figura 4**
+
+*Imagen del usuario número 3 entrevistado*
+
+<p align="center">
+  <img src="../Anexos/Images-CapII/Entrevista_3_S1.png" alt="Entrevista Lucas Moreno">
+</p>
+
+*Nota.* Elaboración propia. Link: https://drive.google.com/file/d/1IlQ3ScfLjSHsY_vZY79KGP98NltSFDHY/view?usp=sharing
+
+* **Nombre:** Lucas Moreno
+* **Edad:** 27 años
+* **Minuto de inicio:** 
+
+* **Resumen:** Lucas utiliza principalmente Microsoft Teams y Outlook para comunicarse en el trabajo. Los anuncios importantes se comunican mediante reuniones diarias, canales generales de Teams y correos corporativos. Considera incómodo usar su WhatsApp personal para asuntos laborales porque lo percibe como un espacio privado. Además, señala que algunos anuncios pueden perderse entre conversaciones dentro de Teams. Utiliza principalmente la laptop para comunicarse y organizar sus actividades.
+------
+* **Necesidades:**
+
+  - Alertas diferenciadas según la importancia de los mensajes.
+
+  - Anuncios y noticias visibles sin perderse entre conversaciones.
+
+  - Filtros para clasificar comunicados por equipo, área o nivel de urgencia.
+
+  - Separación de conversaciones por proyectos o temas específicos.
+
+  - Reducir el uso de WhatsApp personal para asuntos laborales.
+
 
 
 **Entrevista #3:**
