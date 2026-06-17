@@ -432,7 +432,7 @@ Entrevista 1:
 
 <img src="https://i.imgur.com/Mcd6dpT.png" alt="">
 
-* **Nombre:**  Mateo
+* **Nombre:**  Dante Mateo Aleman Romano
 
 * **Edad:** 25
 
@@ -478,6 +478,93 @@ Entrevista 4:
   En términos de usabilidad, el proceso fue evaluado como intuitivo, rápido y estético (*fancy*). No obstante, se detectó una falla técnica crítica de rendimiento: la aplicación se congeló momentáneamente (*"se quedó cargando"*) al intentar ingresar a las analíticas directamente desde la vista del anuncio. Esto obligó a desviar el flujo y acceder al historial de lecturas de manera indirecta a través del menú de miembros en el perfil de usuario. A pesar de este retraso en la carga, la usuaria validó que el módulo analítico es indispensable, claro y que no vulnera la privacidad de los colaboradores, ya que la auditoría utiliza cuentas corporativas y se restringe a verificar la lectura de asignaciones laborales. 
 
 ### 6.3.3. Evaluaciones según heurísticas
+
+# **Anexo D. Formato para Evaluación de User Experience según Heurísticas**
+
+## **UX Heuristics & Principles Evaluation**
+
+### **Usability – Inclusive Design – Information Architecture**
+
+**CARRERA : Ingeniería de Software**
+**CURSO : Diseño de Experimentos de Ingeniería de Software
+SECCIÓN : 1ASI0732-2610-17821**
+**PROFESORES : Lennin Percy Cenas Vasquez**
+**AUDITOR : Raúl Bellido Salas**
+**CLIENTE(S) :Centralis User**
+
+
+#### ***SITE o APP A EVALUAR:***
+
+**[Centralis]()** *(Plataforma SaaS multiplataforma de comunicación interna empresarial)*
+
+#### ***TAREAS A EVALUAR:***
+
+*El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas basadas en los flujos interactivos presentados:*
+
+1. **Navegación por la pantalla de inicio (Home):** Visualización de eventos de la compañía, anuncios generales y lista de chats recientes.
+2. **Filtrado del feed de eventos:** Clasificación y filtrado de elementos de comunicación según su orden de relevancia (Normal, Alto, Urgente).
+3. **Gestión de mensajería interna:** Flujo para sostener chats privados individuales con empleados específicos y creación de chats grupales de coordinación corporativa.
+4. **Consulta de perfil de usuario:** Visualización de las funcionalidades activas asignadas y validación de las compañías empresariales asociadas a la cuenta.
+
+*No están incluidas en esta versión de la evaluación las siguientes tareas:*
+
+1. Configuración del perfil de administrador para la creación de nuevos anuncios corporativos.
+2. Integración y llamadas de voz o videoconferencia directas desde la interfaz.
+3. Configuración y despliegue del sistema SaaS en servidores de múltiples compañías independientes.
+
+---
+
+#### ***ESCALA DE SEVERIDAD:***
+
+| Nivel | Descripción |
+| --- | --- |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### ***TABLA RESUMEN:***
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| --- | --- | --- | --- |
+| **1** | **Falta de orientación inicial o flujo de inducción para nuevos usuarios corporativos (Onboarding).** | **2** | **Usability: Ayuda y documentación / Flexibilidad y eficiencia de uso** |
+| **2** | **Ausencia de datos de localización o salas específicas en las tarjetas de detalles de eventos.** | **3** | **Information Architecture: Is it findable? / Is it usable?** |
+| **3** | **Uso exclusivo de datos estáticos/maquetados sin simulación de flujos de interacción dinámica.** | **2** | **Usability: Relación entre el sistema y el mundo real** |
+
+---
+
+#### ***DESCRIPCIÓN DE PROBLEMAS:***
+
+**PROBLEMA #1: Falta de orientación inicial o flujo de inducción para nuevos usuarios corporativos (Onboarding).** **Severidad:** 2
+
+**Heurística violada:** Usabilidad - Ayuda y documentación
+
+* **Problema:** Al ingresar por primera vez a la interfaz o crear una cuenta, el usuario se encuentra directamente con las cuatro pantallas principales de forma abrupta. Al ser una herramienta que consolida múltiples flujos antes dispersos (reemplazo de WhatsApp, correos y SMS corporativos), el cliente experimenta incertidumbre sobre el alcance exacto de los botones o el propósito operativo de secciones específicas sin una guía previa.
+  *(Incluir captura de pantalla de la barra lateral de navegación y la pantalla Home actual).*
+* **Recomendación:** Diseñar e implementar un pequeño tutorial interactivo de bienvenida (tour de producto) gatillado de manera automática inmediatamente después de que el usuario inicie sesión por primera vez. Este componente debe resaltar secuencialmente las funcionalidades de la barra lateral y explicar cómo interactuar con el feed y la mensajería interna.
+
+---
+
+**PROBLEMA #2: Ausencia de datos de localización o salas específicas en las tarjetas de detalles de eventos.** **Severidad:** 3
+
+**Heurística violada:** Arquitectura de la Información - Is it findable? (¿Es encontrable / útil?)
+
+* **Problema:** Al inspeccionar el feed y los detalles de los eventos organizados por la empresa, la estructura actual solo despliega quiénes están asociados y cuándo está planeado el evento. Al no categorizar si el evento es virtual o presencial, ni proveer campos específicos para registrar auditorios, oficinas, salas de reuniones o enlaces remotos, el usuario se ve obligado a recurrir de forma externa a otros medios informales de comunicación para averiguar dónde debe asistir, anulando la premisa del producto de "tenerlo todo en un solo lugar".
+  *(Incluir captura de pantalla de la vista detallada de una tarjeta de eventos sin campos de ubicación).*
+* **Recomendación:** Enriquecer la estructura de datos y el diseño visual de las tarjetas de eventos. Se deben añadir de forma obligatoria campos específicos para la localización física (ej. Sala de juntas, Auditorio principal) o, en su defecto, un interruptor dinámico para eventos virtuales que renderice un botón directo de acceso al canal de la reunión.
+
+---
+
+**PROBLEMA #3: Uso exclusivo de datos estáticos/maquetados sin simulación de flujos de interacción dinámica.** **Severidad:** 2
+
+**Heurística violada:** Usabilidad - Relación entre el sistema y el mundo real / Consistencia
+
+* **Problema:** Las vistas del feed de eventos, mensajería y perfil dependen enteramente de textos fijos de prueba. Esto impide al evaluador validar componentes cruciales del comportamiento real de la aplicación en el ecosistema pyme, tales como la persistencia de las conversaciones al cambiar de pestañas, el orden cronológico reactivo de los chats en vivo o la actualización en tiempo real de los anuncios urgentes.
+  *(Incluir captura de pantalla de la lista de mensajería con nombres fijos de prueba).*
+* **Recomendación:** Alimentar la aplicación con un set mínimo de datos de prueba dinámicos (Mock Data) controlados por estados locales en el frontend (o un archivo JSON reactivo). Esto debe permitir simular el envío de un mensaje nuevo o la adición de un evento simulado para emular el flujo operativo antes de realizar la integración final con los servicios de backend.
+
 
 ## 6.4. Auditoría de Experiencias de Usuario
 
