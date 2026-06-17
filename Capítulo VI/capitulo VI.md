@@ -485,7 +485,15 @@ Entrevista 4:
 
 #### 6.4.1.1. Información del grupo auditado
 
+ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), dedicada al desarrollo de soluciones digitales para la gestión financiera de restaurantes. Con el propósito de brindar a los dueños de negocios gastronómicos una herramienta accesible, intuitiva y especializada, se ha desarrollado el proyecto FoodFlow, una aplicación web orientada al monitoreo de la salud financiera del restaurante, la visualización de ingresos y gastos, el análisis de rentabilidad por plato, la gestión de inventario, el control de órdenes y la generación de reportes estratégicos. En ClaudeFlow, consideramos que una adecuada gestión financiera es fundamental para la sostenibilidad, rentabilidad y crecimiento de los restaurantes, especialmente en negocios pequeños y medianos que suelen operar con procesos manuales, hojas de cálculo o información dispersa. Por ello, FoodFlow busca convertirse en una solución tecnológica que permita transformar los datos operativos del restaurante en información clara y útil para la toma de decisiones.
+
+
 #### 6.4.1.2. Cronograma de auditoría realizada
+
+|   Fecha    | Actividad | Descripción |
+|:----------:| :--- | :--- |
+| 2026-06-01 | Revisión de la Landing Page | Evaluación de la propuesta de valor, claridad de características y arquitectura descrita en el sitio web de Centralis por Fudi. |
+| 2026-06-02 | Validación del User Flow del Empleado | Evaluación de los flujos de comunicación horizontal (creación y visualización de anuncios global                     
 
 #### 6.4.1.3. Contenido de auditoría realizada
 
@@ -613,7 +621,19 @@ Entrevista 4:
 
 #### 6.4.2.1. Información del grupo auditor
 
+ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), dedicada al desarrollo de soluciones digitales para la gestión financiera de restaurantes. Con el propósito de brindar a los dueños de negocios gastronómicos una herramienta accesible, intuitiva y especializada, se ha desarrollado el proyecto FoodFlow, una aplicación web orientada al monitoreo de la salud financiera del restaurante, la visualización de ingresos y gastos, el análisis de rentabilidad por plato, la gestión de inventario, el control de órdenes y la generación de reportes estratégicos. En ClaudeFlow, consideramos que una adecuada gestión financiera es fundamental para la sostenibilidad, rentabilidad y crecimiento de los restaurantes, especialmente en negocios pequeños y medianos que suelen operar con procesos manuales, hojas de cálculo o información dispersa. Por ello, FoodFlow busca convertirse en una solución tecnológica que permita transformar los datos operativos del restaurante en información clara y útil para la toma de decisiones.
+
+
 #### 6.4.2.2. Cronograma de auditoría recibida
+
+|   Fecha    | Actividad |
+|:----------:| :--- |
+| 2026-06-01 | Revisión inicial de la plataforma FoodFlow y familiarización con sus funcionalidades principales. |
+| 2026-06-03 | Ejecución de tareas de usuario específicas en la aplicación web, enfocándose en los flujos de gestión de inventario, creación de platos y visualización de métricas financieras. |
+| 2026-06-05 | Documentación detallada de problemas de usabilidad encontrados, asignación de severidad y elaboración de recomendaciones de mejora basadas en principios heurísticos. |
+| 2026-06-07 | Preparación del informe de auditoría de experiencia de usuario, incluyendo la tabla resumen de problemas y la descripción detallada de cada uno. |
+| 2026-06-10 | Presentación del informe de auditoría a los desarrolladores de FoodFlow para su revisión y planificación de correcciones en futuras iteraciones del producto. |          
+
 
 #### 6.4.2.3. Contenido de auditoría recibida
 
@@ -823,7 +843,7 @@ Las burbujas de los miembros que asistirán al evento (esquina superior derecha 
 
 **Captura de pantalla:**
 <p align="center">
-  <img src="assets/Problema8.png" alt="P8">
+  <img src="https://i.imgur.com/GEbQALR.png" alt="P8">
 </p>
 
 **Recomendación:**
@@ -832,4 +852,5 @@ Conectar las burbujas de avatar con el servicio de base de datos correspondiente
 
 
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos. 
+
 
