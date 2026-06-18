@@ -294,48 +294,57 @@ Nota: Las step definitions (CompanyStepDefinitions) usan anotaciones en español
 
 En esta sección se detallan las pruebas de sistema realizadas para validar la integridad de la plataforma **Centralis** en su totalidad. Estas evaluaciones aseguran que la interacción entre la aplicación móvil y los servicios de backend operen correctamente bajo escenarios de uso real, cubriendo flujos completos de navegación y sincronización de datos.
 
-**Escenarios de Prueba de Sistema (E2E)**
+**Core Behaviours — Patrol Flutter (E2E)**
 
-Se han ejecutado pruebas integrales que validan la respuesta del sistema en los siguientes escenarios críticos:
-
-1. **Flujo de Comunicación Organizacional:**
-
-    - **Escenario:** Un administrador publica un anuncio desde la plataforma web y un colaborador lo visualiza en la aplicación móvil nativa.
-    - **Validación:** Se confirma la correcta interacción con la API RESTful en Render y la actualización inmediata de la interfaz en Flutter, asegurando que la latencia y el formato de los datos sean los esperados.
+Los siguientes flujos validan el comportamiento extremo a extremo de la aplicación Patrol en Flutter, cubriendo los casos de uso principales de anuncios, eventos y sesión.
 
 
+<img src="https://i.imgur.com/9FuNbzA.png" alt="">
 
-*Link del video:*  https://shorturl.at/0ugjH
-Inicio 00:00 		Fin: 00:10
-
-   <img src="https://i.imgur.com/hh2gAQI.png" alt="crear chat">
-
+- **Announcement Create** — Valida el flujo completo de publicación de un nuevo anuncio corporativo: el test navega hasta la sección de anuncios, completa el formulario con título, descripción y prioridad, confirma la acción y verifica que el anuncio aparezca correctamente listado en la pantalla principal.
+  *Video:* http://bit.ly/4uQ9bVb
 
 
-   <img src="https://i.imgur.com/bFIMTQe.png" alt="crear chat">
+<img src="https://i.imgur.com/wyyd8Xg.png" alt="">
+
+- **Announcement Delete** — Verifica que un anuncio existente pueda eliminarse de forma permanente desde la interfaz móvil: el test selecciona el anuncio, ejecuta la acción de eliminación, confirma el diálogo de advertencia y comprueba que el registro desaparezca de la lista.
+  *Video:* https://bit.ly/4oJDoUA
 
 
+<img src="https://i.imgur.com/adtYh18.png" alt="">
 
-2. **Sincronización de Eventos y Calendario:**
-
-    - **Escenario:** Registro de un evento corporativo y verificación de su disponibilidad para todos los usuarios pertenecientes al mismo `company_id`.
-    - **Validación:** Se valida la navegación entre módulos y la persistencia de la información en la base de datos PostgreSQL, garantizando que no existan errores de sincronización entre el estado del servidor y la vista del cliente móvil.
-
+- **Announcement Edit** — Valida la edición de un anuncio ya publicado: el test accede al modo de edición, modifica los campos de contenido y prioridad, guarda los cambios y confirma que los datos actualizados se reflejen inmediatamente en la vista de detalle.
+  *Video:* https://shorturl.at/OqmyB
 
 
-*Link del video:*  https://shorturl.at/0ugjH
-Inicio 00:10 		Fin: 00:34
+<img src="https://i.imgur.com/NJaOMpT.png" alt="">
 
-<img src="https://i.imgur.com/dXVz6K5.png" alt="crear chat">
-
-
-
-<img src="https://i.imgur.com/VIGAK7a.png" alt="crear chat">
+- **Event Create** — Verifica la creación de un evento corporativo: el test navega al módulo de eventos, completa el formulario con título, descripción, fecha e invitados, registra el evento y comprueba que figure correctamente en el calendario de la organización.
+  *Video:* https://shorturl.at/P9OpU
 
 
+<img src="https://i.imgur.com/gIkZXsR.png" alt="">
+
+- **Event Delete** — Valida que un evento pueda eliminarse correctamente desde la app: el test selecciona el evento objetivo, ejecuta la eliminación, confirma la operación y verifica que el evento haya sido retirado del listado y del calendario compartido.
 
 
+<img src="https://i.imgur.com/n6ZyR6J.png" alt="">
 
+  *Video:* https://shorturl.at/UXHLC
+- **Event Edit** — Verifica la modificación de un evento registrado: el test abre la vista de edición, actualiza el título, la fecha o la lista de invitados, guarda los cambios y comprueba que la información revisada se sincronice con el backend y sea visible para todos los participantes.
+  *Video:* https://shorturl.at/RcA0f
+
+
+<img src="https://i.imgur.com/93wcCkC.png" alt="">
+
+- **Sign Out** — Valida el cierre de sesión seguro del usuario: el test accede al menú de perfil, ejecuta la acción de cerrar sesión y confirma que la app redirija a la pantalla de inicio de sesión sin mantener información de la sesión previa en caché.
+  *Video:* https://shorturl.at/xUVWl
+
+
+<img src="https://i.imgur.com/e4ME92F.png" alt="">
+
+- **Patrol Full Flow** — Flujo integral que encadena todos los comportamientos anteriores en una única ejecución continua: autenticación, creación/edición/eliminación de anuncios, creación/edición/eliminación de eventos y cierre de sesión. Sirve como prueba de regresión general para garantizar que ningún cambio rompa la navegación global de la aplicación.
+  *Video:* https://h1.nu/1rXLr
 
 
 ## 6.2. Static testing & Verification
