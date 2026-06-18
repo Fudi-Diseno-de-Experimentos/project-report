@@ -435,6 +435,8 @@ El proceso de validación de la plataforma se sustenta en una metodología de in
 
 ### 6.3.2. Registro de Entrevistas
 
+Link Validation Interviews: https://shorturl.at/gH7kO
+
 ***Segmento Objetivo 1: Empleados de Empresas***
 
 ***Segmento Objetivo 2: Gerentes y Líderes de Equipos***
@@ -447,7 +449,7 @@ Entrevista 3:
 
 * **Edad:** 28
 
-* **Minuto de inicio:**  (aun por definir)
+* **Minuto de inicio:**  05:30 
 
 * **Resumen:** 
 
@@ -465,7 +467,7 @@ Entrevista 4:
 
 * **Edad:** 30
 
-* **Minuto de inicio:**  (aun por definir)
+* **Minuto de inicio:**  22:47
 
 * **Resumen:** 
 
