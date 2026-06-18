@@ -430,7 +430,7 @@ El proceso de validación de la plataforma se sustenta en una metodología de in
 
 Entrevista 1:
 
-<img src="https://i.imgur.com/Mcd6dpT.png" alt="">
+<img src="https://i.imgur.com/sb9EnAF.png" alt="">
 
 * **Nombre:**  Dante Mateo Aleman Romano
 
@@ -440,6 +440,18 @@ Entrevista 1:
 
 * **Resumen:**
 *
+En esta entrevista de validación, Raúl Villo Salas presenta a su compañero
+Mateo el prototipo de Centralis**, una plataforma SaaS multiplataforma 
+de comunicación interna diseñada para centralizar la interacción en pequeñas
+y medianas empresas (pymes) y evitar la dispersión de herramientas como WhatsApp 
+o el correo electrónico. Durante la demostración de la interfaz —compuesta por 
+cuatro pantallas principales que incluyen el inicio, un feed de eventos y 
+anuncios filtrados por relevancia, mensajería privada/grupal y el perfil 
+de usuario—, Mateo elogia el diseño estético, limpio y minimalista de la
+aplicación. Asimismo, el entrevistado aporta dos sugerencias clave para
+la mejora del producto: la implementación de un tutorial interactivo de inicio
+para guiar a los nuevos usuarios en las funcionalidades de la plataforma, y la
+inclusión de ubicaciones o salas específicas en el apartado de eventos (ya sean virtuales o presenciales) para facilitar la organización del personal. Raúl concluye la sesión agradeciendo el feedback y asegurando que estas recomendaciones serán tomadas en cuenta para el desarrollo futuro de la aplicación.
 
 ***Segmento Objetivo 2: Gerentes y Líderes de Equipos***
 
