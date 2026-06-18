@@ -142,58 +142,51 @@ Es un **protocolo de comunicación** a través de números de versión (ej. `MAJ
 
 <p style="text-indent: 1.25cm;">A continuación, se presentan las tareas, historias de usuario y objetivos específicos definidos por el equipo de Fudi, asegurando la trazabilidad entre las necesidades del negocio y la evolución técnica del producto digital.  
 
-| StoryID | Title                                                        | ID task | Título                                                       | Descripción                                                  | Estimation (Hours) | Assigned To | Status    |
-| ------- | ------------------------------------------------------------ | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------ | ----------- | --------- |
-| US01    | Cambiar el idioma de la landing page                         | TA01    | Cambiar el idioma de la landing page                         | Como visitante, quiero traducir la página para leer el contenido en mi idioma preferido. | 5                  | Fabrizio    | InProcess |
-| US02    | Sección About de la landing page                             | TA02    | Sección About de la landing page                             | Como visitante, quiero ver una sección About en la landing page para entender la misión, visión y propósito de Centralis. | 5                  | Fabrizio    | InProcess |
-| US03    | Historia de la startup                                       | TA03    | Historia de la startup                                       | Como visitante, quiero conocer la historia y origen de Centralis para generar confianza en la marca. | 5                  | Sergio      | InProcess |
-| US04    | Sección FAQ                                                  | TA04    | Sección FAQ                                                  | Como visitante, quiero acceder a una sección FAQ para resolver mis dudas comunes sobre el producto. | 5                  | Neil        | InProcess |
-| US05    | Sección Team                                                 | TA05    | Sección Team                                                 | Como visitante, quiero conocer al equipo detrás de Centralis para humanizar la marca y generar confianza. | 5                  | Raul        | InProcess |
-| US06    | Links profesionales del equipo                               | TA06    | Links profesionales del equipo                               | Como visitante, quiero acceder a los perfiles profesionales del equipo para verificar su expertise. | 5                  | Fabrizio    | InProcess |
-| US07    | Compatibilidad con múltiples dispositivos                    | TA07    | Compatibilidad con múltiples dispositivos                    | Como visitante, quiero poder ver la landing page en mi dispositivo móvil para no tener que abrir el sitio web en un dispositivo similar a una computadora de escritorio. | 5                  | Sergio      | InProcess |
-| US08    | Acceso a Centralis desde la landing page                     | TA08    | Acceso a Centralis desde la landing page                     | Como visitante, quiero acceder a Centralis directamente desde la landing page para poder interactuar con la aplicacion. | 4                  | Fabrizio    | InProcess |
-| US09    | Navegación Accesible                                         | TA09    | Navegación Accesible                                         | Como visitante que utiliza tecnologías de asistencia, quiero que la landing page anuncie claramente las etiquetas de las secciones para comprender su estructura y propósito. | 7                  | Sergio      | InProcess |
-| US10    | Publicación básica de anuncios                               | TA10    | Publicación básica de anuncios                               | Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa. | 5                  | Fabrizio    | InProcess |
-| US11    | Priorización de anuncios                                     | TA11    | Priorización de anuncios                                     | Como gerente, quiero marcar anuncios como prioritarios para que los empleados los vean primero. | 4                  | Sergio      | InProcess |
-| US12    | Edición de anuncios                                          | TA12    | Edición de anuncios                                          | Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información. | 4                  | Danitza     | InProcess |
-| US13    | Eliminación de anuncios                                      | TA13    | Eliminación de anuncios                                      | Como gerente, quiero eliminar anuncios obsoletos para mantener la información actualizada. | 6                  | Sergio      | InProcess |
-| US14    | Confirmaciones de lectura                                    | TA14    | Confirmaciones de lectura                                    | Como gerente, quiero ver confirmaciones de lectura de anuncios para saber quién ha leído la información importante. | 8                  | Neil        | InProcess |
-| US15    | Comentarios en anuncios                                      | TA15    | Comentarios en anuncios                                      | Como empleado, quiero dar feedback sobre anuncios para aclarar dudas o hacer comentarios. | 5                  | Fabrizio    | InProcess |
-| US16    | Subir imágenes en anuncios                                   | TA16    | Subir imágenes en anuncios                                   | Como gerente quiero poder adjuntar imágenes a los anuncios publicados, para que la información sea más clara y atractiva. | 9                  | Fabrizio    | InProcess |
-| US17    | Visualizar imágenes en anuncios                              | TA17    | Visualizar imágenes en anuncios                              | Como empleado quiero poder ver las imágenes adjuntas en los anuncios, para comprender mejor la información publicada. | 7                  | Fabrizio    | InProcess |
-| US18    | Creación básica de eventos                                   | TA18    | Creación básica de eventos                                   | Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa. | 8                  | Neil        | InProcess |
-| US19    | Cancelación de eventos                                       | TA19    | Cancelación de eventos                                       | Como gerente, quiero cancelar eventos cuando sea necesario para evitar confusiones. | 4                  | Raul        | InProcess |
-| US20    | Modificación de eventos                                      | TA20    | Modificación de eventos                                      | Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento. | 8                  | Neil        | InProcess |
-| US21    | Eventos prioritarios                                         | TA21    | Eventos prioritarios                                         | Como gerente, quiero marcar eventos como prioritarios para que los empleados les presten especial atención. | 8                  | Danitza     | InProcess |
-| US22    | Métricas de participación                                    | TA22    | Métricas de participación                                    | Como gerente, quiero ver métricas de participación en eventos para medir el engagement del equipo. | 7                  | Danitza     | InProcess |
-| US23    | Creación de chats grupales                                   | TA23    | Creación de chats grupales                                   | Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas. | 5                  | Neil        | InProcess |
-| US24    | Eliminar grupos de chats                                     | TA24    | Eliminar grupos de chats                                     | Como gerente, quiero eliminar chats grupales para mantener el orden de las conversaciones. | 9                  | Sergio      | InProcess |
-| US25    | Envío de mensajes                                            | TA25    | Envío de mensajes                                            | Como empleado, quiero enviar mensajes para mantenerme comunicado con mi equipo | 4                  | Neil        | InProcess |
-| US26    | Eliminación de mensajes enviados                             | TA26    | Eliminación de mensajes enviados                             | Como empleado, quiero eliminar mensajes que envié por error para corregir mis equivocaciones. | 7                  | Raul        | InProcess |
-| US27    | Modificación de mensajes enviados                            | TA27    | Modificación de mensajes enviados                            | Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos. | 5                  | Raul        | InProcess |
-| US28    | Eliminación de chats grupales por gerentes                   | TA28    | Eliminación de chats grupales por gerentes                   | Como gerente, quiero eliminar chats grupales obsoletos o inactivos para mantener la lista de chats organizada y relevante. | 4                  | Fabrizio    | InProcess |
-| US29    | Listado organizado de chats                                  | TA29    | Listado organizado de chats                                  | Como empleado, quiero ver todos los chats de los que forma parte para encontrar rápidamente conversaciones específicas. | 3                  | Danitza     | InProcess |
-| US30    | Enviar imágenes en chats grupales                            | TA30    | Enviar imágenes en chats grupales                            | Como empleado quiero poder enviar imágenes en los chats grupales, para compartir información visual con mi equipo. | 5                  | Raul        | InProcess |
-| US31    | Eliminar imágenes enviadas en el chat                        | TA31    | Eliminar imágenes enviadas en el chat                        | Como usuario quiero poder eliminar una imagen enviada en un chat, para corregir errores o evitar confusiones. | 5                  | Neil        | InProcess |
-| US32    | Visualizar imágenes en chats                                 | TA32    | Visualizar imágenes en chats                                 | Como empleado, quiero ver todos los chats de los que forma parte para encontrar rápidamente conversaciones específicas. | 4                  | Raul        | InProcess |
-| US33    | Validar y almacenar datos cifrados de usuario al registrarse | TA33    | Validar y almacenar datos cifrados de usuario al registrarse | Como desarrollador, quiero validar los datos de registro entrantes y almacenar las credenciales cifradas  de los empleados para que las cuentas se creen de forma segura y estén protegidas contra accesos no autorizados. | 4                  | Fabrizio    | InProcess |
-| US34    | Restringir el acceso a la API                                | TA34    | Restringir el acceso a la API                                | Como desarrollador, quiero proteger las rutas de la API mediante control de acceso basado en roles y protecciones de middleware para bloquear el acceso no autorizado. | 3                  | Fabrizio    | InProcess |
-| US35    | Mantener la sesión iniciada                                  | TA35    | Mantener la sesión iniciada                                  | Como empleado, quiero mantener la sesión iniciada de forma segura en todas las sesiones para no tener que volver a autenticarme con frecuencia al volver a la aplicación. | 4                  | Fabrizio    | InProcess |
-| US36    | Funcionalidad de Cierre de Sesión Seguro                     | TA36    | Funcionalidad de Cierre de Sesión Seguro                     | Como empleado, quiero cerrar sesión de forma segura en la aplicación para que mi sesión finalice por completo y no pueda ser reutilizada por terceros no autorizados. | 5                  | Neil        | InProcess |
-| US37    | Invalidar tokens y borrar metadatos de sesión al cerrar sesión | TA37    | Invalidar tokens y borrar metadatos de sesión al cerrar sesión | Como desarrollador, quiero implementar un mecanismo de cierre de sesión que invalide los tokens de actualización y borre los metadatos de sesión para mejorar la seguridad | 3                  | Raul        | InProcess |
-| US38    | Implementar autenticación segura con JWT y cifrado de contraseñas | TA38    | Implementar autenticación segura con JWT y cifrado de contraseñas | Como desarrollador, quiero implementar un endpoint de autenticación y emitir JWT firmados con gestión de expiración, para que se puedan establecer sesiones de empleados seguras. | 4                  | Fabrizio    | InProcess |
-| US39    | Representación de navegación y acciones basada en roles.     | TA39    | Representación de navegación y acciones basada en roles.     | Como desarrollador, quiero ver los elementos de navegación según los roles autenticados, para que los empleados solo vean las secciones a las que están autorizados a acceder. | 5                  | Danitza     | InProcess |
-| US40    | Investigar la Integración de Firebase Cloud Messaging para Notificaciones en la Plataforma Fudi | TA40    | Investigar la Integración de Firebase Cloud Messaging para Notificaciones en la Plataforma Fudi | Como equipo de desarrollo de Synera, quiero investigar y prototipar la integración de Firebase Cloud Messaging (FCM) para el envío de notificaciones push a las aplicaciones móviles, para entender los requisitos técnicos, los costos, las limitaciones y el esfuerzo necesario para implementar esta funcionalidad de manera robusta y escalable. | 5                  | Neil        | InProcess |
-| US41    | Registro de nueva Compania                                   | TA41    | Registro de nueva Compania                                   | Como gerente, quiero registrar mi Company en la plataforma para empezar a gestionar la comunicación de mi equipo. | 5                  | Raul        | InProcess |
-| US42    | Edición de perfil de Compania                                | TA42    | Edición de perfil de Compania                                | Como gerente, quiero actualizar la información de mi Company (logo, nombre, dirección) para que los empleados identifiquen la marca. | 3                  | Danitza     | InProcess |
-| US43    | Baja del servicio de Compania                                | TA43    | Baja del servicio de Compania                                | Como gerente, quiero poder desactivar la cuenta de mi Company para que toda la información y acceso de los empleados sea revocado. | 4                  | Raul        | InProcess |
-| US44    | Registro de empleados por Compania                           | TA44    | Registro de empleados por Compania                           | Como gerente, quiero registrar nuevos empleados vinculándolos automáticamente a mi Company para que tengan acceso al entorno privado. | 3                  | Raul        | InProcess |
-| US45    | Eliminación de miembros de la Compania                       | TA45    | Eliminación de miembros de la Compania                       | Como gerente, quiero desvincular a un empleado de mi Company para que ya no pueda acceder a los anuncios, chats o eventos privados. | 3                  | Sergio      | InProcess |
-| US46    | Panel de control corporativo                                 | TA46    | Panel de control corporativo                                 | Como gerente corporativo, quiero visualizar un dashboard con el progreso y las métricas de mis empleados, para medir la participación y el uso de la plataforma. | 3                  | Sergio      | InProcess |
+| StoryID | Title | ID task | Título | Descripción | Estimation (Hours) | Assigned To | Status |
+| ------- | ------------------------------------------------------------ | ------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------ | ----------- | ------ |
+| US01 | Cambiar el idioma de la landing page | TA01 | Cambiar el idioma de la landing page | Como visitante, quiero traducir la página para leer el contenido en mi idioma preferido. | 5 | Raul | Done |
+| US02 | Sección FAQ | TA02 | Sección FAQ | Como visitante, quiero acceder a una sección FAQ para resolver mis dudas comunes sobre el producto. | 4 | Danitza | Done |
+| US03 | Compatibilidad con múltiples dispositivos | TA03 | Compatibilidad con múltiples dispositivos | Como visitante, quiero poder ver la landing page en mi dispositivo móvil para no tener que abrir el sitio web en un dispositivo similar a una computadora de escritorio. | 5 | Raul | Done |
+| US04 | Publicación básica de anuncios | TA04 | Publicación básica de anuncios | Como gerente, quiero publicar anuncios en la aplicación móvil para que los empleados estén informados de las novedades de la empresa. | 5 | Fabrizio | Done |
+| US05 | Priorización de anuncios | TA05 | Priorización de anuncios | Como gerente, quiero marcar anuncios como prioritarios para que los empleados los vean primero. | 4 | Sergio | Done |
+| US06 | Edición de anuncios | TA06 | Edición de anuncios | Como gerente, quiero editar anuncios ya publicados para corregir errores o actualizar información. | 4 | Danitza | Done |
+| US07 | Eliminación de anuncios | TA07 | Eliminación de anuncios | Como gerente, quiero eliminar anuncios obsoletos para mantener la información actualizada. | 6 | Sergio | Done |
+| US08 | Seguimiento de lectura | TA08 | Seguimiento de lectura | Como gerente, quiero tener seguimiento de lectura de anuncios para saber quién ha leído la información importante. | 5 | Fabrizio | Done |
+| US09 | Comentarios en anuncios | TA09 | Comentarios en anuncios | Como empleado, quiero dar feedback sobre anuncios para aclarar dudas o hacer comentarios. | 5 | Neil | Done |
+| US10 | Subir imágenes en anuncios | TA10 | Subir imágenes en anuncios | Como gerente quiero poder adjuntar imágenes a los anuncios publicados, para que la información sea más clara y atractiva. | 9 | Fabrizio | Done |
+| US11 | Visualizar imágenes en anuncios | TA11 | Visualizar imágenes en anuncios | Como empleado quiero poder ver las imágenes adjuntas en los anuncios, para comprender mejor la información publicada. | 7 | Fabrizio | Done |
+| US12 | Creación básica de eventos | TA12 | Creación básica de eventos | Como gerente, quiero crear eventos en la aplicación móvil para organizar reuniones y actividades de la empresa. | 8 | Neil | Done |
+| US13 | Modificación de eventos | TA13 | Modificación de eventos | Como gerente, quiero modificar detalles de eventos existentes para ajustar cambios de último momento. | 8 | Neil | Done |
+| US14 | Métricas de participación | TA14 | Métricas de participación | Como gerente, quiero ver métricas de participación en eventos para medir el engagement del equipo. | 5 | Sergio | Done |
+| US15 | Creación de chats grupales | TA15 | Creación de chats grupales | Como empleado, quiero crear chats grupales para discutir temas específicos con mis colegas. | 5 | Danitza | Done |
+| US16 | Eliminar grupos de chats | TA16 | Eliminar grupos de chats | Como gerente, quiero eliminar chats grupales para mantener el orden de las conversaciones. | 5 | Sergio | Done |
+| US17 | Envío de mensajes | TA17 | Envío de mensajes | Como empleado, quiero enviar mensajes para mantenerme comunicado con mi equipo. | 3 | Raul | Done |
+| US18 | Eliminación de mensajes enviados | TA18 | Eliminación de mensajes enviados | Como empleado, quiero eliminar mensajes que envié por error para corregir mis equivocaciones. | 5 | Danitza | Done |
+| US19 | Modificación de mensajes enviados | TA19 | Modificación de mensajes enviados | Como empleado, quiero editar mensajes que ya envié para corregir errores tipográficos. | 3 | Raul | Done |
+| US20 | Eliminación de chats grupales por gerentes | TA20 | Eliminación de chats grupales por gerentes | Como gerente, quiero eliminar chats grupales obsoletos o inactivos para mantener la lista de chats organizada y relevante. | 3 | Sergio | Done |
+| US21 | Listado organizado de chats | TA21 | Listado organizado de chats | Como empleado, quiero ver todos los chats de los que forma parte para encontrar rápidamente conversaciones específicas. | 3 | Neil | Done |
+| US22 | Enviar imágenes en chats grupales | TA22 | Enviar imágenes en chats grupales | Como empleado quiero poder enviar imágenes en los chats grupales, para compartir información visual con mi equipo. | 5 | Fabrizio | Done |
+| US23 | Validar y almacenar datos cifrados de usuario al registrarse | TA23 | Validar y almacenar datos cifrados de usuario al registrarse | Como desarrollador, quiero validar los datos de registro entrantes y almacenar las credenciales cifradas de los empleados para que las cuentas se creen de forma segura y estén protegidas contra accesos no autorizados. | 5 | Raul | Done |
+| US24 | Restringir el acceso a la API | TA24 | Restringir el acceso a la API | Como desarrollador, quiero proteger las rutas de la API mediante control de acceso basado en roles. | 3 | Fabrizio | Done |
+| US25 | Mantener la sesión iniciada | TA25 | Mantener la sesión iniciada | Como empleado, quiero mantener la sesión iniciada de forma segura en todas las sesiones para no tener que volver a autenticarme con frecuencia al volver a la aplicación. | 5 | Danitza | Done |
+| US26 | Funcionalidad de Cierre de Sesión Seguro | TA26 | Funcionalidad de Cierre de Sesión Seguro | Como empleado, quiero cerrar sesión de forma segura en la aplicación para que mi sesión finalice por completo y no pueda ser reutilizada por terceros no autorizados. | 5 | Neil | Done |
+| US27 | Invalidar tokens y borrar metadatos de sesión al cerrar sesión | TA27 | Invalidar tokens y borrar metadatos de sesión al cerrar sesión | Como desarrollador, quiero implementar un mecanismo de cierre de sesión que invalide los tokens de actualización y borre los metadatos de sesión para mejorar la seguridad. | 3 | Raul | Done |
+| US28 | Implementar autenticación segura con JWT y cifrado de contraseñas | TA28 | Implementar autenticación segura con JWT y cifrado de contraseñas | Como desarrollador, quiero implementar un endpoint de autenticación y emitir JWT firmados con gestión de expiración, para que se puedan establecer sesiones de empleados seguras. | 4 | Fabrizio | Done |
+| US29 | Representación de navegación y acciones basada en roles | TA29 | Representación de navegación y acciones basada en roles | Como desarrollador, quiero ver los elementos de navegación según los roles autenticados, para que los empleados solo vean las secciones a las que están autorizados a acceder. | 5 | Danitza | Done |
+| US30 | Investigar la Integración de Firebase Cloud Messaging para Notificaciones en la Plataforma Fudi | TA30 | Integración de Firebase Cloud Messaging para Notificaciones | Como equipo de desarrollo de Fudi, quiero investigar y prototipar la integración de Firebase Cloud Messaging (FCM) para el envío de notificaciones push a las aplicaciones móviles, para entender los requisitos técnicos, los costos, las limitaciones y el esfuerzo necesario para implementar esta funcionalidad de manera robusta y escalable. | 8 | Neil | Done |
+| US31 | Registro de nueva compañía | TA31 | Registro de nueva compañía | Como gerente, quiero registrar mi compañía en la plataforma para empezar a gestionar la comunicación de mi equipo. | 5 | Raul | Done |
+| US32 | Edición de perfil de compañía | TA32 | Edición de perfil de compañía | Como gerente, quiero actualizar la información de mi compañía (logo, nombre, dirección) para que los empleados identifiquen la marca. | 4 | Danitza | Done |
+| US33 | Baja del servicio de compañía | TA33 | Baja del servicio de compañía | Como gerente, quiero poder desactivar la cuenta de mi compañía para que toda la información y acceso de los empleados sea revocado. | 5 | Sergio | Done |
+| US34 | Registro de empleados por compañía | TA34 | Registro de empleados por compañía | Como gerente, quiero registrar nuevos empleados vinculándolos automáticamente a mi compañía para que tengan acceso al entorno privado. | 5 | Neil | Done |
+| US35 | Eliminación de miembros de la compañía | TA35 | Eliminación de miembros de la compañía | Como gerente, quiero desvincular a un empleado de mi compañía para que ya no pueda acceder a los anuncios, chats o eventos privados. | 4 | Fabrizio | Done |
+| US36 | Panel de control corporativo | TA36 | Panel de control corporativo | Como gerente corporativo, quiero visualizar un dashboard con el progreso y las métricas de mis empleados, para medir la participación y el uso de la plataforma. | 8 | Raul | Done |
 
 ### 5.2.2. Implemented Landing Page Evidence
 
 <p style="text-indent: 1.25cm;">En este capítulo se describe de manera detallada el proceso de construcción, aseguramiento de calidad y puesta en producción de los componentes que integran la solución Centralis. La implementación se ha dividido en tres frentes tecnológicos clave, garantizando la interoperabilidad entre la plataforma de administración y el ecosistema móvil de las organizaciones cliente.
+
+​    
+
 *Link del deploy:* https://landing-page-rmy9.vercel.app/en 
 
 **Landing Page:** Desarrollada con el marco de trabajo **Astro**, priorizando la velocidad de carga y el posicionamiento SEO para la captación de nuevas empresas. Su despliegue se ha realizado de forma automatizada en la plataforma **Vercel**, aprovechando su infraestructura de red de entrega de contenidos (CDN).  
@@ -214,7 +207,7 @@ Es un **protocolo de comunicación** a través de números de versión (ej. `MAJ
 
 <p style="text-indent: 1.25cm;">El presente Acuerdo de Servicio establece el marco legal y operativo que rige el uso de la plataforma Centralis, provista por Fudi bajo el modelo de Software como Servicio (SaaS). Este documento garantiza la transparencia en la prestación del servicio y define las responsabilidades tanto del proveedor como de las organizaciones usuarias.
 
- 
+
 
 **1. Aceptación de los Términos y Condiciones de Servicio (TOS)**
 <p style="text-indent: 1.25cm;">Al acceder, registrarse o utilizar cualquier componente de la solución Centralis (incluyendo su landing page, aplicación web, API RESTful y futuras aplicaciones móviles), la organización suscriptora y sus usuarios finales aceptan de manera explícita e irrevocable los presentes términos. Esta aceptación constituye un requisito legal y técnico previo para la habilitación de la cuenta corporativa y el acceso a los servicios.
@@ -262,25 +255,78 @@ Queda estrictamente prohibido cualquier actividad que constituya una violación 
 
 **8. Legislación Aplicable y Confidencialidad**
 <p style="text-indent: 1.25cm;">Este acuerdo se regirá e interpretará de acuerdo con las leyes de la República del Perú. Cualquier disputa será sometida a la jurisdicción exclusiva de los tribunales de Lima, Perú.
+​    
+
+
+
 ### 5.2.4. Implemented Native-Mobile Application Evidence
 
-<p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias del proceso de construcción y despliegue de la aplicación móvil nativa de Centralis, desarrollada bajo el marco de trabajo Flutter. El enfoque de implementación se ha centrado en garantizar una experiencia de usuario fluida y reactiva, permitiendo que los colaboradores accedan a los anuncios, eventos y chats de su organización de manera eficiente.  
 
 
 
-<p style="text-indent: 1.25cm;">Las evidencias incluidas demuestran la integración de la interfaz de usuario con los Web Services alojados en Render, validando la persistencia de datos y el cumplimiento de las reglas de negocio establecidas para el modelo *SaaS* de Fudi. A continuación, se detallan las capturas de pantalla de las funcionalidades clave y los registros de los *commits* que respaldan el avance técnico durante el ciclo de desarrollo.
+<p style="text-indent: 1.25cm;">En esta sección se presentan las evidencias del desarrollo y la operatividad de la aplicación móvil nativa de Centralis, construida con el framework Flutter. El proceso de implementación se centró en materializar los requisitos funcionales del Product Backlog en una interfaz reactiva y eficiente, garantizando que los colaboradores puedan interactuar con la información corporativa en tiempo real.
 
+<p style="text-indent: 1.25cm;">Se han completado satisfactoriamente los flujos de gestión de identidad, comunicación organizacional y administración de eventos. La aplicación se integra de manera fluida con la API RESTful desplegada en Render, permitiendo la sincronización de datos bajo el modelo multi-tenancy de la startup Fudi.
 
+A continuación, se detallan las interfaces implementadas que conforman el núcleo de la experiencia móvil:
 
-**Mobile Applications:** Una aplicación móvil nativa desarrollada en **Flutter**, asegurando una comunicación fluida y en tiempo real.
+**1. Gestión de Acceso (Sign-in & Sign-up)**
 
-> [!NOTE]
->
-> Para esta primera entrega no se logro completar el desarrollo de la app mobile
+<p style="text-indent: 1.25cm;">Se implementaron las vistas de autenticación que permiten a los usuarios nuevos registrarse y a los colaboradores existentes acceder a su entorno corporativo. Estos flujos incluyen la validación de credenciales y la vinculación segura con el código de organización correspondiente.
 
-<p style="text-indent: 1.25cm;">Este proceso se gestiona de forma iterativa a través de Sprints, donde cada ciclo incluye fases de planificación y documentación de servicios, asegurando un incremento de producto funcional y validado al finalizar cada iteración.
+<p align="center">
+  <img src="https://i.imgur.com/g4GjaZI.png" alt="Descripción">
+</p>
 
+<p align="center">
+  <img src="https://i.imgur.com/0wgFQnj.png" alt="Descripción">
+</p>
 
+**2. Módulo de Anuncios (Visualización y Creación)**
+
+- **Vista de Anuncios:** Interfaz principal donde los usuarios visualizan comunicados oficiales, filtrados por prioridad y fecha.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/8AbLJIp.png" alt="Descripción">
+</p>
+
+- **Creación de Anuncios:** Formulario administrativo que permite a los usuarios con permisos generar nuevos anuncios, adjuntar imágenes y definir niveles de urgencia.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/VyQxao3.png" alt="Descripción">
+</p>
+
+**3. Gestión de Eventos (Agenda y Planificación)**
+
+- **Vista de Eventos:** Calendario y lista detallada de actividades programadas por la empresa, facilitando la organización del tiempo del colaborador.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/GuS8OD7.png" alt="Descripción">
+</p>
+
+- **Creación de Eventos:** Interfaz para la programación de nuevas actividades, donde se especifican horarios, locaciones (físicas o digitales) y descripciones.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/s139QnI.png" alt="Descripción">
+</p>
+
+**4. Perfiles de Usuario**
+
+<p style="text-indent: 1.25cm;">Se implementó la vista de perfil donde el colaborador puede visualizar sus datos personales, cargo dentro de la empresa y gestionar su configuración de cuenta, asegurando la transparencia en el manejo de su identidad digital dentro de la plataforma.
+
+---
+
+<p align="center">
+  <img src="https://i.imgur.com/8ZRjZ7d.png" alt="Descripción">
+</p>
 
 ### 5.2.5. Implemented RESTful API and/or Serverless Backend Evidence
 
@@ -385,7 +431,10 @@ Para cada contexto, se listan los endpoints más relevantes, su verbo HTTP, sint
 
 <p style="text-indent: 1.25cm;">El presente apartado detalla el desempeño colaborativo y la actividad técnica del equipo durante el periodo de implementación de la Landing Page y los Web Services del proyecto Centralis. La gestión del desarrollo se ha articulado mediante el uso de repositorios en GitHub, permitiendo un seguimiento riguroso de la integración de código y la resolución de tareas. A través de los analíticos presentados a continuación, se evidencia la participación de los miembros del equipo y la evolución del software, garantizando la trazabilidad de cada incremento de producto en cumplimiento con los objetivos del Sprint.
 
+
+
 **1. Interpretación de Analíticos: Landing Page**
+
 
 Se analizan los siguientes puntos:
 
@@ -395,13 +444,55 @@ Se analizan los siguientes puntos:
 
 
 
+**Landing Page:**
+
 <p align="center">
   <img src="https://i.imgur.com/gT3Eo0z.png" alt="Descripción">
 </p>
 
+
+
+**Web Service:**
+
+El esfuerzo reciente en el backend se centró en consolidar y asegurar las operaciones críticas de nuestro sistema: la gestión de **Eventos** y **Anuncios**. Para garantizar que el ciclo de vida de estas entidades funcione sin errores, implementamos una cobertura de pruebas exhaustiva:
+
+**1. Pruebas Unitarias (Unit Tests): Validación de Lógica de Negocio** A nivel unitario, nos aseguramos de que cada pieza del código funcione de forma aislada, respetando las reglas de negocio antes de tocar la base de datos.
+
+- **Módulo de Eventos:** Se desarrollaron pruebas específicas para los comandos de creación (`Create Event`), consulta (`Get Events`) y actualización (`Update Event`). Aquí validamos que los datos ingresados sean correctos y que los permisos de los gerentes se apliquen adecuadamente.
+- **Módulo de Anuncios:** Implementamos validaciones similares para aislar la lógica de `Create`, `Get` y `Update Announcement`, asegurando, por ejemplo, que el texto y los metadatos de las imágenes se procesen correctamente antes de enviarlos al servicio compartido de Cloudinary.
+
+**2. Pruebas Integrales (Integration Tests): Flujos y Ciclos de Vida Completos** Una vez asegurada la lógica individual, implementamos pruebas de integración para simular el comportamiento real del sistema, conectando los módulos con nuestra base de datos (Supabase) y verificando el ciclo completo (CRUD).
+
+- **Ciclo de Vida de Eventos:** Automatizamos el flujo completo que valida que un gerente pueda **crear, editar y posteriormente eliminar** un evento, comprobando que los cambios se reflejen de manera persistente y correcta en el sistema.
+- **Flujo Completo de Anuncios:** Verificamos el flujo de interacciones reales, asegurando que se pueda **crear, editar y dejar comentarios** en los anuncios, garantizando que todos los componentes (incluyendo el módulo *Shared*) interactúen a la perfección.
+
+
+
 <p align="center">
-  <img src="https://i.imgur.com/cQxWboz.png" alt="Descripción">
+  <img src="https://i.imgur.com/oeRe05V.png" alt="Descripción">
 </p>
+
+
+
+**App Mobile:**
+
+**1. Desarrollo de Funcionalidades Principales**: Se construyeron las interfaces de usuario (UI) y se integró la lógica de comunicación con el *backend* para gestionar las entidades principales del negocio directamente desde el dispositivo móvil:
+
+- **Módulo de Anuncios:** Se implementó el flujo completo que permite a los usuarios autorizados la creación y publicación de anuncios.
+- **Módulo de Eventos:** Se desarrolló la gestión integral del ciclo de vida de los eventos, habilitando las pantallas y formularios para su creación, edición y eliminación.
+
+**2. Pruebas de Interfaz y Flujos (UI/E2E Testing) con Patrol** Para garantizar la estabilidad del aplicativo y ofrecer una experiencia de usuario libre de errores, se estableció una estrategia de control de calidad en la capa de presentación:
+
+- **Integración de Patrol:** Se adoptó *Patrol* como *framework* de automatización de pruebas para la aplicación móvil. Esto permite realizar pruebas End-to-End (E2E) robustas que interactúan con el sistema operativo y la aplicación de forma nativa.
+
+- **Cobertura de Pruebas:** Se programaron *tests* automatizados específicos para cada una de las funcionalidades desarrolladas (publicación de anuncios y la gestión completa de eventos). Estas pruebas simulan el comportamiento real del usuario —como la navegación entre pantallas, el llenado de campos y la interacción con botones— validando que los flujos críticos finalicen con éxito antes de cualquier despliegue a producción.
+
+  
+
+<p align="center">
+  <img src="https://i.imgur.com/mI8v0Xx.png" alt="Descripción">
+</p>
+
 
 
 
@@ -424,8 +515,3 @@ En cuanto al desarrollo del backend y lógica de servicios (referenciados en las
     <img src="https://i.imgur.com/djOCb4n.png" alt="Descripción">
   </p>
 
-## 5.3. Video About-the-Product.
-
-> [!NOTE]
->
-> Para esta entrega solo se tiene la landing page y el web service, no se logro desarrollar a tiempo la mobile  app, para la siguiente entra nos comprometemos a los tres productos completos.

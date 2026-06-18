@@ -631,10 +631,10 @@ Link del prototipo mobile: https://shorturl.at/Fy7KA
 ### 4.6.2. Software Architecture Container Diagrams.
 
 <p style="text-indent: 1.25cm;">El Diagrama de Contenedores representa el segundo nivel de detalle del Modelo C4, enfocándose en desglosar el sistema de software en sus unidades principales de ejecución. A diferencia del diagrama de contexto, esta vista permite identificar las responsabilidades tecnológicas específicas, como las aplicaciones móviles, las interfaces de programación de aplicaciones (API) y los esquemas de almacenamiento. En esta sección, se detalla la interacción técnica entre los componentes internos de Centralis, especificando los protocolos de comunicación y la distribución de la lógica de negocio para asegurar una arquitectura robusta y escalable.
-
 <p align="center">
-  <img src="https://i.imgur.com/Gt8h5d4.jpeg" alt="Descripción">
+  <img src="https://i.imgur.com/C01nGs7.jpeg" alt="Descripción">
 </p>
+
 
 <p style="text-indent: 1.25cm;">El diagrama detalla la arquitectura interna del sistema y cómo se distribuyen las tareas para cumplir con las funcionalidades de comunicación de la plataforma:
 
