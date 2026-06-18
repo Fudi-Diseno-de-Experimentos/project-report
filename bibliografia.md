@@ -21,14 +21,6 @@
 
 
 
-
-## Video App Validation 
-
-## Video About the product 
-
-## Video About the team
-
-
 # Bibliografía 
 
 * Evans, E. (2003). *Domain-Driven Design: Tackling Complexity in the Heart of Software*. Addison-Wesley Professional.

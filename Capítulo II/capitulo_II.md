@@ -406,7 +406,7 @@ Se desarrollaron dos perfiles principales:
 *User Persona Segmento Objetivo #1: Empleados de Empresas*
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dpprgycup/image/upload/v1757951334/Mar%C3%ADa_Moreira_uqhhdr.png" alt="Class Diagram">
+  <img src="https://res.cloudinary.com/dpprgycup/image/upload/v1757951334/Mar%C3%ADa_Moreira_uqhhdr.png" alt="Class Diagram"  width="500">
 </p>
 
 *Nota.* Elaboración propia.
@@ -420,8 +420,9 @@ Se desarrollaron dos perfiles principales:
 *User Persona Segmento Objetivo #2: Gerentes y Líderes de Equipos*
 
 <p align="center">
-  <img src="https://res.cloudinary.com/dpprgycup/image/upload/v1757951331/Carlos_Rom%C3%A1n_qhu0ye.png" alt="Class Diagram">
+  <img src="https://res.cloudinary.com/dpprgycup/image/upload/v1757951331/Carlos_Rom%C3%A1n_qhu0ye.png" alt="Class Diagram"  width="500">
 </p>
+
 
 *Nota.* Elaboración propia.
 
