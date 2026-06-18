@@ -439,6 +439,31 @@ Link Validation Interviews: https://shorturl.at/gH7kO
 
 ***Segmento Objetivo 1: Empleados de Empresas***
 
+Entrevista 1:
+
+<img src="https://i.imgur.com/sb9EnAF.png" alt="">
+
+* **Nombre:**  Dante Mateo Aleman Romano
+
+* **Edad:** 25
+
+* **Minuto de inicio:**  (aun por definir)
+
+* **Resumen:**
+*
+En esta entrevista de validación, Raúl Villo Salas presenta a su compañero
+Mateo el prototipo de Centralis**, una plataforma SaaS multiplataforma 
+de comunicación interna diseñada para centralizar la interacción en pequeñas
+y medianas empresas (pymes) y evitar la dispersión de herramientas como WhatsApp 
+o el correo electrónico. Durante la demostración de la interfaz —compuesta por 
+cuatro pantallas principales que incluyen el inicio, un feed de eventos y 
+anuncios filtrados por relevancia, mensajería privada/grupal y el perfil 
+de usuario—, Mateo elogia el diseño estético, limpio y minimalista de la
+aplicación. Asimismo, el entrevistado aporta dos sugerencias clave para
+la mejora del producto: la implementación de un tutorial interactivo de inicio
+para guiar a los nuevos usuarios en las funcionalidades de la plataforma, y la
+inclusión de ubicaciones o salas específicas en el apartado de eventos (ya sean virtuales o presenciales) para facilitar la organización del personal. Raúl concluye la sesión agradeciendo el feedback y asegurando que estas recomendaciones serán tomadas en cuenta para el desarrollo futuro de la aplicación.
+
 ***Segmento Objetivo 2: Gerentes y Líderes de Equipos***
 
 Entrevista 3: 
@@ -477,23 +502,476 @@ Entrevista 4:
 
 ### 6.3.3. Evaluaciones según heurísticas
 
+
+
+**UX Heuristics & Principles Evaluation**
+
+ **Usability – Inclusive Design – Information Architecture**
+
+**CARRERA : Ingeniería de Software**
+**CURSO : Diseño de Experimentos de Ingeniería de Software
+SECCIÓN : 1ASI0732-2610-17821**
+**PROFESORES : Lennin Percy Cenas Vasquez**
+**AUDITOR : Raúl Bellido Salas**
+**CLIENTE(S) :Centralis User**
+
+
+**SITE o APP A EVALUAR:**
+
+**[Centralis]()** *(Plataforma SaaS multiplataforma de comunicación interna empresarial)*
+
+**TAREAS A EVALUAR:**
+
+*El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas basadas en los flujos interactivos presentados:*
+
+1. **Navegación por la pantalla de inicio (Home):** Visualización de eventos de la compañía, anuncios generales y lista de chats recientes.
+2. **Filtrado del feed de eventos:** Clasificación y filtrado de elementos de comunicación según su orden de relevancia (Normal, Alto, Urgente).
+3. **Gestión de mensajería interna:** Flujo para sostener chats privados individuales con empleados específicos y creación de chats grupales de coordinación corporativa.
+4. **Consulta de perfil de usuario:** Visualización de las funcionalidades activas asignadas y validación de las compañías empresariales asociadas a la cuenta.
+
+*No están incluidas en esta versión de la evaluación las siguientes tareas:*
+
+1. Configuración del perfil de administrador para la creación de nuevos anuncios corporativos.
+2. Integración y llamadas de voz o videoconferencia directas desde la interfaz.
+3. Configuración y despliegue del sistema SaaS en servidores de múltiples compañías independientes.
+
+---
+
+#### ***ESCALA DE SEVERIDAD:***
+
+| Nivel | Descripción |
+| --- | --- |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+#### ***TABLA RESUMEN:***
+
+| # | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| --- | --- | --- | --- |
+| **1** | **Falta de orientación inicial o flujo de inducción para nuevos usuarios corporativos (Onboarding).** | **2** | **Usability: Ayuda y documentación / Flexibilidad y eficiencia de uso** |
+| **2** | **Ausencia de datos de localización o salas específicas en las tarjetas de detalles de eventos.** | **3** | **Information Architecture: Is it findable? / Is it usable?** |
+| **3** | **Uso exclusivo de datos estáticos/maquetados sin simulación de flujos de interacción dinámica.** | **2** | **Usability: Relación entre el sistema y el mundo real** |
+
+---
+
+#### ***DESCRIPCIÓN DE PROBLEMAS:***
+
+**PROBLEMA #1: Falta de orientación inicial o flujo de inducción para nuevos usuarios corporativos (Onboarding).** **Severidad:** 2
+
+**Heurística violada:** Usabilidad - Ayuda y documentación
+
+* **Problema:** Al ingresar por primera vez a la interfaz o crear una cuenta, el usuario se encuentra directamente con las cuatro pantallas principales de forma abrupta. Al ser una herramienta que consolida múltiples flujos antes dispersos (reemplazo de WhatsApp, correos y SMS corporativos), el cliente experimenta incertidumbre sobre el alcance exacto de los botones o el propósito operativo de secciones específicas sin una guía previa.
+  *(Incluir captura de pantalla de la barra lateral de navegación y la pantalla Home actual).*
+* **Recomendación:** Diseñar e implementar un pequeño tutorial interactivo de bienvenida (tour de producto) gatillado de manera automática inmediatamente después de que el usuario inicie sesión por primera vez. Este componente debe resaltar secuencialmente las funcionalidades de la barra lateral y explicar cómo interactuar con el feed y la mensajería interna.
+
+---
+
+**PROBLEMA #2: Ausencia de datos de localización o salas específicas en las tarjetas de detalles de eventos.** **Severidad:** 3
+
+**Heurística violada:** Arquitectura de la Información - Is it findable? (¿Es encontrable / útil?)
+
+* **Problema:** Al inspeccionar el feed y los detalles de los eventos organizados por la empresa, la estructura actual solo despliega quiénes están asociados y cuándo está planeado el evento. Al no categorizar si el evento es virtual o presencial, ni proveer campos específicos para registrar auditorios, oficinas, salas de reuniones o enlaces remotos, el usuario se ve obligado a recurrir de forma externa a otros medios informales de comunicación para averiguar dónde debe asistir, anulando la premisa del producto de "tenerlo todo en un solo lugar".
+  *(Incluir captura de pantalla de la vista detallada de una tarjeta de eventos sin campos de ubicación).*
+* **Recomendación:** Enriquecer la estructura de datos y el diseño visual de las tarjetas de eventos. Se deben añadir de forma obligatoria campos específicos para la localización física (ej. Sala de juntas, Auditorio principal) o, en su defecto, un interruptor dinámico para eventos virtuales que renderice un botón directo de acceso al canal de la reunión.
+
+---
+
+**PROBLEMA #3: Uso exclusivo de datos estáticos/maquetados sin simulación de flujos de interacción dinámica.** **Severidad:** 2
+
+**Heurística violada:** Usabilidad - Relación entre el sistema y el mundo real / Consistencia
+
+* **Problema:** Las vistas del feed de eventos, mensajería y perfil dependen enteramente de textos fijos de prueba. Esto impide al evaluador validar componentes cruciales del comportamiento real de la aplicación en el ecosistema pyme, tales como la persistencia de las conversaciones al cambiar de pestañas, el orden cronológico reactivo de los chats en vivo o la actualización en tiempo real de los anuncios urgentes.
+  *(Incluir captura de pantalla de la lista de mensajería con nombres fijos de prueba).*
+* **Recomendación:** Alimentar la aplicación con un set mínimo de datos de prueba dinámicos (Mock Data) controlados por estados locales en el frontend (o un archivo JSON reactivo). Esto debe permitir simular el envío de un mensaje nuevo o la adición de un evento simulado para emular el flujo operativo antes de realizar la integración final con los servicios de backend.
+
+
 ## 6.4. Auditoría de Experiencias de Usuario
 
 ### 6.4.1. Auditoría realizada
 
 #### 6.4.1.1. Información del grupo auditado
 
+ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), dedicada al desarrollo de soluciones digitales para la gestión financiera de restaurantes. Con el propósito de brindar a los dueños de negocios gastronómicos una herramienta accesible, intuitiva y especializada, se ha desarrollado el proyecto FoodFlow, una aplicación web orientada al monitoreo de la salud financiera del restaurante, la visualización de ingresos y gastos, el análisis de rentabilidad por plato, la gestión de inventario, el control de órdenes y la generación de reportes estratégicos. En ClaudeFlow, consideramos que una adecuada gestión financiera es fundamental para la sostenibilidad, rentabilidad y crecimiento de los restaurantes, especialmente en negocios pequeños y medianos que suelen operar con procesos manuales, hojas de cálculo o información dispersa. Por ello, FoodFlow busca convertirse en una solución tecnológica que permita transformar los datos operativos del restaurante en información clara y útil para la toma de decisiones.
+
+
 #### 6.4.1.2. Cronograma de auditoría realizada
 
+|   Fecha    | Actividad | Descripción |
+|:----------:| :--- | :--- |
+| 2026-06-01 | Revisión de la Landing Page | Evaluación de la propuesta de valor, claridad de características y arquitectura descrita en el sitio web de Centralis por Fudi. |
+| 2026-06-02 | Validación del User Flow del Empleado | Evaluación de los flujos de comunicación horizontal (creación y visualización de anuncios global                     
+
 #### 6.4.1.3. Contenido de auditoría realizada
+
+**Anexo D. Formato para Evaluación de User Experience según Heurísticas**
+
+**UX Heuristics & Principles Evaluation**
+
+ **Usability – Inclusive Design – Information Architecture**
+
+**CARRERA : Ingeniería de Software**
+**CURSO : Diseño de Experimentos de Ingeniería de Software SECCIÓN : 1ASI0732-2610-17821**
+**PROFESORES : Lennin Percy Cenas Vasquez**
+**AUDITOR : Raúl Bellido Salas** **CLIENTE(S) : ClaudeFlow / FoodFlow Users** ---
+
+**SITE o APP A EVALUAR:**
+
+[FoodFlow-Frontend](https://food-flow-frontend-ipmc.vercel.app/login) *(Aplicación Web de Gestión de Restaurantes)*
+
+**TAREAS A EVALUAR:**
+
+*El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:*
+
+1. Registro de usuario e inicio de sesión en la plataforma.
+2. Gestión de inventario de productos (creación, edición, eliminación y búsqueda de insumos).
+3. Configuración y gestión de platos (Dishes) y precios.
+4. Creación y actualización de pedidos/órdenes y control de sus estados en el restaurante.
+5. Visualización del rendimiento financiero y métricas comerciales en el Dashboard.
+6. Ajuste de perfil, cambio de contraseña y actualización de suscripción en el módulo de Settings.
+
+*No están incluidas en esta versión de la evaluación las siguientes tareas:*
+
+1. Integración en tiempo real de pasarelas de pago externas (p. ej. Stripe, PayPal).
+2. Reportes avanzados exportables en formato PDF o Excel.
+3. Notificaciones push o alertas instantáneas en tiempo real para cambios de estado de órdenes multi-dispositivo.
+
+---
+
+***ESCALA DE SEVERIDAD:***
+
+*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:*
+
+| Nivel | Descripción |
+| :---- | :---- |
+| 1 | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+---
+
+***TABLA RESUMEN:***
+
+| \# | Problema | Escala de severidad | Heurística/Principio violada(o) |
+| :---: | ----- | ----- | :---- |
+| 1 | Hardcodeo del símbolo de moneda `$` en listados en lugar de usar el helper centralizado | 2 | Usability: Consistencia y estándares |
+| 2 | Elementos de imagen clave sin atributo descriptivo en `alt` (p. ej. Logo de marca en login) | 1 | Inclusive Design: Proporciona experiencias comparables |
+| 3 | Redirección abrupta y deslogueo automático al cambiar email sin suficiente aviso o contador | 2 | Usability: Visibilidad del estado del sistema |
+| 4 | Diálogos modales permiten cierre accidental perdiendo datos del formulario sin confirmación | 3 | Usability: Libertad y control del usuario |
+| 5 | Falta de límites superiores claros y advertencia visual en los campos numéricos de stock | 2 | Usability: Prevención de errores |
+| 6 | Inconsistencia de datos en la tarjeta de Órdenes entre el Dashboard y Finanzas | 3 | Usability: Consistencia y estándares |
+| 7 | Etiquetas numéricas del eje Y truncadas o mal alineadas en el gráfico de Finanzas | 2 | Usability: Diseño estético y minimalista |
+| 8 | Falta de botón para agregar un nuevo plato directamente en la vista de Menú/Platos | 2 | Usability: Flexibilidad y eficiencia de uso |
+
+---
+
+#### ***DESCRIPCIÓN DE PROBLEMAS:***
+
+##### **PROBLEMA #1: Hardcodeo del símbolo de moneda `$` en listados de órdenes**
+* **Severidad:** 2
+* **Heurística violada:** Usability - Consistencia y estándares
+* **Problema:** En OrdersPage, el total acumulado de la orden muestra el símbolo de moneda de forma fija (`${row.totalAmount.toFixed(2)}`). Esto rompe la consistencia con el helper `formatCurrency` configurado en `src/utils` y utilizado en otras partes de la aplicación como `SettingsPage.tsx` para adaptarse a las configuraciones regionales del restaurante.
+* **Recomendación:** Reemplazar el hardcodeo de `$` por la invocación del método `formatCurrency(row.totalAmount)` para mantener el estándar global de la aplicación.
+
+---
+
+##### **PROBLEMA #2: Ausencia de descripción en logotipo de marca en autenticación**
+* **Severidad:** 1
+* **Heurística violada:** Inclusive Design - Proporciona experiencias comparables
+* **Problema:** En `LoginPage.tsx` y `RegisterPage.tsx`, el logotipo principal de la aplicación `foodflow-mark.png` contiene un atributo `alt=""` vacío. Para usuarios con lectores de pantalla, esto omite el branding fundamental del sitio.
+* **Recomendación:** Cambiar el atributo por `alt="FoodFlow Logo"` o `alt={t('app.name')}` para asegurar que sea accesible a todas las personas.
+
+---
+
+##### **PROBLEMA #3: Cierre de sesión y redirección abrupta al modificar correo electrónico**
+* **Severidad:** 2
+* **Heurística violada:** Usability - Visibilidad del estado del sistema
+* **Problema:** En `SettingsPage.tsx`, al cambiar el correo electrónico del perfil del usuario, el sistema muestra un mensaje rápido y redirige al login cerrando la sesión de forma inmediata usando un `setTimeout` de 3 segundos sin feedback visual de progreso. El usuario puede desconcertarse al ver que su sesión expira sin una advertencia o un temporizador interactivo.
+* **Recomendación:** Implementar un indicador de progreso visual o un cuadro de diálogo con confirmación donde se indique explícitamente "Cerrando sesión en X segundos..." para reducir la incertidumbre.
+
+---
+
+##### **PROBLEMA #4: Diálogos modales permiten cierre accidental al hacer click afuera sin confirmación de descarte**
+* **Severidad:** 3
+* **Heurística violada:** Usability - Libertad y control del usuario
+* **Problema:** En `ProductsPage.tsx` y en la adición de pedidos, si el usuario tiene información a medio llenar en los diálogos modales y hace clic fuera del modal o presiona "Cancelar" por error, los modales se cierran inmediatamente perdiendo todo el progreso del formulario sin preguntar si desea descartar los cambios.
+* **Recomendación:** Implementar una validación de confirmación (`ConfirmDialog` o comprobación de `isDirty` del formulario) si el usuario intenta cerrar el modal habiendo modificado datos.
+
+---
+
+##### **PROBLEMA #5: Ausencia de advertencias visuales de stock mínimo en listas de productos**
+* **Severidad:** 2
+* **Heurística violada:** Usability - Prevención de errores / Diseño visual
+* **Problema:** Aunque el sistema define un umbral de stock bajo (`lowStockThreshold`), la interfaz de administración de inventario no resalta visualmente en la tabla principal aquellos artículos que están por debajo de este límite, obligando al gestor a comparar manualmente los valores numéricos actuales contra el umbral.
+* **Recomendación:** Añadir un badge, color o icono de advertencia (como el icono `Warning` disponible en las importaciones) a las filas de la tabla de inventario cuando `stockLevel <= lowStockThreshold`.
+
+
+---
+
+##### **PROBLEMA #6: Truncamiento de etiquetas en el gráfico de barras de Finanzas**
+* **Severidad:** 2
+* **Heurística violada:** Usability - Diseño estético y minimalista
+* **Problema:** En la vista de `Finanzas`, dentro del bloque "Ingresos vs gastos por categoría", las etiquetas numéricas del eje Y (por ejemplo, `$600.00`, `$450.00`) aparecen cortadas y pegadas al límite izquierdo del contenedor del gráfico. Esto da una sensación de interfaz rota y dificulta la lectura rápida de los montos.
+* **Recomendación:** Ajustar las propiedades de la librería de gráficos utilizada (ej. Recharts o Chart.js), incrementando el margen izquierdo (`marginLeft` o el `width` del eje Y) para que los valores monetarios tengan suficiente espacio para renderizarse correctamente.
+
+---
+
+##### **PROBLEMA #7: Ausencia de botón de acción (CTA) en la vista de Menú / Platos**
+* **Severidad:** 2
+* **Heurística violada:** Usability - Flexibilidad y eficiencia de uso
+* **Problema:** Si el usuario se dirige directamente a la pestaña `Menú / Platos` con la intención de agregar un nuevo ítem, no encuentra un botón para realizar esta acción principal. Actualmente, el usuario está forzado a regresar a la vista del `Panel` para usar el atajo de "Acciones rápidas > Agregar plato", lo cual rompe el flujo lógico de la tarea.
+* **Recomendación:** Añadir un botón primario visible (ej. "+ Agregar plato" o "Nuevo") en la parte superior derecha de la vista `Menú / Platos`, preferiblemente a la misma altura de la barra de búsqueda.
+
 
 #### 6.4.2. Auditoría recibida
 
 #### 6.4.2.1. Información del grupo auditor
 
+ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de Ciencias Aplicadas (UPC), dedicada al desarrollo de soluciones digitales para la gestión financiera de restaurantes. Con el propósito de brindar a los dueños de negocios gastronómicos una herramienta accesible, intuitiva y especializada, se ha desarrollado el proyecto FoodFlow, una aplicación web orientada al monitoreo de la salud financiera del restaurante, la visualización de ingresos y gastos, el análisis de rentabilidad por plato, la gestión de inventario, el control de órdenes y la generación de reportes estratégicos. En ClaudeFlow, consideramos que una adecuada gestión financiera es fundamental para la sostenibilidad, rentabilidad y crecimiento de los restaurantes, especialmente en negocios pequeños y medianos que suelen operar con procesos manuales, hojas de cálculo o información dispersa. Por ello, FoodFlow busca convertirse en una solución tecnológica que permita transformar los datos operativos del restaurante en información clara y útil para la toma de decisiones.
+
+
 #### 6.4.2.2. Cronograma de auditoría recibida
+
+|   Fecha    | Actividad |
+|:----------:| :--- |
+| 2026-06-01 | Revisión inicial de la plataforma FoodFlow y familiarización con sus funcionalidades principales. |
+| 2026-06-03 | Ejecución de tareas de usuario específicas en la aplicación web, enfocándose en los flujos de gestión de inventario, creación de platos y visualización de métricas financieras. |
+| 2026-06-05 | Documentación detallada de problemas de usabilidad encontrados, asignación de severidad y elaboración de recomendaciones de mejora basadas en principios heurísticos. |
+| 2026-06-07 | Preparación del informe de auditoría de experiencia de usuario, incluyendo la tabla resumen de problemas y la descripción detallada de cada uno. |
+| 2026-06-10 | Presentación del informe de auditoría a los desarrolladores de FoodFlow para su revisión y planificación de correcciones en futuras iteraciones del producto. |          
+
 
 #### 6.4.2.3. Contenido de auditoría recibida
 
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos. 
+**UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
+
+**CARRERA:** Ingeniería de Software
+**CURSO:** Diseño de Experimentos de Ingeniería de Software
+**SECCIÓN:** 17821
+**PROFESORES:** Todos
+**AUDITOR:** Equipo de ClaudeFlow
+**CLIENTE(S):** Fudi
+
+**SITE o APP A EVALUAR:**
+Centralis
+
+**TAREAS A EVALUAR:**
+
+El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:
+1.	Intento de registro de usuario nuevo (Landing Page)
+2.	Inicio de sesión de usuario (Landing Page)
+3.	Navegación general y uso del pie de página (Landing Page)
+4.	Configuración del idioma global (Landing Page)
+5.	Visualización de eventos y anuncios en el Feed (Aplicación móvil)
+6.	Visualización de métricas y analíticas de publicaciones (Aplicación móvil)
+7.	Visualización de datos de perfil, compañía y miembros (Aplicación móvil)
+8.	Interacción con botones de contacto rápido en el perfil (Aplicación móvil)
+
+No están incluidas en esta versión de la evaluación las siguientes tareas:
+1.	Registro de una compañía nueva
+2.	Publicación activa de nuevos anuncios y eventos
+3.	Envío de mensajes en chats directos o grupales
+4.	Actualización de datos de perfil
+5.	Funciones de subida de imágenes y archivos multimedia
+
+**ESCALA DE SEVERIDAD:**
+*Los errores serán puntuados tomando en cuenta la siguiente escala de severidad.*
+
+| Nivel | Descripción |
+|---|---|
+| 1 | Problema superficial: puede ser fácilmente superador por el usuario u ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo. |
+| 2 | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja resolverlo de cara al siguiente reléase. |
+| 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
+| 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
+
+**TABLA RESUMEN:**
+
+| # | Problema | Escala de severidad | Heurística / principio violado(a) |
+|---|---|---|---|
+| 1 |	Botón CTA no redirige al usuario al destino esperado | 2 | Consistencia y estándares (Nielsen) / Information Architecture: Is it usable? |
+| 2 |	Bajo contraste de texto en los enlaces y elementos del Footer. |	2	| Estética y diseño minimalista (Nielsen) / Information Architecture: Is it usable? |
+| 3 |	Selector de idioma deshabilitado o inactivo en el Footer.	| 2 |	Consistencia y estándares (Nielsen) |
+| 4 |	Derechos Reservados Desactualizados	| 1	| Information Architecture: Is it usable? |
+| 5 |	Enlaces inactivos los botones de "Sign In" y "Start Meeting" de la barra de navegación. |	3 |	Consistencia y estándares (Nielsen) / Information Architecture: Is it usable? |
+| 6 |	Botones de comunicación (Llamada, Mensaje, Correo) deshabilitados en la vista de Perfil. |	3	| Consistencia y estándares (Nielsen) / Information Architecture: Is it usable? |
+| 7 |	Inclusión de usuarios sin acceso en el cálculo de métricas de analítica (Visualizations).	| 3 |	Information Architecture: Is it usable? |
+| 8 | Presencia de texto residual fijo ("Button") en la tarjeta de eventos. | 2 | Estética y diseño minimalista (Nielsen) |
+| 9 |	Ausencia de imágenes reales en los avatares de los miembros inscritos (Attendees). |	2	| Consistencia y estándares (Nielsen) / Information Architecture: Is it usable? |
+
+**DESCRIPCIÓN DE PROBLEMAS:**
+**Problema #1:** Botón CTA no redirige al usuario al destino esperado.
+**Severidad:** 2
+**Heurística violada:** Consistencia y estándares (Nielsen) / Information Architecture: Is it usable?
+
+**Problema:**
+El botón principal de llamada a la acción (CTA) en la sección Hero está apuntando a un enlace vacío (href="#"). Al hacer clic, el sitio realiza un leve salto hacia la parte superior de la página en lugar de redirigir al usuario al formulario de registro, inicio de sesión o sección correspondiente, quebrando la expectativa de navegación y deteniendo el flujo del usuario.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/nxyVWvo.png" alt="P1">
+</p>
+
+**Recomendación:**
+Vincular correctamente el botón a su destino final.
+
+---
+
+**Problema #2:** Bajo contraste de texto en los enlaces y elementos del Footer.
+**Severidad:** 2
+**Heurística violada:** Consistencia y estándares (Nielsen) / Information Architecture: Is it usable?
+
+**Problema:**
+Los textos de los enlaces ("Product", "About Team", etc.) y la descripción institucional debajo del logo utilizan un tono gris muy claro sobre un fondo blanco puro. Esto genera una falta de contraste severa que dificulta la lectura para cualquier usuario, y resulta inaccesible para personas con discapacidades visuales o pantallas con bajo brillo.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/T35ORYz.png" alt="P2">
+</p>
+
+**Recomendación:**
+Modificar el color de la tipografía secundaria del footer a un tono gris más oscuro o negro (por ejemplo, reducir la opacidad a un nivel que garantice un ratio de contraste mínimo de 4.5:1 según las pautas WCAG AA para texto normal). También se puede optar por oscurecer el fondo del footer a un gris claro/azul oscuro y mantener las letras legibles.
+
+---
+
+**Problema #3:** Selector de idioma deshabilitado o inactivo en el Footer.
+**Severidad:** 2
+**Heurística violada:** Consistencia y estándares (Nielsen)
+
+**Problema:**
+El menú desplegable de idioma ("EN") ubicado en la esquina inferior izquierda del footer visualmente parece un elemento interactivo, pero no ejerce ninguna acción al hacer clic ni despliega las opciones. Esto rompe con el comportamiento del mismo elemento que sí funciona correctamente en el Header (cabecera), quebrando la consistencia interna de la interfaz.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/qoDlXAf.png" alt="P3">
+</p>
+
+**Recomendación:**
+Replicar el mismo componente y lógica de programación del Header en el Footer para asegurar que el selector de idioma sea completamente funcional en ambas zonas de la Landing Page, manteniendo la consistencia de i18n a lo largo de todo el sitio.
+
+---
+
+**Problema #4:** Derechos Reservados Desactualizados
+**Severidad:** 1
+**Heurística violada:** Information Architecture: Is it usable?
+
+**Problema:**
+El texto al pie de página muestra el año anterior ("© 2024 Centralis by Fudi"), lo que puede dar al usuario la falsa impresión de que el sitio web o la herramienta está abandonada o no recibe soporte actual.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/g6n0jSS.png" alt="P4">
+</p>
+
+**Recomendación:**
+Actualizar el texto al año en curso. Se recomienda encarecidamente automatizar este campo mediante código para que se actualice de forma dinámica cada primero de enero sin requerir mantenimiento manual.
+
+---
+
+**Problema #5:** Enlaces inactivos los botones de "Sign In" y "Start Meeting" de la barra de navegación.
+**Severidad:** 3
+**Heurística violada:** Consistencia y estándares (Nielsen) / Information Architecture: Is it usable?
+
+**Problema:**
+Los botones situados en el extremo derecho del Header ("Sign In" y "Start Meeting") actúan como enlaces vacíos apuntando a #. Al ser presionados, el sistema solo recarga levemente la vista hacia arriba en lugar de abrir la pantalla de autenticación o iniciar el flujo de la reunión, quebrando la usabilidad elemental del flujo de acceso.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/iIhOg0D.png" alt="P5">
+</p>
+
+**Recomendación:**
+Conectar de inmediato ambos botones a sus respectivas rutas de producción o entornos de pruebas activos. Si estas interfaces aún se encuentran en fase de desarrollo, se debe implementar temporalmente una ventana modal simple que informe al usuario que la funcionalidad estará disponible próximamente, evitando por completo el uso de enlaces vacíos que dejen la pantalla suspendida.
+
+---
+
+**Problema #6:** Botones de comunicación (Llamada, Mensaje, Correo) deshabilitados en la vista de Perfil.
+**Severidad:** 3
+**Heurística violada:** Consistencia y estándares (Nielsen) / Information Architecture: Is it usable?
+
+**Problema:**
+El grupo de tres botones interactivos situados debajo del correo electrónico no ejecuta ninguna función ni responde a los gestos táctiles. Visualmente están diseñados como elementos accionables de alta prioridad, por lo que su inactividad contradice el modelo mental estándar de una aplicación de comunicación.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/pjl9vnc.png" alt="P6">
+</p>
+
+**Recomendación:**
+Implementar la lógica de programación para cada disparador:
+1.	Botón Teléfono: Enlazar al marcador nativo del dispositivo (tel:).
+2.	Botón Mensaje: Redirigir directamente al chat interno de la app con ese usuario.
+3.	Botón Correo: Abrir la aplicación de email predeterminada del sistema (mailto:).
+      Si el usuario visualiza su propio perfil y estas acciones no aplican para sí mismo, se deben ocultar estos botones de la vista "My Profile" y mostrarlos únicamente cuando se navegue en la pestaña "Members"
+
+---
+
+**Problema #7:** Inclusión de usuarios sin acceso en el cálculo de métricas de analítica (Visualizations).
+**Severidad:** 3
+**Heurística violada:** Information Architecture: Is it usable?
+
+**Problema:**
+El gráfico de progreso y el porcentaje de visualización (8%) están calculados sobre una base errónea de usuarios (2 de 25). El sistema incluye en el denominador (25 usuarios) a colaboradores externos o cuentas sin permisos que no tienen acceso para ver dicho anuncio, provocando que la métrica de rendimiento real se muestre drásticamente reducida.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/dbZJ8nV.png" alt="P7">
+</p>
+
+**Recomendación:**
+Modificar la consulta en el backend que alimenta esta vista. El total de usuarios objetivo (el denominador) debe filtrar e incluir única y exclusivamente a los miembros activos de la compañía que posean los roles o permisos necesarios para visualizar el anuncio. Los usuarios externos o sin acceso deben ser omitidos del cálculo para reflejar un porcentaje de analítica 100% real.
+
+---
+
+**Problema #8:** Presencia de texto residual fijo ("Button") en la tarjeta de eventos.
+**Severidad:** 2
+**Heurística violada:** Estética y diseño minimalista (Nielsen)
+
+**Problema:**
+Debajo del título aparece una etiqueta de texto flotante que dice "Button" en un tono gris claro. Este texto no corresponde a ninguna información ingresada por el creador del evento ni cumple ninguna función interactiva, revelando un descuido en la limpieza del código de la interfaz (UI)
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/GEbQALR.png" alt="P8">
+</p>
+
+**Recomendación:**
+Eliminar por completo la cadena de texto fija o el elemento <Text> residual del archivo de maquetación del componente de la tarjeta de eventos para limpiar la UI.
+
+---
+
+**Problema #9:** Ausencia de imágenes reales en los avatares de los miembros inscritos (Attendees).
+**Severidad:** 2
+**Heurística violada:** Consistencia y estándares (Nielsen) / Information Architecture: Is it usable?
+
+**Problema:**
+Las burbujas de los miembros que asistirán al evento (esquina superior derecha de la tarjeta) solo muestran un ícono de usuario genérico y grisáceo en lugar de cargar las fotografías reales de perfil de los colaboradores de la empresa, rompiendo la consistencia con el diseño propuesto.
+
+**Captura de pantalla:**
+<p align="center">
+  <img src="https://i.imgur.com/GEbQALR.png" alt="P8">
+</p>
+
+**Recomendación:**
+Conectar las burbujas de avatar con el servicio de base de datos correspondiente. En caso de que un usuario no cuente con una foto de perfil subida, se debe reemplazar el ícono genérico gris por las iniciales del nombre de la persona sobre un fondo de color aleatorio para humanizar la interfaz.
+
+
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+El equipo de desarrollo de Centralis ha tomado nota de cada uno de los problemas identificados en la auditoría de experiencia de usuario y ha comenzado a implementar las siguientes modificaciones para subsanar los hallazgos:
+1.	Redirección del botón CTA en la sección Hero a la pantalla de registro.
+2.	Ajuste del contraste de texto en el Footer para mejorar la legibilidad.
+3.	Habilitación del selector de idioma en el Footer para que funcione de manera consistente con el Header.
+4.	Actualización del año en los derechos reservados a 2026.
+5.	Activación de los botones "Sign In" y "Start Meeting" para redirigir a las pantallas correspondientes.
+6.	Implementación de la funcionalidad de los botones de comunicación en la vista de Perfil.
+7.	Corrección del cálculo de métricas de analítica para incluir solo usuarios con acceso.
+8.	Eliminación del texto residual "Button" de la tarjeta de eventos.
+9.	Integración de imágenes reales en los avatares de los miembros inscritos en los eventos.
+
 
