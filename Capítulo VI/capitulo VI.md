@@ -298,50 +298,42 @@ En esta sección se detallan las pruebas de sistema realizadas para validar la i
 
 Los siguientes flujos validan el comportamiento extremo a extremo de la aplicación Patrol en Flutter, cubriendo los casos de uso principales de anuncios, eventos y sesión.
 
-
-<img src="https://i.imgur.com/9FuNbzA.png" alt="">
+<img src="https://i.imgur.com/9FuNbzA.png" alt="" width="300">
 
 - **Announcement Create** — Valida el flujo completo de publicación de un nuevo anuncio corporativo: el test navega hasta la sección de anuncios, completa el formulario con título, descripción y prioridad, confirma la acción y verifica que el anuncio aparezca correctamente listado en la pantalla principal.
   *Video:* http://bit.ly/4uQ9bVb
 
-
-<img src="https://i.imgur.com/wyyd8Xg.png" alt="">
+<img src="https://i.imgur.com/wyyd8Xg.png" alt="" width="300">
 
 - **Announcement Delete** — Verifica que un anuncio existente pueda eliminarse de forma permanente desde la interfaz móvil: el test selecciona el anuncio, ejecuta la acción de eliminación, confirma el diálogo de advertencia y comprueba que el registro desaparezca de la lista.
   *Video:* https://bit.ly/4oJDoUA
 
-
-<img src="https://i.imgur.com/adtYh18.png" alt="">
+<img src="https://i.imgur.com/adtYh18.png" alt="" width="300">
 
 - **Announcement Edit** — Valida la edición de un anuncio ya publicado: el test accede al modo de edición, modifica los campos de contenido y prioridad, guarda los cambios y confirma que los datos actualizados se reflejen inmediatamente en la vista de detalle.
   *Video:* https://shorturl.at/OqmyB
 
-
-<img src="https://i.imgur.com/NJaOMpT.png" alt="">
+<img src="https://i.imgur.com/NJaOMpT.png" alt="" width="300">
 
 - **Event Create** — Verifica la creación de un evento corporativo: el test navega al módulo de eventos, completa el formulario con título, descripción, fecha e invitados, registra el evento y comprueba que figure correctamente en el calendario de la organización.
   *Video:* https://shorturl.at/P9OpU
 
-
-<img src="https://i.imgur.com/gIkZXsR.png" alt="">
+<img src="https://i.imgur.com/gIkZXsR.png" alt="" width="300">
 
 - **Event Delete** — Valida que un evento pueda eliminarse correctamente desde la app: el test selecciona el evento objetivo, ejecuta la eliminación, confirma la operación y verifica que el evento haya sido retirado del listado y del calendario compartido.
 
-
-<img src="https://i.imgur.com/n6ZyR6J.png" alt="">
+<img src="https://i.imgur.com/n6ZyR6J.png" alt="" width="300">
 
   *Video:* https://shorturl.at/UXHLC
 - **Event Edit** — Verifica la modificación de un evento registrado: el test abre la vista de edición, actualiza el título, la fecha o la lista de invitados, guarda los cambios y comprueba que la información revisada se sincronice con el backend y sea visible para todos los participantes.
   *Video:* https://shorturl.at/RcA0f
 
-
-<img src="https://i.imgur.com/93wcCkC.png" alt="">
+<img src="https://i.imgur.com/93wcCkC.png" alt="" width="300">
 
 - **Sign Out** — Valida el cierre de sesión seguro del usuario: el test accede al menú de perfil, ejecuta la acción de cerrar sesión y confirma que la app redirija a la pantalla de inicio de sesión sin mantener información de la sesión previa en caché.
   *Video:* https://shorturl.at/xUVWl
 
-
-<img src="https://i.imgur.com/e4ME92F.png" alt="">
+<img src="https://i.imgur.com/e4ME92F.png" alt=""> 
 
 - **Patrol Full Flow** — Flujo integral que encadena todos los comportamientos anteriores en una única ejecución continua: autenticación, creación/edición/eliminación de anuncios, creación/edición/eliminación de eventos y cierre de sesión. Sirve como prueba de regresión general para garantizar que ningún cambio rompa la navegación global de la aplicación.
   *Video:* https://h1.nu/1rXLr
@@ -447,7 +439,7 @@ Entrevista 1:
 
 * **Edad:** 25
 
-* **Minuto de inicio:**  (aun por definir)
+* **Minuto de inicio:** 00:00
 
 * **Resumen:**
 *
@@ -535,9 +527,9 @@ SECCIÓN : 1ASI0732-2610-17821**
 2. Integración y llamadas de voz o videoconferencia directas desde la interfaz.
 3. Configuración y despliegue del sistema SaaS en servidores de múltiples compañías independientes.
 
----
 
-#### ***ESCALA DE SEVERIDAD:***
+
+***ESCALA DE SEVERIDAD:***
 
 | Nivel | Descripción |
 | --- | --- |
@@ -546,9 +538,9 @@ SECCIÓN : 1ASI0732-2610-17821**
 | 3 | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlos. Es importante que sean corregidos y se les debe asignar una prioridad alta. |
 | 4 | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento. |
 
----
 
-#### ***TABLA RESUMEN:***
+
+***TABLA RESUMEN:***
 
 | # | Problema | Escala de severidad | Heurística/Principio violada(o) |
 | --- | --- | --- | --- |
@@ -556,9 +548,9 @@ SECCIÓN : 1ASI0732-2610-17821**
 | **2** | **Ausencia de datos de localización o salas específicas en las tarjetas de detalles de eventos.** | **3** | **Information Architecture: Is it findable? / Is it usable?** |
 | **3** | **Uso exclusivo de datos estáticos/maquetados sin simulación de flujos de interacción dinámica.** | **2** | **Usability: Relación entre el sistema y el mundo real** |
 
----
 
-#### ***DESCRIPCIÓN DE PROBLEMAS:***
+
+***DESCRIPCIÓN DE PROBLEMAS:***
 
 **PROBLEMA #1: Falta de orientación inicial o flujo de inducción para nuevos usuarios corporativos (Onboarding).** **Severidad:** 2
 
@@ -669,9 +661,9 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-#### ***DESCRIPCIÓN DE PROBLEMAS:***
+***DESCRIPCIÓN DE PROBLEMAS:***
 
-##### **PROBLEMA #1: Hardcodeo del símbolo de moneda `$` en listados de órdenes**
+**PROBLEMA #1: Hardcodeo del símbolo de moneda `$` en listados de órdenes**
 * **Severidad:** 2
 * **Heurística violada:** Usability - Consistencia y estándares
 * **Problema:** En OrdersPage, el total acumulado de la orden muestra el símbolo de moneda de forma fija (`${row.totalAmount.toFixed(2)}`). Esto rompe la consistencia con el helper `formatCurrency` configurado en `src/utils` y utilizado en otras partes de la aplicación como `SettingsPage.tsx` para adaptarse a las configuraciones regionales del restaurante.
@@ -679,7 +671,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-##### **PROBLEMA #2: Ausencia de descripción en logotipo de marca en autenticación**
+**PROBLEMA #2: Ausencia de descripción en logotipo de marca en autenticación**
 * **Severidad:** 1
 * **Heurística violada:** Inclusive Design - Proporciona experiencias comparables
 * **Problema:** En `LoginPage.tsx` y `RegisterPage.tsx`, el logotipo principal de la aplicación `foodflow-mark.png` contiene un atributo `alt=""` vacío. Para usuarios con lectores de pantalla, esto omite el branding fundamental del sitio.
@@ -687,7 +679,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-##### **PROBLEMA #3: Cierre de sesión y redirección abrupta al modificar correo electrónico**
+**PROBLEMA #3: Cierre de sesión y redirección abrupta al modificar correo electrónico**
 * **Severidad:** 2
 * **Heurística violada:** Usability - Visibilidad del estado del sistema
 * **Problema:** En `SettingsPage.tsx`, al cambiar el correo electrónico del perfil del usuario, el sistema muestra un mensaje rápido y redirige al login cerrando la sesión de forma inmediata usando un `setTimeout` de 3 segundos sin feedback visual de progreso. El usuario puede desconcertarse al ver que su sesión expira sin una advertencia o un temporizador interactivo.
@@ -695,7 +687,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-##### **PROBLEMA #4: Diálogos modales permiten cierre accidental al hacer click afuera sin confirmación de descarte**
+**PROBLEMA #4: Diálogos modales permiten cierre accidental al hacer click afuera sin confirmación de descarte**
 * **Severidad:** 3
 * **Heurística violada:** Usability - Libertad y control del usuario
 * **Problema:** En `ProductsPage.tsx` y en la adición de pedidos, si el usuario tiene información a medio llenar en los diálogos modales y hace clic fuera del modal o presiona "Cancelar" por error, los modales se cierran inmediatamente perdiendo todo el progreso del formulario sin preguntar si desea descartar los cambios.
@@ -703,7 +695,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-##### **PROBLEMA #5: Ausencia de advertencias visuales de stock mínimo en listas de productos**
+**PROBLEMA #5: Ausencia de advertencias visuales de stock mínimo en listas de productos**
 * **Severidad:** 2
 * **Heurística violada:** Usability - Prevención de errores / Diseño visual
 * **Problema:** Aunque el sistema define un umbral de stock bajo (`lowStockThreshold`), la interfaz de administración de inventario no resalta visualmente en la tabla principal aquellos artículos que están por debajo de este límite, obligando al gestor a comparar manualmente los valores numéricos actuales contra el umbral.
@@ -712,7 +704,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-##### **PROBLEMA #6: Truncamiento de etiquetas en el gráfico de barras de Finanzas**
+**PROBLEMA #6: Truncamiento de etiquetas en el gráfico de barras de Finanzas**
 * **Severidad:** 2
 * **Heurística violada:** Usability - Diseño estético y minimalista
 * **Problema:** En la vista de `Finanzas`, dentro del bloque "Ingresos vs gastos por categoría", las etiquetas numéricas del eje Y (por ejemplo, `$600.00`, `$450.00`) aparecen cortadas y pegadas al límite izquierdo del contenedor del gráfico. Esto da una sensación de interfaz rota y dificulta la lectura rápida de los montos.
@@ -720,7 +712,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-##### **PROBLEMA #7: Ausencia de botón de acción (CTA) en la vista de Menú / Platos**
+**PROBLEMA #7: Ausencia de botón de acción (CTA) en la vista de Menú / Platos**
 * **Severidad:** 2
 * **Heurística violada:** Usability - Flexibilidad y eficiencia de uso
 * **Problema:** Si el usuario se dirige directamente a la pestaña `Menú / Platos` con la intención de agregar un nuevo ítem, no encuentra un botón para realizar esta acción principal. Actualmente, el usuario está forzado a regresar a la vista del `Panel` para usar el atajo de "Acciones rápidas > Agregar plato", lo cual rompe el flujo lógico de la tarea.
@@ -973,5 +965,4 @@ El equipo de desarrollo de Centralis ha tomado nota de cada uno de los problemas
 7.	Corrección del cálculo de métricas de analítica para incluir solo usuarios con acceso.
 8.	Eliminación del texto residual "Button" de la tarjeta de eventos.
 9.	Integración de imágenes reales en los avatares de los miembros inscritos en los eventos.
-
 
