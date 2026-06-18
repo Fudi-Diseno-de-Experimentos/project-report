@@ -491,11 +491,11 @@ Entrevista 4:
 
 ### 6.3.3. Evaluaciones según heurísticas
 
-# **Anexo D. Formato para Evaluación de User Experience según Heurísticas**
 
-## **UX Heuristics & Principles Evaluation**
 
-### **Usability – Inclusive Design – Information Architecture**
+**UX Heuristics & Principles Evaluation**
+
+ **Usability – Inclusive Design – Information Architecture**
 
 **CARRERA : Ingeniería de Software**
 **CURSO : Diseño de Experimentos de Ingeniería de Software
@@ -505,11 +505,11 @@ SECCIÓN : 1ASI0732-2610-17821**
 **CLIENTE(S) :Centralis User**
 
 
-#### ***SITE o APP A EVALUAR:***
+**SITE o APP A EVALUAR:**
 
 **[Centralis]()** *(Plataforma SaaS multiplataforma de comunicación interna empresarial)*
 
-#### ***TAREAS A EVALUAR:***
+**TAREAS A EVALUAR:**
 
 *El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas basadas en los flujos interactivos presentados:*
 
@@ -596,22 +596,22 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 #### 6.4.1.3. Contenido de auditoría realizada
 
-# **Anexo D. Formato para Evaluación de User Experience según Heurísticas**
+**Anexo D. Formato para Evaluación de User Experience según Heurísticas**
 
-## **UX Heuristics & Principles Evaluation**
+**UX Heuristics & Principles Evaluation**
 
-### **Usability – Inclusive Design – Information Architecture**
+ **Usability – Inclusive Design – Information Architecture**
 
 **CARRERA : Ingeniería de Software**
 **CURSO : Diseño de Experimentos de Ingeniería de Software SECCIÓN : 1ASI0732-2610-17821**
 **PROFESORES : Lennin Percy Cenas Vasquez**
 **AUDITOR : Raúl Bellido Salas** **CLIENTE(S) : ClaudeFlow / FoodFlow Users** ---
 
-#### ***SITE o APP A EVALUAR:***
+**SITE o APP A EVALUAR:**
 
 [FoodFlow-Frontend](https://food-flow-frontend-ipmc.vercel.app/login) *(Aplicación Web de Gestión de Restaurantes)*
 
-#### ***TAREAS A EVALUAR:***
+**TAREAS A EVALUAR:**
 
 *El alcance de esta evaluación incluye la revisión de la usabilidad de las siguientes tareas:*
 
@@ -630,7 +630,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-#### ***ESCALA DE SEVERIDAD:***
+***ESCALA DE SEVERIDAD:***
 
 *Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:*
 
@@ -643,7 +643,7 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 ---
 
-#### ***TABLA RESUMEN:***
+***TABLA RESUMEN:***
 
 | \# | Problema | Escala de severidad | Heurística/Principio violada(o) |
 | :---: | ----- | ----- | :---- |
@@ -736,8 +736,9 @@ ClaudeFlow es una startup liderada por estudiantes de la Universidad Peruana de 
 
 #### 6.4.2.3. Contenido de auditoría recibida
 
-##### UX Heuristics & Principles Evaluation
-##### Usability – Inclusive Design – Information Architecture
+**UX Heuristics & Principles Evaluation**
+
+**Usability – Inclusive Design – Information Architecture**
 
 **CARRERA:** Ingeniería de Software
 **CURSO:** Diseño de Experimentos de Ingeniería de Software
@@ -950,6 +951,16 @@ Conectar las burbujas de avatar con el servicio de base de datos correspondiente
 
 
 
-#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos. 
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos.
+El equipo de desarrollo de Centralis ha tomado nota de cada uno de los problemas identificados en la auditoría de experiencia de usuario y ha comenzado a implementar las siguientes modificaciones para subsanar los hallazgos:
+1.	Redirección del botón CTA en la sección Hero a la pantalla de registro.
+2.	Ajuste del contraste de texto en el Footer para mejorar la legibilidad.
+3.	Habilitación del selector de idioma en el Footer para que funcione de manera consistente con el Header.
+4.	Actualización del año en los derechos reservados a 2026.
+5.	Activación de los botones "Sign In" y "Start Meeting" para redirigir a las pantallas correspondientes.
+6.	Implementación de la funcionalidad de los botones de comunicación en la vista de Perfil.
+7.	Corrección del cálculo de métricas de analítica para incluir solo usuarios con acceso.
+8.	Eliminación del texto residual "Button" de la tarjeta de eventos.
+9.	Integración de imágenes reales en los avatares de los miembros inscritos en los eventos.
 
 
