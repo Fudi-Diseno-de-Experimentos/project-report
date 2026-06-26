@@ -961,7 +961,7 @@ El equipo de desarrollo de Centralis ha tomado nota de cada uno de los problemas
 3.	Habilitación del selector de idioma en el Footer para que funcione de manera consistente con el Header.
 4.	Actualización del año en los derechos reservados a 2026.
 5.	Activación de los botones "Sign In" y "Start Meeting" para redirigir a las pantallas correspondientes.
-6.	Implementación de la funcionalidad de los botones de comunicación en la vista de Perfil.
+6.	Eliminación de los botones de comunicación inoperativos en la vista de Perfil.
 7.	Corrección del cálculo de métricas de analítica para incluir solo usuarios con acceso.
 8.	Eliminación del texto residual "Button" de la tarjeta de eventos.
 9.	Integración de imágenes reales en los avatares de los miembros inscritos en los eventos.
