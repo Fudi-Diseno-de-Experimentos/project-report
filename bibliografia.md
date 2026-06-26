@@ -20,6 +20,17 @@
 <p style="text-indent: 1.25cm;">Finalmente, la validación del sistema se consolidó a través de una rigurosa suite de pruebas que cubrió todos los niveles de la arquitectura. Se ejecutaron con éxito Unit Tests e Integration Tests en el backend y el entorno móvil, verificando flujos transaccionales y de seguridad críticos. Además, el uso de herramientas avanzadas como Patrol para los Core System Tests permitió confirmar que la interacción de extremo a extremo entre los dispositivos móviles y los servicios en la nube es fluida, garantizando una solución de ingeniería de software confiable, transparente y de alto impacto organizacional.
 
 
+**TB2:** 
+
+<p style="text-indent: 1.25cm;">La exitosa corrección técnica del flujo de DevOps y la incorporación del enfoque de Experiment-Driven Development (Desarrollo Guiado por Experimentos) han permitido al equipo establecer una infraestructura de despliegue continuo altamente eficiente. Esta optimización no solo asegura una entrega de software más ágil y automatizada, sino que también introduce una metodología científica para validar nuevas funcionalidades mediante experimentos controlados, mitigando los riesgos técnicos antes de su liberación en el entorno de producción.
+
+<p style="text-indent: 1.25cm;">La actualización y ampliación exhaustiva de las suites de pruebas —abarcando los niveles Unitario, de Integración y de Sistema (Core System Tests)— garantizan la robustez estructural y la estabilidad operativa de la plataforma. Al documentar formalmente estos componentes, se ha fortalecido la trazabilidad del código y se ha establecido una red de seguridad técnica indispensable para sostener el crecimiento del sistema, minimizando la aparición de regresiones o fallos en las funcionalidades críticas de la aplicación móvil.
+
+<p style="text-indent: 1.25cm;">La ejecución de la auditoría de experiencias de usuario, respaldada por la evaluación de heurísticas y el análisis de las entrevistas de validación, ha sido fundamental para identificar fricciones operativas en el ecosistema móvil. A través de este diagnóstico, plasmado formalmente en la Sección 6.4 del informe, el equipo logró ejecutar correcciones de interfaz precisas y centradas en el usuario, elevando significativamente los estándares de usabilidad, accesibilidad y fluidez de la aplicación de cara a su despliegue definitivo.
+
+<p style="text-indent: 1.25cm;">El registro, edición y consolidación sistemática del material audiovisual correspondiente a las entrevistas de validación aportaron el sustento empírico necesario para legitimar las decisiones de diseño e ingeniería adoptadas por el equipo. La sincronización entre las actividades de validación heurística, la documentación técnica y la configuración de infraestructura refleja un alto nivel de madurez organizativa y un esfuerzo colaborativo cohesionado, logrando cumplir de manera integral con los objetivos de calidad exigidos para esta fase del proyecto.
+
+
 
 # Bibliografía 
 
