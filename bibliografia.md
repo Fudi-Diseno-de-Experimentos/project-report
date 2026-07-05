@@ -27,8 +27,22 @@
 <p style="text-indent: 1.25cm;">La actualización y ampliación exhaustiva de las suites de pruebas —abarcando los niveles Unitario, de Integración y de Sistema (Core System Tests)— garantizan la robustez estructural y la estabilidad operativa de la plataforma. Al documentar formalmente estos componentes, se ha fortalecido la trazabilidad del código y se ha establecido una red de seguridad técnica indispensable para sostener el crecimiento del sistema, minimizando la aparición de regresiones o fallos en las funcionalidades críticas de la aplicación móvil.
 
 <p style="text-indent: 1.25cm;">La ejecución de la auditoría de experiencias de usuario, respaldada por la evaluación de heurísticas y el análisis de las entrevistas de validación, ha sido fundamental para identificar fricciones operativas en el ecosistema móvil. A través de este diagnóstico, plasmado formalmente en la Sección 6.4 del informe, el equipo logró ejecutar correcciones de interfaz precisas y centradas en el usuario, elevando significativamente los estándares de usabilidad, accesibilidad y fluidez de la aplicación de cara a su despliegue definitivo.
-
 <p style="text-indent: 1.25cm;">El registro, edición y consolidación sistemática del material audiovisual correspondiente a las entrevistas de validación aportaron el sustento empírico necesario para legitimar las decisiones de diseño e ingeniería adoptadas por el equipo. La sincronización entre las actividades de validación heurística, la documentación técnica y la configuración de infraestructura refleja un alto nivel de madurez organizativa y un esfuerzo colaborativo cohesionado, logrando cumplir de manera integral con los objetivos de calidad exigidos para esta fase del proyecto.
+
+
+   **TF:**     
+
+<p style="text-indent: 1.25cm;">En esta entrega final , se consolidó la implementación e integración de todas las características clave de la plataforma Centralis, logrando un prototipo completamente funcional de extremo a extremo. Esto incluyó la adición de la redirección al botón de descarga en la Landing Page, la confirmación interactiva y reactiva de asistencia a eventos en la aplicación móvil, la asignación dinámica de miembros del equipo con sincronización reactiva, y la exposición de endpoints robustos para la lógica de negocios y streaming analítico en tiempo real mediante SSE en el backend.</p>
+
+<p style="text-indent: 1.25cm;">La adopción de la metodología de Experiment-Driven Development permitió validar empíricamente cada una de las hipótesis planteadas en el Question Backlog. Los resultados cuantitativos medidos manualmente durante las sesiones de prueba de usabilidad y los pilotos con participantes reales evidenciaron un cumplimiento del 100% de los criterios de éxito establecidos para las métricas de dominio. Características críticas como la reactividad de la UI y la reserva de salas libre de colisiones  registraron un éxito absoluto, lo que condujo al rechazo de las hipótesis nulas y al soporte científico de las hipótesis de trabajo.</p>
+
+<p style="text-indent: 1.25cm;">Asimismo, las entrevistas estructuradas de validación aportaron una rica retroalimentación cualitativa que legitima las decisiones de diseño heurístico y de interfaz. Los usuarios destacaron la practicidad de contar con notificaciones de asistencia y lectura en una sola tarjeta integrada, y valoraron especialmente la separación de las comunicaciones formales de canales cotidianos como WhatsApp. Esta separación no solo redujo la sobrecarga cognitiva y eliminó el spam visual gracias a la restricción jerárquica de permisos, sino que también aumentó significativamente el foco de los empleados y la velocidad de lectura de anuncios urgentes.</p>
+
+<p style="text-indent: 1.25cm;">Por último, el establecimiento del workflow de aprendizaje continuo y la formalización de las Learning Cards estructuradas en el reporte permitieron documentar de manera profesional las lecciones clave de cada hipótesis y definir un plan de acción concreto para la estabilización y consolidación final del código. Este proceso demuestra que Centralis ha madurado hasta convertirse en una solución de ingeniería de software confiable, probada y centrada en el usuario, sentando una línea base metodológica y técnica que garantiza la sostenibilidad del producto en futuras expansiones académicas o profesionales.</p>
+
+
+
+# Video About-The-Team
 
 
 

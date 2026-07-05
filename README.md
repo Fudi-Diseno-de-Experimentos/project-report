@@ -21,7 +21,7 @@
 
   <hr style="width: 50%; margin: 25px auto; border: 1px solid #999;"/>
 
-<h2 style="margin-bottom: 10px;"><strong>"Informe del TP"</strong></h2>
+<h2 style="margin-bottom: 10px;"><strong>"Informe del Trabajo Final"</strong></h2>
 <p style="margin: 5px 0;"><strong>Nombre del grupo:</strong> Fudi</p>
 <p style="margin: 5px 0;"><strong>Nombre del producto:</strong> Centralis</p>
 
@@ -35,7 +35,7 @@
   <p style="margin: 4px 0;"><code>U20231B866</code> - Curipaco Huayllani, Neil Aldrin Wilhelm</p>
   <p style="margin: 4px 0;"><code>u201910803</code> - Heredia Hoyos, Danitza Ivonne</p>
 
-  <p style="margin-top: 25px;"><strong>Lima - Mayo 2026</strong></p>
+  <p style="margin-top: 25px;"><strong>Lima - Julio 2026</strong></p>
 
 </div>
 
