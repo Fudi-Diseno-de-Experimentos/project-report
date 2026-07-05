@@ -554,6 +554,33 @@ En esta sección se definen las historias de usuario del estado futuro (To-Be) q
   </tr>
 </table>
 
+<table style="width: 100%; border-collapse: collapse; margin: 0 auto;">
+  <tr>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Story ID</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">User</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Priority</th>
+    <th style="border: 1px solid black; padding: 8px; text-align: center; width: 20%;">Epic</th>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">TB-US09</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">usuario visitante</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">1</td>
+    <td style="border: 1px solid black; padding: 8px; text-align: center;">Usabilidad y Consistencia de la Landing Page</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Title</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Redirección al enlace de descarga de la aplicación móvil desde los botones CTA de la Landing Page</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold;">Description</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left;">Como usuario visitante de la Landing Page, quiero que los botones de llamada a la acción (CTA) y el botón del header me redirijan directamente a la sección de descargas de la aplicación móvil (releases de GitHub), para poder descargar e instalar la aplicación de manera directa.</td>
+  </tr>
+  <tr>
+    <td style="border: 1px solid black; padding: 8px; text-align: left; font-weight: bold; vertical-align: top;">Acceptance Criteria</td>
+    <td colspan="3" style="border: 1px solid black; padding: 8px; text-align: left; vertical-align: top;">Feature: Redirección de llamadas a la acción (CTA) a la página de descargas de la aplicación móvil<br><br>Escenario: Redirección del botón CTA principal en Hero<br>Dado que un usuario visitante se encuentra en la Landing Page,<br>Cuando hace clic en el botón "Empezar" de la sección Hero,<br>Entonces el sistema lo redirige a la página de descargas de la aplicación móvil nativa (https://github.com/Fudi-Diseno-de-Experimentos/app-mobile/releases) abriéndose en una nueva pestaña.<br><br>Escenario: Redirección del botón en CTASection<br>Dado que un usuario visitante se encuentra en la Landing Page,<br>Cuando hace clic en el botón "Comienza Gratis" de la sección de llamado a la acción final,<br>Entonces el sistema lo redirige a la página de descargas de la aplicación móvil nativa (https://github.com/Fudi-Diseno-de-Experimentos/app-mobile/releases) abriéndose en una nueva pestaña.<br><br>Escenario: Redirección del botón "Iniciar Reunión" del Header<br>Dado que un usuario visitante se encuentra en la Landing Page,<br>Cuando hace clic en el botón "Iniciar Reunión" del Header,<br>Entonces el sistema lo redirige a la página de descargas de la aplicación móvil nativa (https://github.com/Fudi-Diseno-de-Experimentos/app-mobile/releases) abriéndose en una nueva pestaña.</td>
+  </tr>
+</table>
+
 ### 8.3.2. To-Be Product Backlog
 <p style="text-indent: 1.25cm;">El To-Be Product Backlog consolida las historias de usuario experimentales y de subsanación de usabilidad en una lista priorizada, ordenada por valor de negocio, riesgo técnico, severidad de hallazgos e impacto en los objetivos de aprendizaje. Las historias técnicas (TB-US01, TB-US03) se ubican en las primeras posiciones porque habilitan la infraestructura de medición y reducen fricción crítica; las historias funcionales (TB-US02, TB-US04, TB-US05) se priorizan según su contribución a las métricas de dominio (DBM) y su criticidad para la validación de hipótesis. Finalmente, las historias de usabilidad y navegación (TB-US06, TB-US07, TB-US08) resuelven fricciones críticas identificadas en la auditoría de experiencia de usuario para garantizar un producto consistente y accesible.</p>
 
@@ -567,6 +594,7 @@ En esta sección se definen las historias de usuario del estado futuro (To-Be) q
 | 6 | TB-US06 | Activación y corrección de enlaces de navegación en la Landing Page | Como usuario visitante de la Landing Page, quiero que todos los botones de llamada a la acción (CTA), enlaces del header y pie de página sean funcionales, para poder navegar y registrarme sin interrupciones. | 3 |
 | 7 | TB-US07 | Filtrado de usuarios con acceso en métricas de analítica | Como gerente, quiero que el cálculo del porcentaje de visualización de anuncios en analíticas considere únicamente a usuarios con permisos de acceso, para obtener métricas reales de lectura. | 5 |
 | 8 | TB-US08 | Limpieza visual y avatares dinámicos en tarjetas de eventos | Como usuario, quiero que las tarjetas de eventos no muestren texto residual y muestren avatares dinámicos con fotos de perfil o iniciales, para una UI limpia y profesional. | 3 |
+| 9 | TB-US09 | Redirección al enlace de descarga de la aplicación móvil desde los botones CTA | Como usuario visitante, quiero que los botones CTA y del header me redirijan a la descarga de la app móvil, para poder instalar Centralis directamente. | 3 |
 
 ### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
 
@@ -589,16 +617,157 @@ En esta sección se definen las historias de usuario del estado futuro (To-Be) q
 | TB-US03 | Sincronización reactiva de estados en flujo de eventos | TA03.1 | UI Reactiva de Miembros | Refactorizar la lista de miembros asignables en la creación de eventos grupales con StreamBuilder para actualización automática en vivo. | 7 | Neil | Done |
 | TB-US04 | Reserva de espacios físicos corporativos en eventos | TA04.1 | Endpoints de Reserva | Implementar servicios en Spring Boot para validar y bloquear la disponibilidad de espacios en los horarios programados del evento. | 8 | Raúl | Done |
 | TB-US02 | Confirmación binaria de asistencia a eventos | TA02.1 | Botones Aceptar/Rechazar | Diseñar e integrar botones interactivos de confirmación rápida en el widget de la tarjeta del evento en el feed del empleado. | 4 | Raúl | Done |
+| TB-US09 | Redirección al enlace de descarga de la aplicación móvil desde los botones CTA | TA09.1 | Redirección de botones CTA a descargas | Configurar los botones de llamada a la acción en la Landing Page (Hero, Header y CTA final) para redirigir al enlace de releases de la aplicación móvil nativa. | 4 | Neil | Done |
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
 
-#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+<p style="text-indent: 1.25cm;">Para el experimento de usabilidad y conversión de la Landing Page de Centralis, se implementó el redireccionamiento directo de todos los botones principales de llamada a la acción (CTA) y del header hacia la sección oficial de descargas de la aplicación móvil nativa (las *releases* de GitHub). Este cambio optimiza el embudo de conversión al guiar directamente a los usuarios hacia el aplicativo móvil (desarrollado en Flutter), eliminando flujos web inactivos y enlaces redundantes que apuntaban a <code>#</code> en el prototipo inicial.</p>
 
-#### 8.3.3.4. Implemented To-Be Native-Mobile Application Evidence
+<p style="text-indent: 1.25cm;">El desarrollo se realizó sobre el proyecto basado en <strong>Astro</strong>, modificando los componentes de presentación y actualizando los diccionarios de internacionalización (inglés y español) para la Landing Page. Específicamente, se actualizaron el botón de descarga en la sección Hero, el botón en la sección CTA final y el botón "Iniciar Reunión" / "Start Meeting" del Header principal, vinculándolos a la URL oficial del repositorio: <code>https://github.com/Fudi-Diseno-de-Experimentos/app-mobile/releases</code>. El despliegue continuo (CD) se encuentra configurado de manera automática en la plataforma <strong>Vercel</strong> y está disponible públicamente.</p>
 
-#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+*   **Enlace de despliegue oficial:** https://landing-page-rmy9.vercel.app/en
 
-#### 8.3.3.6. Team Collaboration Insights
+<img src="https://i.imgur.com/ii09fAb.png" width="400">
+
+
+
+<img src="https://i.imgur.com/J94gOTw.png" width="400">
+
+
+#### 8.3.3.3. Implemented To-Be Native-Mobile Application Evidence
+
+<p style="text-indent: 1.25cm;">En esta sección se detallan las evidencias de desarrollo y la implementación de las características experimentales en la aplicación móvil nativa de Centralis (desarrollada con Flutter). Los cambios funcionales se implementaron de acuerdo con las historias de usuario prioritarias del backlog y se verificaron mediante la automatización de pruebas unitarias, de integración y de sistema.</p>
+
+**1. Confirmación de Asistencia a Eventos (TB-US02)**
+
+<p style="text-indent: 1.25cm;">Se implementó la lógica y los componentes de interfaz para permitir que los empleados confirmen o declinen su asistencia a eventos corporativos con un solo clic. A nivel del dominio y datos, se añadieron los casos de uso <code>AcceptInvitationUseCase</code> y <code>DeclineInvitationUseCase</code> en la estructura de Clean Architecture de la app móvil. Estos casos de uso se integraron en el BLoC de eventos (<code>EventBloc</code>), manejando los eventos <code>AcceptInvitation</code> y <code>DeclineInvitation</code> para actualizar de forma optimista la interfaz y persistir el estado de la invitación en Supabase.</p>
+
+<p style="text-indent: 1.25cm;">En la capa de presentación, se modificó el widget de la tarjeta de evento (<code>EventCard</code>) para renderizar dinámicamente un componente de acciones inline (<code>_InvitationActions</code>) que presenta los botones <em>Accept</em> y <em>Decline</em>. Este componente solo se visualiza cuando la invitación tiene estado pendiente (<code>isPending</code>). Al presionar una opción, la tarjeta se actualiza reactivamente ocultando los botones y actualizando el estado visual del evento en el feed.</p>
+
+<img src="https://i.imgur.com/8dEvGFz.png" width="300">
+
+**2. Selector y Reserva de Espacios Físicos Corporativos (TB-US04)**
+
+<p style="text-indent: 1.25cm;">Para dar soporte al flujo de reserva de espacios y evitar conflictos de ocupación (métrica DBM-06), se modificó el formulario de creación de eventos (<code>CreateEventPage</code>). Tras elegir una fecha, la aplicación realiza una consulta en vivo a través de <code>GetSpacesUseCase</code> para recuperar la disponibilidad de salas de la compañía para ese día.</p>
+
+<p style="text-indent: 1.25cm;">El selector de salas (<code>_buildRoomPickerSection</code>) evalúa los estados de disponibilidad y reacciona de la siguiente manera:
+<ul>
+  <li>Si la compañía no cuenta con salas registradas en la base de datos, el formulario ofrece un atajo visual (botón <em>Add Space</em>) que permite al gerente invocar un formulario flotante <code>showSpaceFormSheet</code> para registrar un nuevo espacio físico inline sin interrumpir la creación del evento.</li>
+  <li>Si existen salas, aquellas ocupadas en esa fecha y horario se muestran de forma deshabilitada bajo la etiqueta <em>"Booked"</em>, garantizando que el gerente solo pueda reservar espacios físicamente libres.</li>
+</ul>
+</p>
+<img src="https://i.imgur.com/oUIuJyL.png" width="300">
+
+<img src="https://i.imgur.com/M4IF1Y6.png" width="300">
+
+**3. Sincronización Reactiva de Estados (TB-US03) e Invitados (TB-US08)**
+
+<p style="text-indent: 1.25cm;">Se implementó la lista reactiva de miembros invitados (<code>_buildMemberPickerSection</code>) dentro de la creación de eventos grupales. La lista carga automáticamente los miembros asignables de la organización y permite seleccionarlos usando casillas de verificación. Se incorporó el componente <code>AvatarGroup</code> para apilar visualmente los avatares dinámicos de los miembros seleccionados (mostrando sus fotos de perfil o iniciales de nombre en círculos de colores), y se eliminaron las etiquetas de depuración residuales ("Button") en la tarjeta del evento.</p>
+
+<img src="https://i.imgur.com/GFz1FIC.png" width="300">
+
+
+#### 8.3.3.4. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+<p style="text-indent: 1.25cm;">En esta sección se detalla la implementación y evidencias del backend RESTful que da soporte a las características experimentales de la aplicación móvil. La API está diseñada bajo una arquitectura dirigida por dominio (DDD) y expone endpoints seguros con control de acceso basado en roles. Toda la persistencia y aislamiento lógico multi-tenancy se gestionan a través de Supabase PostgreSQL.</p>
+
+**1. Documentación de Endpoints del Experimento de Eventos (Asistencia - TB-US02)**
+
+<p style="text-indent: 1.25cm;">Se implementó el ciclo de vida de confirmación binaria de asistencia a eventos por parte de los destinatarios. Los endpoints permiten actualizar de manera atómica el estado de la invitación del usuario empleado autenticado.</p>
+
+*   **Aceptar Invitación a Evento**
+    *   **Verbo HTTP:** `POST`
+    *   **Endpoint:** `/api/v1/events/{eventId}/accept`
+    *   **Variables de Ruta:**
+        *   `eventId` (UUID): Identificador único del evento al que se desea asistir.
+    *   **Descripción:** Registra de manera atómica la confirmación positiva de asistencia del usuario empleado autenticado (cambiando su estado en la tabla de destinatarios a <code>ACCEPTED</code>).
+    *   **Códigos de Respuesta:**
+        *   `200 OK`: Retorna el objeto del evento actualizado con el estado correspondiente del receptor.
+        *   `403 Forbidden`: El usuario autenticado no figura como destinatario/invitado de este evento.
+        *   `404 Not Found`: No existe un evento con el ID proporcionado.
+
+*   **Rechazar Invitación a Evento**
+    *   **Verbo HTTP:** `POST`
+    *   **Endpoint:** `/api/v1/events/{eventId}/decline`
+    *   **Variables de Ruta:**
+        *   `eventId` (UUID): Identificador único del evento al que se declina asistir.
+    *   **Descripción:** Registra la inasistencia del usuario autenticado (cambiando su estado en la tabla de destinatarios a <code>DECLINED</code>). En la aplicación móvil, esto oculta el evento de la lista del destinatario.
+    *   **Códigos de Respuesta:**
+        *   `200 OK`: Retorna el objeto del evento actualizado.
+        *   `403 Forbidden`: El usuario autenticado no figura como invitado de este evento.
+        *   `404 Not Found`: Evento no encontrado.
+
+<img src="https://i.imgur.com/HBCJ1G9.png" width="450">
+
+**2. Documentación de Endpoints del Experimento de Reserva de Espacios (TB-US04)**
+
+<p style="text-indent: 1.25cm;">Para evitar la doble reserva de espacios físicos internos (laboratorios, oficinas, salas de reuniones, etc.) se implementó la lógica de asignación y verificación de disponibilidad de espacios por fecha.</p>
+
+*   **Listar Espacios con Consulta de Disponibilidad**
+    *   **Verbo HTTP:** `GET`
+    *   **Endpoint:** `/api/v1/spaces`
+    *   **Parámetros de Consulta (Query Params):**
+        *   `date` (LocalDate, opcional, formato YYYY-MM-DD): Fecha del calendario para la cual se desea comprobar la disponibilidad de los espacios.
+    *   **Descripción:** Retorna la lista de salas registradas para la compañía del usuario. Si se proporciona el parámetro <code>date</code>, el sistema calcula de manera dinámica la disponibilidad de cada espacio evaluando las reservas existentes, anotando cada recurso con la bandera booleana <code>available</code> (true/false).
+    *   **Códigos de Respuesta:**
+        *   `200 OK`: Retorna un arreglo con las salas de la compañía y su estado de ocupación.
+
+*   **Crear Espacio Físico (Sala)**
+    *   **Verbo HTTP:** `POST`
+    *   **Endpoint:** `/api/v1/spaces`
+    *   **Seguridad:** Restringido a usuarios con rol `ROLE_ADMIN` o `ROLE_MANAGER`.
+    *   **Cuerpo de la Solicitud (Body):**
+        ```json
+        {
+          "name": "Sala de Reuniones A",
+          "description": "Sala equipada para videoconferencias en el 3er piso"
+        }
+        ```
+    *   **Descripción:** Registra un nuevo espacio físico para la compañía del gerente, habilitándolo inmediatamente en el catálogo.
+    *   **Códigos de Respuesta:**
+        *   `201 Created`: Retorna el objeto de la sala creada.
+
+<img src="https://i.imgur.com/1KcmAY2.png" width="450">
+
+**3. Documentación del Endpoint de Server-Sent Events para Analíticas (TB-US01)**
+
+<p style="text-indent: 1.25cm;">Se implementó una conexión persistente para el streaming de datos a fin de mitigar la percepción de latencia y la tasa de abandono de pantalla al abrir el panel de analíticas.</p>
+
+*   **Streaming de Analíticas en Tiempo Real (SSE)**
+    *   **Verbo HTTP:** `GET`
+    *   **Endpoint:** `/api/v1/analytics/stream/{contentType}/{contentId}`
+    *   **Cabeceras Requeridas:**
+        *   `Accept: text/event-stream`
+    *   **Variables de Ruta:**
+        *   `contentType` (String): El tipo de entidad a auditar (<code>ANNOUNCEMENT</code> o <code>EVENT</code>).
+        *   `contentId` (String): El ID del anuncio o evento correspondiente.
+    *   **Descripción:** Establece un canal de Server-Sent Events (SSE) que envía flujos progresivos (en chunks) de los datos de confirmación de lectura en lugar de una petición bloqueante tradicional, actualizando al cliente móvil dinámicamente cuando un usuario lee un anuncio.
+    *   **Códigos de Respuesta:**
+        *   `200 OK`: Establecimiento de la conexión del stream.
+
+<img src="https://i.imgur.com/90cJg08.png" width="450">
+
+
+
+#### 8.3.3.5. Team Collaboration Insights
+
+<p style="text-indent: 1.25cm;">El presente apartado describe y analiza las dinámicas de colaboración técnica y el desempeño del equipo de la startup <strong>Fudi</strong> durante el Sprint 3 de desarrollo. Para sustentar la transparencia y la responsabilidad en el ciclo de vida del software, el equipo utiliza el control de versiones en GitHub con una gestión de ramas basada en GitFlow e integración de código mediante Pull Requests. A continuación, se presenta la interpretación de los analíticos de contribuciones de cada repositorio para las funcionalidades experimentales de la plataforma Centralis:</p>
+
+**1. Interpretación de Analíticos: Landing Page**
+
+<p style="text-indent: 1.25cm;">El analítico del repositorio de la Landing Page refleja un esfuerzo concentrado para la corrección y alineación de los enlaces del MVP corporativo.
+
+<img src="https://i.imgur.com/1F7xfwQ.png" width="450">
+
+**2. Interpretación de Analíticos: App Mobile**
+<p style="text-indent: 1.25cm;">En el repositorio de la aplicación móvil (Flutter), los analíticos de GitHub muestran un volumen alto de commits e integración de código en la rama de desarrollo (<code>develop</code>) y en ramas de características de experimentos (<code>feature/add-event-invitation</code>). 
+
+<img src="https://i.imgur.com/DuQnkqP.png" width="450">
+
+**3. Interpretación de Analíticos: Web Service**
+<p style="text-indent: 1.25cm;">Para el repositorio de servicios web, se registra una actividad colaborativa enfocada en la creación y robustecimiento de los endpoints del dominio. La actividad se centró en implementar la persistencia y control de disponibilidad de salas por fecha, la lógica transaccional de aceptación/rechazo de invitaciones y la infraestructura de transmisión persistente Server-Sent Events (SSE). La integración se realizó mediante Pull Requests formales de desarrollo, asegurando la revisión de código antes de la fusión a la rama <code>main</code> y su posterior despliegue automático en Render.</p>
+
+<img src="https://i.imgur.com/ET7D7Ad.png" width="450">
 
 #### 8.3.4. To-Be Validation Interviews
 
