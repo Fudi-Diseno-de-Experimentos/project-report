@@ -769,6 +769,15 @@ En esta sección se definen las historias de usuario del estado futuro (To-Be) q
 
 #### 8.3.4. To-Be Validation Interviews
 
+<p style="text-indent: 1.25cm;">Con el propósito de evaluar de manera directa la usabilidad, fluidez e impacto organizacional de las nuevas características de Centralis, el equipo de trabajo llevó a cabo una fase de pruebas de usabilidad y entrevistas semiestructuradas con los participantes del segmento de gerentes y empleados. Estas sesiones de validación permitieron contrastar empíricamente las hipótesis planteadas en el Question Backlog y recopilar retroalimentación cualitativa clave sobre la adopción del sistema.</p>
+
+<p style="text-indent: 1.25cm;">Como evidencia del proceso de validación final del aplicativo móvil, se compiló un video demostrativo que consolida los momentos más significativos de las interacciones de los usuarios. En este registro audiovisual se aprecia la ejecución de las tareas asignadas en la app por parte de los participantes de prueba, documentando de manera transparente la usabilidad real del prototipo desarrollado y sus testimonios sobre el descarte del desorden visual del feed y la optimización logística. A continuación se incluye la captura de pantalla de referencia y el enlace directo para visualizar el video publicado en la plataforma OneDrive:</p>
+
+<img src="https://i.imgur.com/WuNU2qS.png" width="450">
+
+Link del video Validation Interviews: https://shorturl.at/RSCEz
+
+
 #### 8.3.4.1. Diseño de Entrevistas.
 
 <p style="text-indent: 1.25cm;">El diseño de las entrevistas de validación cualitativa se estructuró con el propósito de contrastar las hipótesis nulas y de trabajo de los cuatro experimentos definidos en la sección 8.2. Para ello, se adoptó un enfoque metodológico mixto que complementa las métricas cuantitativas recolectadas manualmente durante las pruebas (tasa de abandono, tasa de confirmación, clics innecesarios, colisiones) con la percepción subjetiva de usabilidad, frustración, utilidad y fluidez de los usuarios reales.</p>

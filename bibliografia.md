@@ -42,6 +42,16 @@
 
 
 
+# Video App Validation
+
+<p style="text-indent: 1.25cm;">El video de validación de la aplicación Video App Validation constituye una evidencia empírica fundamental del Trabajo Final del proyecto Centralis. Este material audiovisual consolida las sesiones de pruebas de usabilidad y entrevistas estructuradas realizadas con los participantes de los segmentos objetivo. En el video se puede observar de forma directa la interacción de los usuarios con las características experimentales implementadas, tales como la confirmación de asistencia con un solo clic, la visualización progresiva de analíticas en tiempo real (SSE) y la reserva interactiva de salas sin conflictos de ocupación.</p>
+
+<p style="text-indent: 1.25cm;">El propósito del video es documentar de manera transparente la validación de las hipótesis de usabilidad y la respuesta cualitativa de los participantes, quienes expresaron sus testimonios y apreciaciones sobre la reducción de la sobrecarga de información y el desorden visual en comparación con herramientas de mensajería informal de uso diario. A continuación se incluye una captura de pantalla del video y el enlace directo para su reproducción en línea:</p>
+
+<img src="https://i.imgur.com/9PRKrZO.png" width="450">
+
+Link del video Validation Interviews: https://shorturl.at/RSCEz
+
 # Video About-The-Team
 
 
@@ -86,4 +96,6 @@ To-Be Scenario Mapping: https://i.imgur.com/TCNr03W.png
 
 Link del prototipo mobile: https://shorturl.at/Fy7KA
 
-Link Validation Interviews: https://shorturl.at/gH7kO
+Link Validation Interviews sprint 1: https://shorturl.at/gH7kO
+
+Link Validation Interviews sprint 2: https://shorturl.at/RSCEz
