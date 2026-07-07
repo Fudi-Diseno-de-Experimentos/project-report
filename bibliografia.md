@@ -54,6 +54,12 @@ Link del video Validation Interviews: https://shorturl.at/RSCEz
 
 # Video About-The-Team
 
+El proceso de ingeniería de software y gestión DevOps no solo se valida a través del correcto funcionamiento de la arquitectura tecnológica, sino también mediante el crecimiento, la sinergia y el aprendizaje técnico consolidado por el equipo de desarrollo a lo largo de las fases de construcción del producto. Con este propósito, se ha elaborado el recurso audiovisual **"About-the-Team Video"**, un material de cierre que recopila el testimonio directo de los ingenieros detrás de **Centralis**, exponiendo la evolución metodológica del equipo durante el desarrollo del ecosistema móvil.
+
+Link About-The-Team: https://shorturl.at/adFLr
+
+<img src="https://i.imgur.com/Inj7ob0.png" width="450">
+
 
 
 # Bibliografía 
@@ -96,6 +102,12 @@ To-Be Scenario Mapping: https://i.imgur.com/TCNr03W.png
 
 Link del prototipo mobile: https://shorturl.at/Fy7KA
 
-Link Validation Interviews sprint 1: https://shorturl.at/gH7kO
+Link Validation Interviews: https://shorturl.at/RSCEz
 
-Link Validation Interviews sprint 2: https://shorturl.at/RSCEz
+Link About the Product: https://shorturl.at/Br5Fg
+
+Link About-The-Team: https://shorturl.at/adFLr
+
+Link de la landing page: https://landing-page-rmy9.vercel.app/en
+
+Link del web service: https://web-service-1mm7.onrender.com/swagger-ui/index.html

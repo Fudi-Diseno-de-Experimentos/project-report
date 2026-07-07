@@ -804,6 +804,8 @@ Link del video Validation Interviews: https://shorturl.at/RSCEz
 
 #### 8.3.4.2. Registro de Entrevistas.
 
+Link Needfinding Interviews: https://shorturl.at/LRyqA
+
 ***Segmento objetivo #1: Empleados y Colaboradores***
 
 **Entrevista #1: Dana Vallejos**
@@ -1143,3 +1145,9 @@ graph TD
 ## 8.6. To-Be Software Platform Pre-launch
 
 ### 8.6.1. About-the-Product Intro Video
+
+Link About the Product: https://shorturl.at/Br5Fg
+
+Como parte de la estrategia de transferencia de conocimiento y cierre del ciclo de validación del producto, se ha diseñado y producido un recurso audiovisual en formato de video introductorio. El propósito principal de este material es sintetizar de manera didáctica la propuesta de valor unificada de **Centralis**, sirviendo como un canal de inducción rápido y accesible para los potenciales usuarios y tomadores de decisiones dentro del ecosistema de las pequeñas y medianas empresas. 
+
+<img src="https://i.imgur.com/O7LZeq9.png" width="500">
