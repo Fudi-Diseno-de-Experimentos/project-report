@@ -20,6 +20,47 @@
 <p style="text-indent: 1.25cm;">Finalmente, la validación del sistema se consolidó a través de una rigurosa suite de pruebas que cubrió todos los niveles de la arquitectura. Se ejecutaron con éxito Unit Tests e Integration Tests en el backend y el entorno móvil, verificando flujos transaccionales y de seguridad críticos. Además, el uso de herramientas avanzadas como Patrol para los Core System Tests permitió confirmar que la interacción de extremo a extremo entre los dispositivos móviles y los servicios en la nube es fluida, garantizando una solución de ingeniería de software confiable, transparente y de alto impacto organizacional.
 
 
+**TB2:** 
+
+<p style="text-indent: 1.25cm;">La exitosa corrección técnica del flujo de DevOps y la incorporación del enfoque de Experiment-Driven Development (Desarrollo Guiado por Experimentos) han permitido al equipo establecer una infraestructura de despliegue continuo altamente eficiente. Esta optimización no solo asegura una entrega de software más ágil y automatizada, sino que también introduce una metodología científica para validar nuevas funcionalidades mediante experimentos controlados, mitigando los riesgos técnicos antes de su liberación en el entorno de producción.
+
+<p style="text-indent: 1.25cm;">La actualización y ampliación exhaustiva de las suites de pruebas —abarcando los niveles Unitario, de Integración y de Sistema (Core System Tests)— garantizan la robustez estructural y la estabilidad operativa de la plataforma. Al documentar formalmente estos componentes, se ha fortalecido la trazabilidad del código y se ha establecido una red de seguridad técnica indispensable para sostener el crecimiento del sistema, minimizando la aparición de regresiones o fallos en las funcionalidades críticas de la aplicación móvil.
+
+<p style="text-indent: 1.25cm;">La ejecución de la auditoría de experiencias de usuario, respaldada por la evaluación de heurísticas y el análisis de las entrevistas de validación, ha sido fundamental para identificar fricciones operativas en el ecosistema móvil. A través de este diagnóstico, plasmado formalmente en la Sección 6.4 del informe, el equipo logró ejecutar correcciones de interfaz precisas y centradas en el usuario, elevando significativamente los estándares de usabilidad, accesibilidad y fluidez de la aplicación de cara a su despliegue definitivo.
+<p style="text-indent: 1.25cm;">El registro, edición y consolidación sistemática del material audiovisual correspondiente a las entrevistas de validación aportaron el sustento empírico necesario para legitimar las decisiones de diseño e ingeniería adoptadas por el equipo. La sincronización entre las actividades de validación heurística, la documentación técnica y la configuración de infraestructura refleja un alto nivel de madurez organizativa y un esfuerzo colaborativo cohesionado, logrando cumplir de manera integral con los objetivos de calidad exigidos para esta fase del proyecto.
+
+
+   **TF:**     
+
+<p style="text-indent: 1.25cm;">En esta entrega final , se consolidó la implementación e integración de todas las características clave de la plataforma Centralis, logrando un prototipo completamente funcional de extremo a extremo. Esto incluyó la adición de la redirección al botón de descarga en la Landing Page, la confirmación interactiva y reactiva de asistencia a eventos en la aplicación móvil, la asignación dinámica de miembros del equipo con sincronización reactiva, y la exposición de endpoints robustos para la lógica de negocios y streaming analítico en tiempo real mediante SSE en el backend.</p>
+
+<p style="text-indent: 1.25cm;">La adopción de la metodología de Experiment-Driven Development permitió validar empíricamente cada una de las hipótesis planteadas en el Question Backlog. Los resultados cuantitativos medidos manualmente durante las sesiones de prueba de usabilidad y los pilotos con participantes reales evidenciaron un cumplimiento del 100% de los criterios de éxito establecidos para las métricas de dominio. Características críticas como la reactividad de la UI y la reserva de salas libre de colisiones  registraron un éxito absoluto, lo que condujo al rechazo de las hipótesis nulas y al soporte científico de las hipótesis de trabajo.</p>
+
+<p style="text-indent: 1.25cm;">Asimismo, las entrevistas estructuradas de validación aportaron una rica retroalimentación cualitativa que legitima las decisiones de diseño heurístico y de interfaz. Los usuarios destacaron la practicidad de contar con notificaciones de asistencia y lectura en una sola tarjeta integrada, y valoraron especialmente la separación de las comunicaciones formales de canales cotidianos como WhatsApp. Esta separación no solo redujo la sobrecarga cognitiva y eliminó el spam visual gracias a la restricción jerárquica de permisos, sino que también aumentó significativamente el foco de los empleados y la velocidad de lectura de anuncios urgentes.</p>
+
+<p style="text-indent: 1.25cm;">Por último, el establecimiento del workflow de aprendizaje continuo y la formalización de las Learning Cards estructuradas en el reporte permitieron documentar de manera profesional las lecciones clave de cada hipótesis y definir un plan de acción concreto para la estabilización y consolidación final del código. Este proceso demuestra que Centralis ha madurado hasta convertirse en una solución de ingeniería de software confiable, probada y centrada en el usuario, sentando una línea base metodológica y técnica que garantiza la sostenibilidad del producto en futuras expansiones académicas o profesionales.</p>
+
+
+
+# Video App Validation
+
+<p style="text-indent: 1.25cm;">El video de validación de la aplicación Video App Validation constituye una evidencia empírica fundamental del Trabajo Final del proyecto Centralis. Este material audiovisual consolida las sesiones de pruebas de usabilidad y entrevistas estructuradas realizadas con los participantes de los segmentos objetivo. En el video se puede observar de forma directa la interacción de los usuarios con las características experimentales implementadas, tales como la confirmación de asistencia con un solo clic, la visualización progresiva de analíticas en tiempo real (SSE) y la reserva interactiva de salas sin conflictos de ocupación.</p>
+
+<p style="text-indent: 1.25cm;">El propósito del video es documentar de manera transparente la validación de las hipótesis de usabilidad y la respuesta cualitativa de los participantes, quienes expresaron sus testimonios y apreciaciones sobre la reducción de la sobrecarga de información y el desorden visual en comparación con herramientas de mensajería informal de uso diario. A continuación se incluye una captura de pantalla del video y el enlace directo para su reproducción en línea:</p>
+
+<img src="https://i.imgur.com/9PRKrZO.png" width="450">
+
+Link del video Validation Interviews: https://shorturl.at/RSCEz
+
+# Video About-The-Team
+
+El proceso de ingeniería de software y gestión DevOps no solo se valida a través del correcto funcionamiento de la arquitectura tecnológica, sino también mediante el crecimiento, la sinergia y el aprendizaje técnico consolidado por el equipo de desarrollo a lo largo de las fases de construcción del producto. Con este propósito, se ha elaborado el recurso audiovisual **"About-the-Team Video"**, un material de cierre que recopila el testimonio directo de los ingenieros detrás de **Centralis**, exponiendo la evolución metodológica del equipo durante el desarrollo del ecosistema móvil.
+
+Link About-The-Team: https://shorturl.at/adFLr
+
+<img src="https://i.imgur.com/Inj7ob0.png" width="450">
+
+
 
 # Bibliografía 
 
@@ -61,4 +102,12 @@ To-Be Scenario Mapping: https://i.imgur.com/TCNr03W.png
 
 Link del prototipo mobile: https://shorturl.at/Fy7KA
 
-Link Validation Interviews: https://shorturl.at/gH7kO
+Link Validation Interviews: https://shorturl.at/RSCEz
+
+Link About the Product: https://shorturl.at/Br5Fg
+
+Link About-The-Team: https://shorturl.at/adFLr
+
+Link de la landing page: https://landing-page-rmy9.vercel.app/en
+
+Link del web service: https://web-service-1mm7.onrender.com/swagger-ui/index.html
