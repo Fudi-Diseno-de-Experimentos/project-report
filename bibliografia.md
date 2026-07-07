@@ -42,7 +42,23 @@
 
 
 
+# Video App Validation
+
+<p style="text-indent: 1.25cm;">El video de validación de la aplicación Video App Validation constituye una evidencia empírica fundamental del Trabajo Final del proyecto Centralis. Este material audiovisual consolida las sesiones de pruebas de usabilidad y entrevistas estructuradas realizadas con los participantes de los segmentos objetivo. En el video se puede observar de forma directa la interacción de los usuarios con las características experimentales implementadas, tales como la confirmación de asistencia con un solo clic, la visualización progresiva de analíticas en tiempo real (SSE) y la reserva interactiva de salas sin conflictos de ocupación.</p>
+
+<p style="text-indent: 1.25cm;">El propósito del video es documentar de manera transparente la validación de las hipótesis de usabilidad y la respuesta cualitativa de los participantes, quienes expresaron sus testimonios y apreciaciones sobre la reducción de la sobrecarga de información y el desorden visual en comparación con herramientas de mensajería informal de uso diario. A continuación se incluye una captura de pantalla del video y el enlace directo para su reproducción en línea:</p>
+
+<img src="https://i.imgur.com/9PRKrZO.png" width="450">
+
+Link del video Validation Interviews: https://shorturl.at/RSCEz
+
 # Video About-The-Team
+
+El proceso de ingeniería de software y gestión DevOps no solo se valida a través del correcto funcionamiento de la arquitectura tecnológica, sino también mediante el crecimiento, la sinergia y el aprendizaje técnico consolidado por el equipo de desarrollo a lo largo de las fases de construcción del producto. Con este propósito, se ha elaborado el recurso audiovisual **"About-the-Team Video"**, un material de cierre que recopila el testimonio directo de los ingenieros detrás de **Centralis**, exponiendo la evolución metodológica del equipo durante el desarrollo del ecosistema móvil.
+
+Link About-The-Team: https://shorturl.at/adFLr
+
+<img src="https://i.imgur.com/Inj7ob0.png" width="450">
 
 
 
@@ -86,4 +102,12 @@ To-Be Scenario Mapping: https://i.imgur.com/TCNr03W.png
 
 Link del prototipo mobile: https://shorturl.at/Fy7KA
 
-Link Validation Interviews: https://shorturl.at/gH7kO
+Link Validation Interviews: https://shorturl.at/RSCEz
+
+Link About the Product: https://shorturl.at/Br5Fg
+
+Link About-The-Team: https://shorturl.at/adFLr
+
+Link de la landing page: https://landing-page-rmy9.vercel.app/en
+
+Link del web service: https://web-service-1mm7.onrender.com/swagger-ui/index.html
